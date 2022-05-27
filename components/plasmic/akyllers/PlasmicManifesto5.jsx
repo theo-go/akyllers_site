@@ -74,7 +74,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                 className={classNames(
                   projectcss.all,
                   projectcss.a,
-                  sty.link__sh4Ht
+                  sty.link__dArDj
                 )}
                 component={Link}
                 href={"#"}
@@ -82,7 +82,7 @@ function PlasmicManifesto5__RenderFunc(props) {
               >
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img___5JPWj)}
+                  className={classNames(sty.img__fylli)}
                   displayHeight={"40px"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
@@ -102,7 +102,7 @@ function PlasmicManifesto5__RenderFunc(props) {
             closeButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img___9049B)}
+                className={classNames(sty.img__whhsp)}
                 displayHeight={"auto"}
                 displayMaxHeight={"none"}
                 displayMaxWidth={"none"}
@@ -129,10 +129,10 @@ function PlasmicManifesto5__RenderFunc(props) {
                     projectcss.all,
                     projectcss.a,
                     projectcss.__wab_text,
-                    sty.link__cwUy
+                    sty.link__bcf5X
                   )}
                   component={Link}
-                  href={"/"}
+                  href={"/manifesto-5"}
                   platform={"nextjs"}
                 >
                   {"Gallery"}
@@ -146,7 +146,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                     sty.link__s5LC7
                   )}
                   component={Link}
-                  href={"/"}
+                  href={"/manifesto-3"}
                   platform={"nextjs"}
                 >
                   {"Roadmap"}
@@ -160,7 +160,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                     sty.link__lxVcx
                   )}
                   component={Link}
-                  href={"/"}
+                  href={"/manifesto"}
                   platform={"nextjs"}
                 >
                   {"manifesto"}
@@ -174,7 +174,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                     sty.link__vgXzj
                   )}
                   component={Link}
-                  href={"/"}
+                  href={"/-2"}
                   platform={"nextjs"}
                 >
                   {"arcade"}
@@ -229,7 +229,7 @@ function PlasmicManifesto5__RenderFunc(props) {
             openButton={
               <p.PlasmicImg
                 alt={""}
-                className={classNames(sty.img__gE4BI)}
+                className={classNames(sty.img__et9Hq)}
                 displayHeight={
                   hasVariant(globalVariants, "screen", "mobileOnly")
                     ? "30px"

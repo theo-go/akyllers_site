@@ -132,7 +132,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.link__hGfDn
                   )}
                   component={Link}
-                  href={"/"}
+                  href={"/manifesto-5"}
                   platform={"nextjs"}
                 >
                   {"Gallery"}
@@ -146,7 +146,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.link__s5LC7
                   )}
                   component={Link}
-                  href={"/"}
+                  href={"/manifesto-3"}
                   platform={"nextjs"}
                 >
                   {"Roadmap"}
@@ -160,7 +160,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.link__lxVcx
                   )}
                   component={Link}
-                  href={"/"}
+                  href={"/manifesto"}
                   platform={"nextjs"}
                 >
                   {"manifesto"}
@@ -174,7 +174,7 @@ function PlasmicHomepage__RenderFunc(props) {
                     sty.link__vgXzj
                   )}
                   component={Link}
-                  href={"/"}
+                  href={"/-2"}
                   platform={"nextjs"}
                 >
                   {"arcade"}
@@ -283,6 +283,7 @@ function PlasmicHomepage__RenderFunc(props) {
                 sty.link__q08KB
               )}
               component={Link}
+              href={"/-2"}
               platform={"nextjs"}
             >
               <p.Stack

@@ -81,7 +81,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                   className={classNames(
                     projectcss.all,
                     projectcss.a,
-                    sty.link__c27Uo
+                    sty.link__q5PDn
                   )}
                   component={Link}
                   href={"#"}
@@ -89,7 +89,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                 >
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img__xcBhI)}
+                    className={classNames(sty.img__l54Pg)}
                     displayHeight={"40px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"none"}
@@ -109,7 +109,7 @@ function PlasmicHomepage2__RenderFunc(props) {
               closeButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__eaTRu)}
+                  className={classNames(sty.img__yEayQ)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
@@ -136,10 +136,10 @@ function PlasmicHomepage2__RenderFunc(props) {
                       projectcss.all,
                       projectcss.a,
                       projectcss.__wab_text,
-                      sty.link___91PPg
+                      sty.link___2I9S0
                     )}
                     component={Link}
-                    href={"/"}
+                    href={"/manifesto-5"}
                     platform={"nextjs"}
                   >
                     {"Gallery"}
@@ -153,7 +153,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                       sty.link__s5LC7
                     )}
                     component={Link}
-                    href={"/"}
+                    href={"/manifesto-3"}
                     platform={"nextjs"}
                   >
                     {"Roadmap"}
@@ -167,7 +167,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                       sty.link__lxVcx
                     )}
                     component={Link}
-                    href={"/"}
+                    href={"/manifesto"}
                     platform={"nextjs"}
                   >
                     {"manifesto"}
@@ -181,7 +181,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                       sty.link__vgXzj
                     )}
                     component={Link}
-                    href={"/"}
+                    href={"/-2"}
                     platform={"nextjs"}
                   >
                     {"arcade"}
@@ -236,7 +236,7 @@ function PlasmicHomepage2__RenderFunc(props) {
               openButton={
                 <p.PlasmicImg
                   alt={""}
-                  className={classNames(sty.img__v7Kzk)}
+                  className={classNames(sty.img__xqH7Y)}
                   displayHeight={
                     hasVariant(globalVariants, "screen", "mobileOnly")
                       ? "30px"
