@@ -1,0 +1,17 @@
+.root {
+  display: flex;
+  color: #616161;
+  position: relative;
+}
+.link {
+  display: flex;
+  flex-direction: row;
+}
+.slotTargetChildren {
+  font-weight: 500;
+  color: #222222;
+  text-transform: uppercase;
+}
+.slotTargetChildrenwhiteColor {
+  color: #ffffff;
+}

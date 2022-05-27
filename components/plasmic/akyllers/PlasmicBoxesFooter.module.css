@@ -1,0 +1,260 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  position: relative;
+  min-width: 0;
+  padding: 8px;
+}
+.text__sFhkZ {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  color: #ffffff;
+  background: #464646;
+  border-radius: 8px;
+  padding: 10px 20px;
+}
+.freeBox__cmTv5 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin-top: 20px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__cmTv5 {
+    display: flex;
+    flex-direction: column;
+    flex-column-gap: 0px;
+  }
+}
+.lightFooterBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  background: url("/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png") top 50% left 1% / contain no-repeat,
+    #eeeeee;
+  min-width: 0;
+  border-radius: 7px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .lightFooterBox {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+  }
+}
+.text__meuy9 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  top: auto;
+  z-index: 1;
+  left: auto;
+  text-align: right;
+  padding-right: 2em;
+  font-weight: 500;
+  font-size: 2em;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__meuy9 {
+    padding-right: 0em;
+  }
+}
+.freeBox__n9Pji {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: none;
+  min-width: 0;
+  padding: 8px;
+}
+.darkFooterBox {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  background: url("/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png") top 50% left 1% / contain no-repeat,
+    #28272c;
+  min-width: 0;
+  flex-shrink: 0;
+  border-radius: 7px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .darkFooterBox {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+  }
+}
+.text__gPfzK {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  top: auto;
+  z-index: 1;
+  left: auto;
+  text-align: right;
+  padding-right: 2em;
+  font-weight: 500;
+  font-size: 2em;
+  color: #ffffff;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__gPfzK {
+    padding-right: 0em;
+  }
+}
+.freeBox___0Owuq {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox___0Owuq {
+    display: flex;
+    flex-direction: column;
+    flex-column-gap: 0px;
+  }
+}
+.freeBox___13C7V {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 8px;
+}
+.darkFooterBox2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  background: url("/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png") top 50% left 1% / contain no-repeat,
+    #28272c;
+  min-width: 0;
+  flex-shrink: 0;
+  border-radius: 7px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .darkFooterBox2 {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+  }
+}
+.text__drnlZ {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  top: auto;
+  z-index: 1;
+  left: auto;
+  text-align: right;
+  padding-right: 2em;
+  font-weight: 500;
+  font-size: 2em;
+  color: #ffffff;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__drnlZ {
+    padding-right: 0em;
+  }
+}
+.freeBox__p8OZe {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+}
+.lightFooterBox2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  max-width: 100%;
+  background: url("/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png") top 50% left 1% / contain no-repeat,
+    #eeeeee;
+  min-width: 0;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .lightFooterBox2 {
+    justify-content: flex-start;
+    align-items: center;
+    padding: 8px;
+  }
+}
+.text__p7Ow6 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  top: auto;
+  z-index: 1;
+  left: auto;
+  text-align: right;
+  padding-right: 2em;
+  font-weight: 500;
+  font-size: 2em;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__p7Ow6 {
+    padding-right: 0em;
+  }
+}

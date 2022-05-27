@@ -1,0 +1,34 @@
+.root {
+  background: linear-gradient(0deg, #2c1044 0%, #504196 100%);
+  display: flex;
+  position: relative;
+  border-radius: 10px;
+}
+.freeBox___19HoC {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 500px;
+  max-width: 100%;
+  align-self: center;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__eee1U {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  padding-left: 8px;
+  min-width: 0;
+}
+.slotTargetChildren {
+  font-size: 2em;
+  font-weight: 500;
+  color: #ffffff;
+}
