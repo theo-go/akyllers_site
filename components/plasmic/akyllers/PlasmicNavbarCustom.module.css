@@ -1,0 +1,139 @@
+.root:global(.__wab_instance) {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 100%;
+  position: relative;
+  padding: 16px;
+}
+.link__qKkg {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0px;
+}
+.img__eiNyK {
+  object-fit: cover;
+  height: 40px;
+}
+.img__eiNyK > picture > img {
+  object-fit: cover;
+}
+.img__eiNyK > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.img__aPIi {
+  object-fit: cover;
+}
+.img__aPIi > picture > img {
+  object-fit: cover;
+}
+.img__aPIi > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__aPIi {
+    object-fit: contain;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__aPIi > picture > img {
+    object-fit: contain;
+  }
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .img__aPIi > .__wab_img-spacer > img {
+    object-fit: contain;
+  }
+}
+.img___6KE {
+  object-fit: cover;
+}
+.img___6KE > picture > img {
+  object-fit: cover;
+}
+.img___6KE > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.link__cqn6 {
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__s5LC7 {
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__lxVcx {
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__vgXzj {
+  color: #ffffff;
+  text-transform: uppercase;
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+}
+.link__tlyIa {
+  position: relative;
+  display: flex;
+}
+.svg___4YbdT {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #ffffff;
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+}
+.link__f0Zhb {
+  position: relative;
+  display: flex;
+}
+.svg__rQn5O {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #ffffff;
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+}
+.link___8891 {
+  position: relative;
+  display: flex;
+}
+.svg__cpK9S {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  color: #ffffff;
+  width: 1em;
+  flex-shrink: 0;
+  height: 1em;
+}

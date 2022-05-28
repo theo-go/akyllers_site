@@ -209,6 +209,7 @@
   max-width: 800px;
   align-self: flex-start;
   color: #ffffff;
+  padding-top: 24px;
   min-width: 0;
 }
 .text__hoEeD {
@@ -306,6 +307,11 @@
   align-items: center;
   min-width: 0;
   padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .column__iuX8T {
+    display: none;
+  }
 }
 .freeBox {
   display: flex;

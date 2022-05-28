@@ -1,0 +1,111 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 200px;
+  height: 300px;
+  max-width: 100%;
+  background: #ede9e1;
+  position: relative;
+  border-radius: 15px;
+}
+.freeBox__uccG7 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  background: #9b1919;
+  min-width: 0;
+  border-radius: 15px 15px 0px 0px;
+}
+.freeBoxblue__uccG7Yv58Q {
+  background: linear-gradient(286deg, #6660ae 0%, #99c4f2 100%);
+}
+.freeBoxpurple__uccG7Ch8ZR {
+  background: linear-gradient(79deg, #9e40dc 0%, #493cb2 69%);
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.freeBox__iwcRy {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  align-self: auto;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+}
+.freeBox___4ZJZj {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetName {
+  font-size: 14px;
+  color: #616161;
+  text-align: center;
+  text-transform: uppercase;
+}
+.freeBox__wimpw {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 2px 8px 8px;
+}
+.text {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  text-align: center;
+  color: #464646;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+}
+.freeBox__mdNfV {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: 800px;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+.slotTargetNumber {
+  font-size: 16px;
+  font-weight: 500;
+  color: #464646;
+  text-align: center;
+  text-transform: uppercase;
+}

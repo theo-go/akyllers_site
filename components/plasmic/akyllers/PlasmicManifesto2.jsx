@@ -328,23 +328,31 @@ function PlasmicManifesto2__RenderFunc(props) {
                   </div>
                 </div>
 
-                <div className={classNames(projectcss.all, sty.column__iuX8T)}>
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
                   <div
-                    data-plasmic-name={"freeBox"}
-                    data-plasmic-override={overrides.freeBox}
-                    className={classNames(projectcss.all, sty.freeBox)}
+                    className={classNames(projectcss.all, sty.column__iuX8T)}
                   >
                     <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__maPyy
-                      )}
+                      data-plasmic-name={"freeBox"}
+                      data-plasmic-override={overrides.freeBox}
+                      className={classNames(projectcss.all, sty.freeBox)}
                     >
-                      {"Enter some text"}
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__maPyy
+                        )}
+                      >
+                        {"Enter some text"}
+                      </div>
                     </div>
                   </div>
-                </div>
+                ) : null}
               </div>
             </div>
           </div>

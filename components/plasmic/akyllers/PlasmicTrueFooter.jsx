@@ -15,9 +15,11 @@ import {
   hasVariant,
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts
+  deriveRenderOpts,
+  ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import FooterLink from "../../FooterLink"; // plasmic-import: 5rx4AKY7Ct/component
+import { useScreenVariants as useScreenVariantsnK2Y1P6I3Vepj } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: nK2Y1p6i3Vepj/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_akyllers.module.css"; // plasmic-import: cELQgcBTCpXC8URn4hyouo/projectcss
 import sty from "./PlasmicTrueFooter.module.css"; // plasmic-import: 1RTRAsLRW5N/css
@@ -35,6 +37,10 @@ function PlasmicTrueFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultTrueFooter__Args, props.args);
   const $props = args;
+  const globalVariants = ensureGlobalVariants({
+    screen: useScreenVariantsnK2Y1P6I3Vepj()
+  });
+
   return (
     <p.Stack
       as={"div"}
@@ -51,146 +57,182 @@ function PlasmicTrueFooter__RenderFunc(props) {
         sty.root
       )}
     >
-      <p.PlasmicImg
-        data-plasmic-name={"img"}
-        data-plasmic-override={overrides.img}
-        alt={""}
-        className={classNames(sty.img, {
-          [sty.imgdarkMode]: hasVariant(variants, "darkMode", "darkMode")
-        })}
-        displayHeight={"auto"}
-        displayMaxHeight={"none"}
-        displayMaxWidth={"100%"}
-        displayMinHeight={"0"}
-        displayMinWidth={"0"}
-        displayWidth={"200px"}
-        loading={"lazy"}
-        src={
-          hasVariant(variants, "darkMode", "darkMode")
-            ? {
-                src: "/plasmic/akyllers/images/logoWhitepng.png",
-                fullWidth: 1560,
-                fullHeight: 303,
-                aspectRatio: undefined
+      <div className={classNames(projectcss.all, sty.freeBox__xRAiw)}>
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+          <div className={classNames(projectcss.all, sty.freeBox__krXpl)}>
+            <p.PlasmicImg
+              data-plasmic-name={"img"}
+              data-plasmic-override={overrides.img}
+              alt={""}
+              className={classNames(sty.img, {
+                [sty.imgdarkMode]: hasVariant(variants, "darkMode", "darkMode")
+              })}
+              displayHeight={"auto"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"100%"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={
+                hasVariant(globalVariants, "screen", "mobileOnly")
+                  ? "auto"
+                  : "200px"
               }
-            : {
-                src: "/plasmic/akyllers/images/logopng.png",
-                fullWidth: 1560,
-                fullHeight: 303,
-                aspectRatio: undefined
+              loading={"lazy"}
+              src={
+                hasVariant(variants, "darkMode", "darkMode")
+                  ? {
+                      src: "/plasmic/akyllers/images/logoWhitepng.png",
+                      fullWidth: 1560,
+                      fullHeight: 303,
+                      aspectRatio: undefined
+                    }
+                  : {
+                      src: "/plasmic/akyllers/images/logopng.png",
+                      fullWidth: 1560,
+                      fullHeight: 303,
+                      aspectRatio: undefined
+                    }
               }
-        }
-      />
+            />
+          </div>
+        ) : null}
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__vVTq)}
+          >
+            <FooterLink
+              className={classNames("__wab_instance", sty.footerLink__t0Pq, {
+                [sty.footerLinkdarkMode__t0PqIscWr]: hasVariant(
+                  variants,
+                  "darkMode",
+                  "darkMode"
+                )
+              })}
+              link={"/"}
+              whiteColor={
+                hasVariant(variants, "darkMode", "darkMode") ? true : undefined
+              }
+            >
+              {"Gallery"}
+            </FooterLink>
 
-      <FooterLink
-        className={classNames("__wab_instance", sty.footerLink__t0Pq, {
-          [sty.footerLinkdarkMode__t0PqIscWr]: hasVariant(
-            variants,
-            "darkMode",
-            "darkMode"
-          )
-        })}
-        link={"/"}
-        whiteColor={
-          hasVariant(variants, "darkMode", "darkMode") ? true : undefined
-        }
-      >
-        {"Gallery"}
-      </FooterLink>
+            <FooterLink
+              className={classNames("__wab_instance", sty.footerLink__vWvtN, {
+                [sty.footerLinkdarkMode__vWvtNiscWr]: hasVariant(
+                  variants,
+                  "darkMode",
+                  "darkMode"
+                )
+              })}
+              whiteColor={
+                hasVariant(variants, "darkMode", "darkMode") ? true : undefined
+              }
+            >
+              {"Roadmap"}
+            </FooterLink>
 
-      <FooterLink
-        className={classNames("__wab_instance", sty.footerLink__vWvtN, {
-          [sty.footerLinkdarkMode__vWvtNiscWr]: hasVariant(
-            variants,
-            "darkMode",
-            "darkMode"
-          )
-        })}
-        whiteColor={
-          hasVariant(variants, "darkMode", "darkMode") ? true : undefined
-        }
-      >
-        {"Roadmap"}
-      </FooterLink>
+            <FooterLink
+              className={classNames("__wab_instance", sty.footerLink__j6LeP, {
+                [sty.footerLinkdarkMode__j6LePiscWr]: hasVariant(
+                  variants,
+                  "darkMode",
+                  "darkMode"
+                )
+              })}
+              whiteColor={
+                hasVariant(variants, "darkMode", "darkMode") ? true : undefined
+              }
+            />
 
-      <FooterLink
-        className={classNames("__wab_instance", sty.footerLink__j6LeP, {
-          [sty.footerLinkdarkMode__j6LePiscWr]: hasVariant(
-            variants,
-            "darkMode",
-            "darkMode"
-          )
-        })}
-        whiteColor={
-          hasVariant(variants, "darkMode", "darkMode") ? true : undefined
-        }
-      />
+            <FooterLink
+              className={classNames("__wab_instance", sty.footerLink__rOA, {
+                [sty.footerLinkdarkMode__rOAiscWr]: hasVariant(
+                  variants,
+                  "darkMode",
+                  "darkMode"
+                )
+              })}
+              whiteColor={
+                hasVariant(variants, "darkMode", "darkMode") ? true : undefined
+              }
+            >
+              {"arcade"}
+            </FooterLink>
+          </p.Stack>
+        ) : null}
+        {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
+          <p.Stack
+            as={"div"}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox__yBWi)}
+          >
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__sknvu
+              )}
+              component={Link}
+              platform={"nextjs"}
+            >
+              <DiscordSvgrepoComsvgIcon
+                className={classNames(projectcss.all, sty.svg__dg1Vu, {
+                  [sty.svgdarkMode__dg1VuIscWr]: hasVariant(
+                    variants,
+                    "darkMode",
+                    "darkMode"
+                  )
+                })}
+                role={"img"}
+              />
+            </p.PlasmicLink>
 
-      <FooterLink
-        className={classNames("__wab_instance", sty.footerLink__rOA, {
-          [sty.footerLinkdarkMode__rOAiscWr]: hasVariant(
-            variants,
-            "darkMode",
-            "darkMode"
-          )
-        })}
-        whiteColor={
-          hasVariant(variants, "darkMode", "darkMode") ? true : undefined
-        }
-      >
-        {"arcade"}
-      </FooterLink>
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__gN9Au
+              )}
+              component={Link}
+              platform={"nextjs"}
+            >
+              <InstagramSvgrepoCom2SvgIcon
+                className={classNames(projectcss.all, sty.svg__iMiKg, {
+                  [sty.svgdarkMode__iMiKgIscWr]: hasVariant(
+                    variants,
+                    "darkMode",
+                    "darkMode"
+                  )
+                })}
+                role={"img"}
+              />
+            </p.PlasmicLink>
 
-      <p.PlasmicLink
-        className={classNames(projectcss.all, projectcss.a, sty.link__sknvu)}
-        component={Link}
-        platform={"nextjs"}
-      >
-        <DiscordSvgrepoComsvgIcon
-          className={classNames(projectcss.all, sty.svg__dg1Vu, {
-            [sty.svgdarkMode__dg1VuIscWr]: hasVariant(
-              variants,
-              "darkMode",
-              "darkMode"
-            )
-          })}
-          role={"img"}
-        />
-      </p.PlasmicLink>
-
-      <p.PlasmicLink
-        className={classNames(projectcss.all, projectcss.a, sty.link__gN9Au)}
-        component={Link}
-        platform={"nextjs"}
-      >
-        <InstagramSvgrepoCom2SvgIcon
-          className={classNames(projectcss.all, sty.svg__iMiKg, {
-            [sty.svgdarkMode__iMiKgIscWr]: hasVariant(
-              variants,
-              "darkMode",
-              "darkMode"
-            )
-          })}
-          role={"img"}
-        />
-      </p.PlasmicLink>
-
-      <p.PlasmicLink
-        className={classNames(projectcss.all, projectcss.a, sty.link__etPHl)}
-        component={Link}
-        platform={"nextjs"}
-      >
-        <TwitterSvgrepoComsvgIcon
-          className={classNames(projectcss.all, sty.svg__lbLXj, {
-            [sty.svgdarkMode__lbLXjIscWr]: hasVariant(
-              variants,
-              "darkMode",
-              "darkMode"
-            )
-          })}
-          role={"img"}
-        />
-      </p.PlasmicLink>
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__etPHl
+              )}
+              component={Link}
+              platform={"nextjs"}
+            >
+              <TwitterSvgrepoComsvgIcon
+                className={classNames(projectcss.all, sty.svg__lbLXj, {
+                  [sty.svgdarkMode__lbLXjIscWr]: hasVariant(
+                    variants,
+                    "darkMode",
+                    "darkMode"
+                  )
+                })}
+                role={"img"}
+              />
+            </p.PlasmicLink>
+          </p.Stack>
+        ) : null}
+      </div>
     </p.Stack>
   );
 }

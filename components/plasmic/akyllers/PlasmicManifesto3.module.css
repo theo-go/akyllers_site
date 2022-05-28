@@ -384,6 +384,11 @@
   min-width: 0;
   padding: 8px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__p9Kj {
+    padding: 0px;
+  }
+}
 .details {
   flex-direction: column;
   display: flex;
@@ -503,6 +508,7 @@
   align-self: flex-start;
   color: #ffffff;
   padding-bottom: 0px;
+  font-size: 40px;
 }
 .text__u66Dt {
   position: relative;
@@ -526,6 +532,11 @@
   margin-top: 80px;
   min-width: 0;
   padding: 8px;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .freeBox__qgJxW {
+    padding: 0px;
+  }
 }
 .trueFooter:global(.__wab_instance) {
   max-width: 100%;

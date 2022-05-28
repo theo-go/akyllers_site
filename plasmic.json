@@ -166,19 +166,6 @@
           "componentType": "page"
         },
         {
-          "id": "G7WJTpHQNnw",
-          "name": "Manifesto4",
-          "type": "managed",
-          "projectId": "cELQgcBTCpXC8URn4hyouo",
-          "renderModuleFilePath": "plasmic/akyllers/PlasmicManifesto4.jsx",
-          "importSpec": {
-            "modulePath": "../pages/manifesto-4.jsx"
-          },
-          "cssFilePath": "plasmic/akyllers/PlasmicManifesto4.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "lEWLrQK3dc",
           "name": "RoadmapItem",
           "type": "managed",
@@ -203,6 +190,58 @@
           "cssFilePath": "plasmic/akyllers/PlasmicManifesto5.module.css",
           "scheme": "blackbox",
           "componentType": "page"
+        },
+        {
+          "id": "5sPSsjDnyE",
+          "name": "NavbarCustom",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicNavbarCustom.jsx",
+          "importSpec": {
+            "modulePath": "NavbarCustom.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicNavbarCustom.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "Df4ah1WY7c",
+          "name": "TeamItemBox",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicTeamItemBox.jsx",
+          "importSpec": {
+            "modulePath": "TeamItemBox.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicTeamItemBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "u3bZHsWi8B",
+          "name": "GalleryItemBox",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicGalleryItemBox.jsx",
+          "importSpec": {
+            "modulePath": "GalleryItemBox.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicGalleryItemBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "btXf6zq--J",
+          "name": "AttributesBox",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicAttributesBox.jsx",
+          "importSpec": {
+            "modulePath": "AttributesBox.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicAttributesBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -292,11 +331,184 @@
           "id": "VooHMPXGH",
           "name": "logo-white.png",
           "filePath": "../public/plasmic/akyllers/images/logoWhitepng.png"
+        },
+        {
+          "id": "I-Wgf2awN",
+          "name": "Major-Havoc-Artwork-Only.psd-me_transparent.png",
+          "filePath": "../public/plasmic/akyllers/images/majorHavocArtworkOnlypsdMeTransparentpng.png"
+        },
+        {
+          "id": "0Zg-fMYQ-",
+          "name": "Major-Havoc-Artwork-Only 12.png",
+          "filePath": "../public/plasmic/akyllers/images/majorHavocArtworkOnly12Png.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "",
+      "globalContextsFilePath": "plasmic/akyllers/PlasmicGlobalContextsProvider.jsx",
       "codeComponents": []
+    },
+    {
+      "projectId": "84wxoth5npGrp6RRXPL88z",
+      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
+      "projectName": "react-scroll-parallax-global",
+      "version": "4.0.1",
+      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic_react_scroll_parallax_global.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.jsx",
+      "codeComponents": [
+        {
+          "id": "bozP4lLlAZ",
+          "name": "ParallaxWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        },
+        {
+          "id": "L6MfauX2Cw",
+          "name": "ParallaxProviderWrapper",
+          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
+        }
+      ]
+    },
+    {
+      "projectId": "28Ba3BDvRe7EiWdfFNnLB6",
+      "projectApiToken": "DWg4EVpu2l6n6fAdMDCvE22FFoWH1NK3ZmqmXnzezysh5ZWic03cixuobavnSG7W2O29VnLlgnyQp1TAijQ",
+      "projectName": "antd",
+      "version": "2.0.1",
+      "cssFilePath": "plasmic/antd/plasmic_antd.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "kv6Mk_JNYw",
+          "name": "Button",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "iBC45mjTXv",
+          "name": "Slider",
+          "componentImportPath": "@plasmicpkgs/antd"
+        },
+        {
+          "id": "tRueht1jub",
+          "name": "Switch",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "YRr0RPAdEj",
+          "name": "Option",
+          "componentImportPath": "rc-select"
+        },
+        {
+          "id": "Ay1H491feg",
+          "name": "OptGroup",
+          "componentImportPath": "rc-select"
+        },
+        {
+          "id": "2YpGIhkzkpc",
+          "name": "Select",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "yegZ392NLoV",
+          "name": "CollapsePanel",
+          "componentImportPath": "antd/lib/collapse/CollapsePanel"
+        },
+        {
+          "id": "F10gpQ1ZhXY",
+          "name": "Collapse",
+          "componentImportPath": "antd/lib/collapse/Collapse"
+        },
+        {
+          "id": "SAEWraOT2YV",
+          "name": "Checkbox",
+          "componentImportPath": "antd/lib/checkbox/Checkbox"
+        },
+        {
+          "id": "m5zFS-kMOL-",
+          "name": "CheckboxGroup",
+          "componentImportPath": "antd/lib/checkbox/Group"
+        },
+        {
+          "id": "6DZuSUEKjFh",
+          "name": "MenuDivider",
+          "componentImportPath": "antd/lib/menu/MenuDivider"
+        },
+        {
+          "id": "HZ6EmQgIQJr",
+          "name": "MenuItem",
+          "componentImportPath": "antd/lib/menu/MenuItem"
+        },
+        {
+          "id": "LGE6ExNG8fZ",
+          "name": "ItemGroup",
+          "componentImportPath": "rc-menu"
+        },
+        {
+          "id": "DSwQm8gUYob",
+          "name": "SubMenu",
+          "componentImportPath": "antd/lib/menu/SubMenu"
+        },
+        {
+          "id": "Iz_hLKpHZDg",
+          "name": "Menu",
+          "componentImportPath": "antd/lib/menu/index"
+        },
+        {
+          "id": "_C8wcdH3BDp",
+          "name": "Carousel",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "tO9wrxr8Nbb",
+          "name": "Input",
+          "componentImportPath": "antd"
+        },
+        {
+          "id": "ZJIPHLoTjkN",
+          "name": "TextArea",
+          "componentImportPath": "antd/lib/input/TextArea"
+        },
+        {
+          "id": "zDcn8vsMldu",
+          "name": "Search",
+          "componentImportPath": "antd/lib/input/Search"
+        },
+        {
+          "id": "fTDg0FM1tnD",
+          "name": "Password",
+          "componentImportPath": "antd/lib/input/Password"
+        },
+        {
+          "id": "uZueUXuqePq",
+          "name": "InputGroup",
+          "componentImportPath": "antd/lib/input/Group"
+        },
+        {
+          "id": "cv59X4q0WK",
+          "name": "Dropdown",
+          "componentImportPath": "@plasmicpkgs/antd"
+        },
+        {
+          "id": "cHUYQj2aKK",
+          "name": "DropdownButton",
+          "componentImportPath": "antd/lib/dropdown/dropdown-button"
+        },
+        {
+          "id": "p3HNI5RglT",
+          "name": "TabPane",
+          "componentImportPath": "rc-tabs"
+        },
+        {
+          "id": "Hb-DVgvuk3",
+          "name": "Tabs",
+          "componentImportPath": "@plasmicpkgs/antd"
+        }
+      ]
     }
   ],
   "globalVariants": {
