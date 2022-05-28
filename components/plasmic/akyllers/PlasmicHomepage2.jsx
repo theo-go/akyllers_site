@@ -18,7 +18,6 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { ParallaxWrapper } from "@plasmicpkgs/react-scroll-parallax"; // plasmic-import: bozP4lLlAZ/codeComponent
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
 import ItemInside from "../../ItemInside"; // plasmic-import: nG5tYecuo7/component
 import TeamItemBox from "../../TeamItemBox"; // plasmic-import: Df4ah1WY7c/component
@@ -75,13 +74,8 @@ function PlasmicHomepage2__RenderFunc(props) {
             data-plasmic-override={overrides.hero}
             className={classNames(projectcss.all, sty.hero)}
           >
-            <div className={classNames(projectcss.all, sty.freeBox__fH6Ts)}>
-              <ParallaxWrapper
-                data-plasmic-name={"scrollParallax"}
-                data-plasmic-override={overrides.scrollParallax}
-                className={classNames("__wab_instance", sty.scrollParallax)}
-                speed={20}
-              >
+            {true ? (
+              <div className={classNames(projectcss.all, sty.freeBox__fH6Ts)}>
                 <p.PlasmicImg
                   alt={""}
                   className={classNames(sty.img__lfBrf)}
@@ -92,14 +86,14 @@ function PlasmicHomepage2__RenderFunc(props) {
                   displayMinWidth={"0"}
                   displayWidth={"auto"}
                   src={{
-                    src: "/plasmic/akyllers/images/ezgifcomGifMaker2Png.png",
-                    fullWidth: 1920,
-                    fullHeight: 1080,
+                    src: "/plasmic/akyllers/images/untitledArtworkpng.png",
+                    fullWidth: 3000,
+                    fullHeight: 3798,
                     aspectRatio: undefined
                   }}
                 />
-              </ParallaxWrapper>
-            </div>
+              </div>
+            ) : null}
 
             <div
               data-plasmic-name={"fakeRoot"}
@@ -117,7 +111,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                       sty.link__q5PDn
                     )}
                     component={Link}
-                    href={"#"}
+                    href={"/"}
                     platform={"nextjs"}
                   >
                     <p.PlasmicImg
@@ -312,18 +306,9 @@ function PlasmicHomepage2__RenderFunc(props) {
                       sty.text__q8Fpl
                     )}
                   >
-                    <React.Fragment>
-                      <React.Fragment>{""}</React.Fragment>
-                      <span
-                        className={"plasmic_default__all plasmic_default__span"}
-                        style={{ fontWeight: 700 }}
-                      >
-                        {"Our intent is"}
-                      </span>
-                      <React.Fragment>
-                        {"\nto be unclassifiable in a cluttered NFT landscape."}
-                      </React.Fragment>
-                    </React.Fragment>
+                    {
+                      "Akyllers is a web 3.0 brand with a vision.\nTurn Boring parts of life into a game."
+                    }
                   </div>
                 </div>
               </div>
@@ -355,9 +340,9 @@ function PlasmicHomepage2__RenderFunc(props) {
                     displayWidth={"auto"}
                     loading={"lazy"}
                     src={{
-                      src: "/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png",
-                      fullWidth: 2048,
-                      fullHeight: 2048,
+                      src: "/plasmic/akyllers/images/untitledArtworkpng.png",
+                      fullWidth: 3000,
+                      fullHeight: 3798,
                       aspectRatio: undefined
                     }}
                   />
@@ -379,7 +364,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         sty.h1__vdsuy
                       )}
                     >
-                      {"Title goes here"}
+                      {"LFG = Life is a Game"}
                     </h1>
 
                     <div
@@ -389,7 +374,9 @@ function PlasmicHomepage2__RenderFunc(props) {
                         sty.text__eOfel
                       )}
                     >
-                      {"Enter some text"}
+                      {
+                        "From the Hood, to the Arcade, we're bringing decentralized stuff to the 80s."
+                      }
                     </div>
                   </div>
 
@@ -404,7 +391,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         sty.h1__pOx8O
                       )}
                     >
-                      {"Title goes here"}
+                      {"We are gamers... processing..."}
                     </h1>
 
                     <div
@@ -414,7 +401,9 @@ function PlasmicHomepage2__RenderFunc(props) {
                         sty.text__rghRl
                       )}
                     >
-                      {"Enter some text"}
+                      {
+                        "Here is to all the misfits, the rebels, the gamers who rejected reality and created one of their own. Here's what we are here to build: A new way of doin' things."
+                      }
                     </div>
                   </div>
                 </p.Stack>
@@ -434,7 +423,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                   sty.h1__nDuHv
                 )}
               >
-                {"WELCOME TO AKYLLA"}
+                {"Things we are here for"}
               </h1>
 
               <div
@@ -445,7 +434,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                 )}
               >
                 {
-                  "When you buy an Akyller, you are not simply buying an avatar or an exquisite rare piece of art. Instead, you are gaining access to a brand built by a community whose value & benefits increase over time. Your Akyller is your digital identity granting you exclusive access & Full IP Commercial rights."
+                  "We are here to build together, to create together, to have fun & grow together as we embark on a journey that has no attachment to status quo. We, Akyllers, live in a world beyond your world, in a hood that joins creators, builders, individuals who are bold enough to be humble, proud, and defiant. "
                 }
               </div>
 
@@ -460,7 +449,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         sty.itemInside__oDrqp
                       )}
                     >
-                      {"4,444 Original rare Akyller tokens"}
+                      {"4,444 unique Akyller tokens"}
                     </ItemInside>
                   </div>
 
@@ -479,7 +468,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         aspectRatio: undefined
                       }}
                     >
-                      {"Play to Learn to Earn"}
+                      {"Brand with a vision: LFG"}
                     </ItemInside>
                   </div>
 
@@ -498,7 +487,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         aspectRatio: undefined
                       }}
                     >
-                      {"You own IP commercial rights on your Akyller"}
+                      {"Brand built by Akyllers to All"}
                     </ItemInside>
                   </div>
 
@@ -517,9 +506,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         aspectRatio: undefined
                       }}
                     >
-                      {
-                        "Gain additional benefits through roadmap activations the more you Hold"
-                      }
+                      {"Riding Web 3.0 & everything in it"}
                     </ItemInside>
                   </div>
 
@@ -538,7 +525,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         aspectRatio: undefined
                       }}
                     >
-                      {"The Arcade: A member's-only NFT gated community"}
+                      {"Anime is still in Chapter one."}
                     </ItemInside>
                   </div>
 
@@ -557,7 +544,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         aspectRatio: undefined
                       }}
                     >
-                      {"Fair Launch, fair distribution"}
+                      {"An ecosystem in the making."}
                     </ItemInside>
                   </div>
                 </div>
@@ -601,6 +588,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                   data-plasmic-name={"teamItemBox"}
                   data-plasmic-override={overrides.teamItemBox}
                   className={classNames("__wab_instance", sty.teamItemBox)}
+                  title={"Akylles"}
                 />
               </div>
             </div>
@@ -627,7 +615,6 @@ const PlasmicDescendants = {
   root: [
     "root",
     "hero",
-    "scrollParallax",
     "fakeRoot",
     "navigationBar",
     "mission",
@@ -641,8 +628,7 @@ const PlasmicDescendants = {
     "trueFooter"
   ],
 
-  hero: ["hero", "scrollParallax", "fakeRoot", "navigationBar", "mission"],
-  scrollParallax: ["scrollParallax"],
+  hero: ["hero", "fakeRoot", "navigationBar", "mission"],
   fakeRoot: ["fakeRoot", "navigationBar", "mission"],
   navigationBar: ["navigationBar"],
   mission: ["mission"],
@@ -696,7 +682,6 @@ export const PlasmicHomepage2 = Object.assign(
   {
     // Helper components rendering sub-elements
     hero: makeNodeComponent("hero"),
-    scrollParallax: makeNodeComponent("scrollParallax"),
     fakeRoot: makeNodeComponent("fakeRoot"),
     navigationBar: makeNodeComponent("navigationBar"),
     mission: makeNodeComponent("mission"),

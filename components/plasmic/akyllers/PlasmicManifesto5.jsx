@@ -19,6 +19,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import BoxesFooter from "../../BoxesFooter"; // plasmic-import: oP4880RYxJw/component
 import { Select } from "antd"; // plasmic-import: 2YpGIhkzkpc/codeComponent
 import { Option } from "rc-select"; // plasmic-import: YRr0RPAdEj/codeComponent
 import GalleryItemBox from "../../GalleryItemBox"; // plasmic-import: u3bZHsWi8B/component
@@ -81,7 +82,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                   sty.link__dArDj
                 )}
                 component={Link}
-                href={"#"}
+                href={"/"}
                 platform={"nextjs"}
               >
                 <p.PlasmicImg
@@ -263,444 +264,465 @@ function PlasmicManifesto5__RenderFunc(props) {
             responsiveBreakpoint={768}
           />
 
-          <div
-            data-plasmic-name={"textSection"}
-            data-plasmic-override={overrides.textSection}
-            className={classNames(projectcss.all, sty.textSection)}
-          >
-            {(
-              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
-            ) ? (
-              <p.Stack
-                as={"div"}
-                data-plasmic-name={"filters"}
-                data-plasmic-override={overrides.filters}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.filters)}
-              >
-                <Select
-                  allowClear={true}
-                  bordered={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.antdSelect__rag6N
-                  )}
-                  disabled={false}
-                  loading={false}
-                  placeholder={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___0Z44V
-                      )}
-                    >
-                      {"Select"}
-                    </div>
-                  }
-                >
-                  <Option
-                    className={classNames(
-                      "__wab_instance",
-                      sty.antdOption___6Z5Fa
-                    )}
-                    value={"Option"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__h5RUx
-                      )}
-                    >
-                      {"Option"}
-                    </div>
-                  </Option>
-                </Select>
-
-                <Select
-                  allowClear={true}
-                  bordered={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.antdSelect__sx5Wh
-                  )}
-                  disabled={false}
-                  loading={false}
-                  placeholder={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___3Rv5E
-                      )}
-                    >
-                      {"Select"}
-                    </div>
-                  }
-                >
-                  <Option
-                    className={classNames(
-                      "__wab_instance",
-                      sty.antdOption___8LQ6M
-                    )}
-                    value={"Option"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__mHjpG
-                      )}
-                    >
-                      {"Option"}
-                    </div>
-                  </Option>
-                </Select>
-
-                <Select
-                  allowClear={true}
-                  bordered={true}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.antdSelect__g8RNn
-                  )}
-                  disabled={false}
-                  loading={false}
-                  placeholder={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__qfBk
-                      )}
-                    >
-                      {"Select"}
-                    </div>
-                  }
-                >
-                  <Option
-                    className={classNames(
-                      "__wab_instance",
-                      sty.antdOption__dpFL
-                    )}
-                    value={"Option"}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__v1Y6K
-                      )}
-                    >
-                      {"Option"}
-                    </div>
-                  </Option>
-                </Select>
-              </p.Stack>
-            ) : null}
-
+          <div className={classNames(projectcss.all, sty.freeBox__bNqht)}>
             <div
-              data-plasmic-name={"leftRight"}
-              data-plasmic-override={overrides.leftRight}
-              className={classNames(projectcss.all, sty.leftRight)}
+              className={classNames(
+                projectcss.all,
+                projectcss.__wab_text,
+                sty.text__xTdFx
+              )}
             >
-              <div className={classNames(projectcss.all, sty.column__mcwbM)}>
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"galleryItems"}
-                  data-plasmic-override={overrides.galleryItems}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.galleryItems)}
-                >
-                  <GalleryItemBox
-                    className={classNames(
-                      "__wab_instance",
-                      sty.galleryItemBox__fuVxP
-                    )}
-                  />
+              {"Coming soon..."}
+            </div>
 
-                  <GalleryItemBox
-                    className={classNames(
-                      "__wab_instance",
-                      sty.galleryItemBox___9DTgU
-                    )}
-                  />
+            <BoxesFooter
+              data-plasmic-name={"boxesFooter"}
+              data-plasmic-override={overrides.boxesFooter}
+              className={classNames("__wab_instance", sty.boxesFooter)}
+            />
+          </div>
 
-                  <GalleryItemBox
-                    className={classNames(
-                      "__wab_instance",
-                      sty.galleryItemBox__cCmYs
-                    )}
-                  />
-
-                  <GalleryItemBox
-                    className={classNames(
-                      "__wab_instance",
-                      sty.galleryItemBox___79VG6
-                    )}
-                  />
-
-                  <GalleryItemBox
-                    className={classNames(
-                      "__wab_instance",
-                      sty.galleryItemBox__uWnG
-                    )}
-                  />
-
-                  <GalleryItemBox
-                    className={classNames(
-                      "__wab_instance",
-                      sty.galleryItemBox__bwp4C
-                    )}
-                  />
-
-                  <GalleryItemBox
-                    className={classNames(
-                      "__wab_instance",
-                      sty.galleryItemBox__cg6Op
-                    )}
-                  />
-
-                  <GalleryItemBox
-                    className={classNames(
-                      "__wab_instance",
-                      sty.galleryItemBox__aKeLh
-                    )}
-                  />
-                </p.Stack>
-              </div>
-
+          {true ? (
+            <div
+              data-plasmic-name={"textSection"}
+              data-plasmic-override={overrides.textSection}
+              className={classNames(projectcss.all, sty.textSection)}
+            >
               {(
                 hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
               ) ? (
-                <div className={classNames(projectcss.all, sty.column___6Y2O)}>
-                  <div
-                    data-plasmic-name={"rightSide"}
-                    data-plasmic-override={overrides.rightSide}
-                    className={classNames(projectcss.all, sty.rightSide)}
+                <p.Stack
+                  as={"div"}
+                  data-plasmic-name={"filters"}
+                  data-plasmic-override={overrides.filters}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.filters)}
+                >
+                  <Select
+                    allowClear={true}
+                    bordered={true}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.antdSelect__rag6N
+                    )}
+                    disabled={false}
+                    loading={false}
+                    placeholder={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___0Z44V
+                        )}
+                      >
+                        {"Select"}
+                      </div>
+                    }
                   >
-                    <div
-                      data-plasmic-name={"imgDiv"}
-                      data-plasmic-override={overrides.imgDiv}
-                      className={classNames(projectcss.all, sty.imgDiv)}
-                    >
-                      <p.PlasmicImg
-                        alt={""}
-                        className={classNames(sty.img__rGn9)}
-                        displayHeight={"auto"}
-                        displayMaxHeight={"none"}
-                        displayMaxWidth={"100%"}
-                        displayMinHeight={"0"}
-                        displayMinWidth={"0"}
-                        displayWidth={"auto"}
-                        loading={"lazy"}
-                        src={{
-                          src: "/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png",
-                          fullWidth: 2048,
-                          fullHeight: 2048,
-                          aspectRatio: undefined
-                        }}
-                      />
-                    </div>
-
-                    <div
-                      data-plasmic-name={"nameDiv"}
-                      data-plasmic-override={overrides.nameDiv}
-                      className={classNames(projectcss.all, sty.nameDiv)}
+                    <Option
+                      className={classNames(
+                        "__wab_instance",
+                        sty.antdOption___6Z5Fa
+                      )}
+                      value={"Option"}
                     >
                       <div
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__wl51A
+                          sty.text__h5RUx
                         )}
                       >
-                        {"Name"}
+                        {"Option"}
                       </div>
+                    </Option>
+                  </Select>
 
+                  <Select
+                    allowClear={true}
+                    bordered={true}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.antdSelect__sx5Wh
+                    )}
+                    disabled={false}
+                    loading={false}
+                    placeholder={
                       <div
                         className={classNames(
                           projectcss.all,
-                          sty.freeBox__uXqy
+                          projectcss.__wab_text,
+                          sty.text___3Rv5E
                         )}
                       >
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__y5GuC
-                          )}
-                        >
-                          {"#"}
-                        </div>
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__yKfyy
-                          )}
-                        >
-                          {" "}
-                        </div>
-
-                        <div
-                          className={classNames(
-                            projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text__rO5HC
-                          )}
-                        >
-                          {"1111"}
-                        </div>
+                        {"Select"}
                       </div>
-                    </div>
-
-                    {true ? (
+                    }
+                  >
+                    <Option
+                      className={classNames(
+                        "__wab_instance",
+                        sty.antdOption___8LQ6M
+                      )}
+                      value={"Option"}
+                    >
                       <div
-                        data-plasmic-name={"attributesDiv"}
-                        data-plasmic-override={overrides.attributesDiv}
                         className={classNames(
                           projectcss.all,
-                          sty.attributesDiv
+                          projectcss.__wab_text,
+                          sty.text__mHjpG
                         )}
                       >
-                        <p.Stack
-                          as={"div"}
-                          data-plasmic-name={"columns"}
-                          data-plasmic-override={overrides.columns}
-                          hasGap={true}
-                          className={classNames(projectcss.all, sty.columns)}
+                        {"Option"}
+                      </div>
+                    </Option>
+                  </Select>
+
+                  <Select
+                    allowClear={true}
+                    bordered={true}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.antdSelect__g8RNn
+                    )}
+                    disabled={false}
+                    loading={false}
+                    placeholder={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__qfBk
+                        )}
+                      >
+                        {"Select"}
+                      </div>
+                    }
+                  >
+                    <Option
+                      className={classNames(
+                        "__wab_instance",
+                        sty.antdOption__dpFL
+                      )}
+                      value={"Option"}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__v1Y6K
+                        )}
+                      >
+                        {"Option"}
+                      </div>
+                    </Option>
+                  </Select>
+                </p.Stack>
+              ) : null}
+
+              <div
+                data-plasmic-name={"leftRight"}
+                data-plasmic-override={overrides.leftRight}
+                className={classNames(projectcss.all, sty.leftRight)}
+              >
+                <div className={classNames(projectcss.all, sty.column__mcwbM)}>
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"galleryItems"}
+                    data-plasmic-override={overrides.galleryItems}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.galleryItems)}
+                  >
+                    <GalleryItemBox
+                      className={classNames(
+                        "__wab_instance",
+                        sty.galleryItemBox__fuVxP
+                      )}
+                    />
+
+                    <GalleryItemBox
+                      className={classNames(
+                        "__wab_instance",
+                        sty.galleryItemBox___9DTgU
+                      )}
+                    />
+
+                    <GalleryItemBox
+                      className={classNames(
+                        "__wab_instance",
+                        sty.galleryItemBox__cCmYs
+                      )}
+                    />
+
+                    <GalleryItemBox
+                      className={classNames(
+                        "__wab_instance",
+                        sty.galleryItemBox___79VG6
+                      )}
+                    />
+
+                    <GalleryItemBox
+                      className={classNames(
+                        "__wab_instance",
+                        sty.galleryItemBox__uWnG
+                      )}
+                    />
+
+                    <GalleryItemBox
+                      className={classNames(
+                        "__wab_instance",
+                        sty.galleryItemBox__bwp4C
+                      )}
+                    />
+
+                    <GalleryItemBox
+                      className={classNames(
+                        "__wab_instance",
+                        sty.galleryItemBox__cg6Op
+                      )}
+                    />
+
+                    <GalleryItemBox
+                      className={classNames(
+                        "__wab_instance",
+                        sty.galleryItemBox__aKeLh
+                      )}
+                    />
+                  </p.Stack>
+                </div>
+
+                {(
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? true
+                    : true
+                ) ? (
+                  <div
+                    className={classNames(projectcss.all, sty.column___6Y2O)}
+                  >
+                    <div
+                      data-plasmic-name={"rightSide"}
+                      data-plasmic-override={overrides.rightSide}
+                      className={classNames(projectcss.all, sty.rightSide)}
+                    >
+                      <div
+                        data-plasmic-name={"imgDiv"}
+                        data-plasmic-override={overrides.imgDiv}
+                        className={classNames(projectcss.all, sty.imgDiv)}
+                      >
+                        <p.PlasmicImg
+                          alt={""}
+                          className={classNames(sty.img__rGn9)}
+                          displayHeight={"auto"}
+                          displayMaxHeight={"none"}
+                          displayMaxWidth={"100%"}
+                          displayMinHeight={"0"}
+                          displayMinWidth={"0"}
+                          displayWidth={"auto"}
+                          loading={"lazy"}
+                          src={{
+                            src: "/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png",
+                            fullWidth: 2048,
+                            fullHeight: 2048,
+                            aspectRatio: undefined
+                          }}
+                        />
+                      </div>
+
+                      <div
+                        data-plasmic-name={"nameDiv"}
+                        data-plasmic-override={overrides.nameDiv}
+                        className={classNames(projectcss.all, sty.nameDiv)}
+                      >
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            projectcss.__wab_text,
+                            sty.text__wl51A
+                          )}
                         >
-                          {true ? (
+                          {"Name"}
+                        </div>
+
+                        <div
+                          className={classNames(
+                            projectcss.all,
+                            sty.freeBox__uXqy
+                          )}
+                        >
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__y5GuC
+                            )}
+                          >
+                            {"#"}
+                          </div>
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__yKfyy
+                            )}
+                          >
+                            {" "}
+                          </div>
+
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text__rO5HC
+                            )}
+                          >
+                            {"1111"}
+                          </div>
+                        </div>
+                      </div>
+
+                      {true ? (
+                        <div
+                          data-plasmic-name={"attributesDiv"}
+                          data-plasmic-override={overrides.attributesDiv}
+                          className={classNames(
+                            projectcss.all,
+                            sty.attributesDiv
+                          )}
+                        >
+                          <p.Stack
+                            as={"div"}
+                            data-plasmic-name={"columns"}
+                            data-plasmic-override={overrides.columns}
+                            hasGap={true}
+                            className={classNames(projectcss.all, sty.columns)}
+                          >
+                            {true ? (
+                              <div
+                                className={classNames(
+                                  projectcss.all,
+                                  sty.column__nmSOy
+                                )}
+                              >
+                                <AttributesBox
+                                  className={classNames(
+                                    "__wab_instance",
+                                    sty.attributesBox__e30Hb
+                                  )}
+                                />
+                              </div>
+                            ) : null}
+
                             <div
                               className={classNames(
                                 projectcss.all,
-                                sty.column__nmSOy
+                                sty.column__u62Kh
                               )}
                             >
                               <AttributesBox
                                 className={classNames(
                                   "__wab_instance",
-                                  sty.attributesBox__e30Hb
+                                  sty.attributesBox__gwgF
                                 )}
                               />
                             </div>
-                          ) : null}
 
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.column__u62Kh
-                            )}
-                          >
-                            <AttributesBox
+                            <div
                               className={classNames(
-                                "__wab_instance",
-                                sty.attributesBox__gwgF
+                                projectcss.all,
+                                sty.column__nUjhm
                               )}
-                            />
-                          </div>
+                            >
+                              <AttributesBox
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.attributesBox__qapmb
+                                )}
+                              />
+                            </div>
 
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.column__nUjhm
-                            )}
-                          >
-                            <AttributesBox
+                            <div
                               className={classNames(
-                                "__wab_instance",
-                                sty.attributesBox__qapmb
+                                projectcss.all,
+                                sty.column__qyx3D
                               )}
-                            />
-                          </div>
+                            >
+                              <AttributesBox
+                                className={classNames(
+                                  "__wab_instance",
+                                  sty.attributesBox__tnWmr
+                                )}
+                              />
+                            </div>
+                          </p.Stack>
+                        </div>
+                      ) : null}
 
-                          <div
-                            className={classNames(
-                              projectcss.all,
-                              sty.column__qyx3D
-                            )}
-                          >
-                            <AttributesBox
-                              className={classNames(
-                                "__wab_instance",
-                                sty.attributesBox__tnWmr
-                              )}
-                            />
-                          </div>
-                        </p.Stack>
-                      </div>
-                    ) : null}
-
-                    <div
-                      data-plasmic-name={"viewOn"}
-                      data-plasmic-override={overrides.viewOn}
-                      className={classNames(projectcss.all, sty.viewOn)}
-                    >
                       <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__ivf3R
-                        )}
+                        data-plasmic-name={"viewOn"}
+                        data-plasmic-override={overrides.viewOn}
+                        className={classNames(projectcss.all, sty.viewOn)}
                       >
                         <div
                           className={classNames(
                             projectcss.all,
-                            projectcss.__wab_text,
-                            sty.text___1GnEl
+                            sty.freeBox__ivf3R
                           )}
                         >
-                          {"View on:"}
+                          <div
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.__wab_text,
+                              sty.text___1GnEl
+                            )}
+                          >
+                            {"View on:"}
+                          </div>
                         </div>
-                      </div>
 
-                      <div
-                        className={classNames(
-                          projectcss.all,
-                          sty.freeBox__kIlxe
-                        )}
-                      >
-                        <p.Stack
-                          as={"div"}
-                          hasGap={true}
+                        <div
                           className={classNames(
                             projectcss.all,
-                            sty.freeBox__rhzYa
+                            sty.freeBox__kIlxe
                           )}
                         >
-                          <svg
+                          <p.Stack
+                            as={"div"}
+                            hasGap={true}
                             className={classNames(
                               projectcss.all,
-                              sty.svg__yMzqd
+                              sty.freeBox__rhzYa
                             )}
-                            role={"img"}
-                          />
+                          >
+                            <svg
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__yMzqd
+                              )}
+                              role={"img"}
+                            />
 
-                          <svg
-                            className={classNames(
-                              projectcss.all,
-                              sty.svg__fBteg
-                            )}
-                            role={"img"}
-                          />
-                        </p.Stack>
+                            <svg
+                              className={classNames(
+                                projectcss.all,
+                                sty.svg__fBteg
+                              )}
+                              role={"img"}
+                            />
+                          </p.Stack>
+                        </div>
                       </div>
                     </div>
                   </div>
-                </div>
-              ) : null}
+                ) : null}
+              </div>
             </div>
-          </div>
+          ) : null}
 
           <TrueFooter
-            className={classNames("__wab_instance", sty.trueFooter__tx3Lu)}
-            darkMode={true}
-          />
-
-          <TrueFooter
-            className={classNames("__wab_instance", sty.trueFooter__zExsc)}
+            data-plasmic-name={"trueFooter"}
+            data-plasmic-override={overrides.trueFooter}
+            className={classNames("__wab_instance", sty.trueFooter)}
           />
         </p.Stack>
       </div>
@@ -712,6 +734,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "navigationBar",
+    "boxesFooter",
     "textSection",
     "filters",
     "leftRight",
@@ -721,10 +744,12 @@ const PlasmicDescendants = {
     "nameDiv",
     "attributesDiv",
     "columns",
-    "viewOn"
+    "viewOn",
+    "trueFooter"
   ],
 
   navigationBar: ["navigationBar"],
+  boxesFooter: ["boxesFooter"],
   textSection: [
     "textSection",
     "filters",
@@ -764,7 +789,8 @@ const PlasmicDescendants = {
   nameDiv: ["nameDiv"],
   attributesDiv: ["attributesDiv", "columns"],
   columns: ["columns"],
-  viewOn: ["viewOn"]
+  viewOn: ["viewOn"],
+  trueFooter: ["trueFooter"]
 };
 
 function makeNodeComponent(nodeName) {
@@ -797,6 +823,7 @@ export const PlasmicManifesto5 = Object.assign(
   {
     // Helper components rendering sub-elements
     navigationBar: makeNodeComponent("navigationBar"),
+    boxesFooter: makeNodeComponent("boxesFooter"),
     textSection: makeNodeComponent("textSection"),
     filters: makeNodeComponent("filters"),
     leftRight: makeNodeComponent("leftRight"),
@@ -807,6 +834,7 @@ export const PlasmicManifesto5 = Object.assign(
     attributesDiv: makeNodeComponent("attributesDiv"),
     columns: makeNodeComponent("columns"),
     viewOn: makeNodeComponent("viewOn"),
+    trueFooter: makeNodeComponent("trueFooter"),
     // Metadata about props expected for PlasmicManifesto5
     internalVariantProps: PlasmicManifesto5__VariantProps,
     internalArgProps: PlasmicManifesto5__ArgProps

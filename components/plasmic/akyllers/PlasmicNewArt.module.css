@@ -1,0 +1,81 @@
+.root {
+  display: flex;
+  color: #535353;
+  position: relative;
+  background: #eeeeee;
+}
+.root:hover {
+  transform: scaleX(1.1) scaleY(1.1) scaleZ(1.1);
+  transform-style: preserve-3d;
+}
+.root:hover * {
+  transform-style: preserve-3d;
+}
+.freeBox___6TlcI {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 250px;
+  height: 350px;
+  max-width: 100%;
+  box-shadow: 0px 4px 16px 0px #00000033;
+  cursor: pointer;
+  flex-shrink: 0;
+  border-radius: 8px;
+}
+.img {
+  position: relative;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 250px;
+  height: 100%;
+  min-height: 0;
+  border-radius: 8px 8px 0px 0px;
+}
+.img > picture > img {
+  object-fit: cover;
+}
+.img > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+.freeBox__m0I6U {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-width: 0;
+  padding: 16px;
+}
+.freeBox__ftcMo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+.freeBox__iaD5T {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slotTargetDescription {
+  font-size: 12px;
+  color: #535353;
+}

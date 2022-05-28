@@ -8,12 +8,13 @@
   max-width: 100%;
   box-shadow: 0px 4px 16px 0px #0000001a;
   position: relative;
+  cursor: pointer;
   border-radius: 6px;
   padding: 8px;
 }
 .root:hover {
   width: 250px;
-  background: #c22600;
+  background: #c00130;
   height: 100%;
   min-height: 0;
 }

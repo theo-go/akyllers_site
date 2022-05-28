@@ -1,0 +1,16 @@
+.root {
+  width: auto;
+  height: auto;
+  color: #333333;
+  background: url("/plasmic/akyllers/images/subtractpng.png") top 50% left 50% / contain no-repeat;
+  text-align: center;
+  box-shadow: none;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  border-radius: 8px;
+  padding: 30px;
+}
+.root:hover {
+  background: url("/plasmic/akyllers/images/subtract2Png.png") top 50% left 50% / contain no-repeat;
+}

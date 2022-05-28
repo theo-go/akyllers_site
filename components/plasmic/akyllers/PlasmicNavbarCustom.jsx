@@ -51,7 +51,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
         <p.PlasmicLink
           className={classNames(projectcss.all, projectcss.a, sty.link__qKkg)}
           component={Link}
-          href={"#"}
+          href={"/"}
           platform={"nextjs"}
         >
           <p.PlasmicImg

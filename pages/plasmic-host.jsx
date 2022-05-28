@@ -3,6 +3,8 @@ import * as React from 'react';
 import Script from 'next/script';
 import { PlasmicCanvasHost, registerComponent } from '@plasmicapp/host';
 
+import CardsSwipe from '../components/CardsSwipe'
+
 // You can register any code components that you want to use here; see
 // https://docs.plasmic.app/learn/code-components-ref/
 // And configure your Plasmic project to use the host url pointing at
@@ -11,6 +13,14 @@ import { PlasmicCanvasHost, registerComponent } from '@plasmicapp/host';
 // https://docs.plasmic.app/learn/app-hosting/#set-a-plasmic-project-to-use-your-app-host
 
 // registerComponent(...)
+// registerComponent(CardsSwipe, {
+//   name: 'CardsSwipe',
+//   props: {
+//   },
+//   importPath: './components/CardsSwipe',
+// });
+
+
 
 export default function PlasmicHost() {
   return (

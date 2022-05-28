@@ -58,11 +58,17 @@
     display: flex;
   }
 }
+.link__eiFPj {
+  position: relative;
+  display: flex;
+  width: auto;
+}
 .img {
   position: relative;
   object-fit: cover;
   max-width: 100%;
   width: 200px;
+  flex-shrink: 0;
 }
 .img > picture > img {
   object-fit: cover;
@@ -156,6 +162,7 @@
 .link__sknvu {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .svg__dg1Vu {
   position: relative;
@@ -172,12 +179,14 @@
 .link__gN9Au {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .svg__iMiKg {
   position: relative;
   object-fit: cover;
   max-width: 100%;
   color: #222222;
+  cursor: pointer;
   width: 1em;
   flex-shrink: 0;
   height: 1em;
@@ -188,6 +197,7 @@
 .link__etPHl {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .svg__lbLXj {
   position: relative;

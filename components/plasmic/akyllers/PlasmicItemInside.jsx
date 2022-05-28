@@ -72,7 +72,8 @@ function PlasmicItemInside__RenderFunc(props) {
       >
         {p.renderPlasmicSlot({
           defaultContents: "Enter some text",
-          value: args.children
+          value: args.children,
+          className: classNames(sty.slotTargetChildren)
         })}
       </div>
     </div>

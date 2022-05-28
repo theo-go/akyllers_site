@@ -4,7 +4,8 @@
   position: relative;
   width: 100%;
   height: 100%;
-  background: none;
+  background: url("/plasmic/akyllers/images/longHotSummerNightByPascalCampionOnDeviantArtjpg.jpeg") top 50% left 50% / cover repeat;
+  padding-bottom: 60px;
   min-width: 0;
   min-height: 0;
 }
@@ -33,10 +34,9 @@
   height: auto;
   max-width: 100%;
   min-width: 0;
-  padding: 24px;
+  padding: 12px;
 }
 .freeBox__fH6Ts {
-  display: flex;
   position: fixed;
   flex-direction: column;
   align-items: center;
@@ -46,13 +46,9 @@
   max-width: 100%;
   left: 0px;
   top: 0px;
-  z-index: 0;
+  z-index: -1;
   min-width: 0;
-}
-.scrollParallax:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
-  height: auto;
+  display: none;
 }
 .img__lfBrf {
   object-fit: cover;
@@ -72,10 +68,12 @@
   width: 100%;
   height: 100%;
   max-width: 100%;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 96px;
   background: none;
   min-width: 0;
   min-height: 0;
-  padding: 20px 24px 96px;
 }
 .navigationBar:global(.__wab_instance) {
   width: 100%;
@@ -168,6 +166,7 @@
   width: auto;
   height: auto;
   max-width: 800px;
+  cursor: pointer;
 }
 .link__s5LC7 {
   color: #ffffff;
@@ -176,6 +175,7 @@
   width: auto;
   height: auto;
   max-width: 800px;
+  cursor: pointer;
 }
 .link__lxVcx {
   color: #ffffff;
@@ -184,6 +184,7 @@
   width: auto;
   height: auto;
   max-width: 800px;
+  cursor: pointer;
 }
 .link__vgXzj {
   color: #ffffff;
@@ -192,10 +193,12 @@
   width: auto;
   height: auto;
   max-width: 800px;
+  cursor: pointer;
 }
 .link__tlyIa {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .svg___4YbdT {
   position: relative;
@@ -209,6 +212,7 @@
 .link__f0Zhb {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .svg__rQn5O {
   position: relative;
@@ -222,6 +226,7 @@
 .link___8891 {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .svg__cpK9S {
   position: relative;
@@ -256,6 +261,7 @@
   max-width: 100%;
   background: #1b121fb8;
   align-self: center;
+  box-shadow: 0px 4px 16px 0px #00000033;
   border-radius: 10px;
   padding: 40px 20px;
 }
@@ -265,7 +271,7 @@
   height: auto;
   max-width: 800px;
   color: #ffffff;
-  font-size: 64px;
+  font-size: 56px;
   text-align: center;
   line-height: 1.2;
   min-width: 0;
@@ -309,6 +315,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .section2 {
+    width: 95%;
     padding: 12px;
   }
 }
@@ -320,7 +327,7 @@
   justify-content: flex-start;
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 1000px;
   min-width: 0;
   padding: 8px;
 }
@@ -472,7 +479,7 @@
   justify-content: flex-start;
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 1000px;
   margin-top: calc(50px + 40px) !important;
   min-width: 0;
   padding: 8px;
@@ -668,7 +675,7 @@
   justify-content: flex-start;
   width: 100%;
   height: auto;
-  max-width: 100%;
+  max-width: 1000px;
   min-width: 0;
   padding: 8px;
 }
@@ -700,7 +707,7 @@
   justify-content: flex-start;
   width: 100%;
   height: 100%;
-  max-width: 100%;
+  max-width: 1000px;
   min-height: 400px;
   min-width: 0;
   padding: 20px 8px 8px;
@@ -711,7 +718,7 @@
 }
 .boxesFooter:global(.__wab_instance) {
   position: relative;
-  margin-top: calc(80px + 40px) !important;
+  margin-top: calc(40px + 40px) !important;
 }
 .trueFooter:global(.__wab_instance) {
   max-width: 100%;

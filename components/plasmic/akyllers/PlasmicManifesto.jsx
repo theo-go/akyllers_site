@@ -77,7 +77,7 @@ function PlasmicManifesto__RenderFunc(props) {
                   sty.link___9YBRl
                 )}
                 component={Link}
-                href={"#"}
+                href={"/"}
                 platform={"nextjs"}
               >
                 <p.PlasmicImg

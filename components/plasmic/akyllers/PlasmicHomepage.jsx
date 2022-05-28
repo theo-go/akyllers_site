@@ -80,7 +80,7 @@ function PlasmicHomepage__RenderFunc(props) {
                   sty.text__eSdyu
                 )}
               >
-                {"Hello."}
+                {"hello world..."}
               </div>
             </div>
           ) : null}

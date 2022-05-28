@@ -9,12 +9,17 @@
 // Plasmic Project: cELQgcBTCpXC8URn4hyouo
 // Component: oP4880RYxJw
 import * as React from "react";
+import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import LightFooterBox from "../../LightFooterBox"; // plasmic-import: U1TWkuZvfI/component
+import DarkFooterBox from "../../DarkFooterBox"; // plasmic-import: QPWIEA9PWn/component
+import DarkFooterBox2 from "../../DarkFooterBox2"; // plasmic-import: EaCaTvYvI9/component
+import LightFooterBox2 from "../../LightFooterBox2"; // plasmic-import: T2PRct6rsu/component
 import { useScreenVariants as useScreenVariantsnK2Y1P6I3Vepj } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: nK2Y1p6i3Vepj/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_akyllers.module.css"; // plasmic-import: cELQgcBTCpXC8URn4hyouo/projectcss
@@ -35,11 +40,13 @@ function PlasmicBoxesFooter__RenderFunc(props) {
   });
 
   return (
-    <div
+    <p.Stack
+      as={"div"}
       data-plasmic-name={"root"}
       data-plasmic-override={overrides.root}
       data-plasmic-root={true}
       data-plasmic-for-node={forNode}
+      hasGap={true}
       className={classNames(
         projectcss.all,
         projectcss.root_reset,
@@ -49,101 +56,64 @@ function PlasmicBoxesFooter__RenderFunc(props) {
       )}
     >
       <div
-        className={classNames(
-          projectcss.all,
-          projectcss.__wab_text,
-          sty.text__sFhkZ
-        )}
+        data-plasmic-name={"text"}
+        data-plasmic-override={overrides.text}
+        className={classNames(projectcss.all, projectcss.__wab_text, sty.text)}
       >
         {"COMMUNITY"}
       </div>
 
-      <div className={classNames(projectcss.all, sty.freeBox__cmTv5)}>
-        <div
+      <p.Stack
+        as={"div"}
+        hasGap={true}
+        className={classNames(projectcss.all, sty.freeBox__cmTv5)}
+      >
+        <LightFooterBox
           data-plasmic-name={"lightFooterBox"}
           data-plasmic-override={overrides.lightFooterBox}
-          className={classNames(projectcss.all, sty.lightFooterBox)}
-        >
-          <div
-            className={classNames(
-              projectcss.all,
-              projectcss.__wab_text,
-              sty.text__meuy9
-            )}
-          >
-            {"DISCORD"}
-          </div>
-        </div>
+          className={classNames("__wab_instance", sty.lightFooterBox)}
+          url={"https://discord.com/invite/fGbCdPkDwU"}
+        />
 
-        <div className={classNames(projectcss.all, sty.freeBox__n9Pji)}>
-          <div
-            data-plasmic-name={"darkFooterBox"}
-            data-plasmic-override={overrides.darkFooterBox}
-            className={classNames(projectcss.all, sty.darkFooterBox)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__gPfzK
-              )}
-            >
-              {"TWITTER"}
-            </div>
-          </div>
-        </div>
-      </div>
+        <DarkFooterBox
+          data-plasmic-name={"darkFooterBox"}
+          data-plasmic-override={overrides.darkFooterBox}
+          className={classNames("__wab_instance", sty.darkFooterBox)}
+        />
+      </p.Stack>
 
-      <div className={classNames(projectcss.all, sty.freeBox___0Owuq)}>
-        <div className={classNames(projectcss.all, sty.freeBox___13C7V)}>
-          <div
-            data-plasmic-name={"darkFooterBox2"}
-            data-plasmic-override={overrides.darkFooterBox2}
-            className={classNames(projectcss.all, sty.darkFooterBox2)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__drnlZ
-              )}
-            >
-              {"INSTAGRAM"}
-            </div>
-          </div>
-        </div>
+      <p.Stack
+        as={"div"}
+        hasGap={true}
+        className={classNames(projectcss.all, sty.freeBox___0Owuq)}
+      >
+        <DarkFooterBox2
+          data-plasmic-name={"darkFooterBox2"}
+          data-plasmic-override={overrides.darkFooterBox2}
+          className={classNames("__wab_instance", sty.darkFooterBox2)}
+        />
 
-        <div className={classNames(projectcss.all, sty.freeBox__p8OZe)}>
-          <div
-            data-plasmic-name={"lightFooterBox2"}
-            data-plasmic-override={overrides.lightFooterBox2}
-            className={classNames(projectcss.all, sty.lightFooterBox2)}
-          >
-            <div
-              className={classNames(
-                projectcss.all,
-                projectcss.__wab_text,
-                sty.text__p7Ow6
-              )}
-            >
-              {"CONTACT US"}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+        <LightFooterBox2
+          data-plasmic-name={"lightFooterBox2"}
+          data-plasmic-override={overrides.lightFooterBox2}
+          className={classNames("__wab_instance", sty.lightFooterBox2)}
+        />
+      </p.Stack>
+    </p.Stack>
   );
 }
 
 const PlasmicDescendants = {
   root: [
     "root",
+    "text",
     "lightFooterBox",
     "darkFooterBox",
     "darkFooterBox2",
     "lightFooterBox2"
   ],
 
+  text: ["text"],
   lightFooterBox: ["lightFooterBox"],
   darkFooterBox: ["darkFooterBox"],
   darkFooterBox2: ["darkFooterBox2"],
@@ -179,6 +149,7 @@ export const PlasmicBoxesFooter = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    text: makeNodeComponent("text"),
     lightFooterBox: makeNodeComponent("lightFooterBox"),
     darkFooterBox: makeNodeComponent("darkFooterBox"),
     darkFooterBox2: makeNodeComponent("darkFooterBox2"),

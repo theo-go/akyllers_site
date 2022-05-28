@@ -242,6 +242,149 @@
           "cssFilePath": "plasmic/akyllers/PlasmicAttributesBox.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "alRcFwfrdE",
+          "name": "CardsDiv",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicCardsDiv.jsx",
+          "importSpec": {
+            "modulePath": "CardsDiv.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicCardsDiv.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "DlZHxOtpOm",
+          "name": "RoadmapBox",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicRoadmapBox.jsx",
+          "importSpec": {
+            "modulePath": "RoadmapBox.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicRoadmapBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "JxzItQHtdP",
+          "name": "FullText",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicFullText.jsx",
+          "importSpec": {
+            "modulePath": "FullText.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicFullText.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "U1TWkuZvfI",
+          "name": "LightFooterBox",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicLightFooterBox.jsx",
+          "importSpec": {
+            "modulePath": "LightFooterBox.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicLightFooterBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "QPWIEA9PWn",
+          "name": "DarkFooterBox",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicDarkFooterBox.jsx",
+          "importSpec": {
+            "modulePath": "DarkFooterBox.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicDarkFooterBox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "EaCaTvYvI9",
+          "name": "DarkFooterBox2",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicDarkFooterBox2.jsx",
+          "importSpec": {
+            "modulePath": "DarkFooterBox2.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicDarkFooterBox2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "T2PRct6rsu",
+          "name": "LightFooterBox2",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicLightFooterBox2.jsx",
+          "importSpec": {
+            "modulePath": "LightFooterBox2.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicLightFooterBox2.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "OETkP4aQ7kj",
+          "name": "Manifesto6",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicManifesto6.jsx",
+          "importSpec": {
+            "modulePath": "../pages/manifesto-6.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicManifesto6.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "-LEP2YxQV0",
+          "name": "MmBoxQuote",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicMmBoxQuote.jsx",
+          "importSpec": {
+            "modulePath": "MmBoxQuote.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicMmBoxQuote.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "PrC51OjMk0",
+          "name": "NewArt",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicNewArt.jsx",
+          "importSpec": {
+            "modulePath": "NewArt.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicNewArt.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "daG_UtRVH0",
+          "name": "ReadButton",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicReadButton.jsx",
+          "importSpec": {
+            "modulePath": "ReadButton.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicReadButton.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -341,35 +484,131 @@
           "id": "0Zg-fMYQ-",
           "name": "Major-Havoc-Artwork-Only 12.png",
           "filePath": "../public/plasmic/akyllers/images/majorHavocArtworkOnly12Png.png"
+        },
+        {
+          "id": "UiaDi_-3e",
+          "name": "Long hot summer night by PascalCampion on DeviantArt.jpg",
+          "filePath": "../public/plasmic/akyllers/images/longHotSummerNightByPascalCampionOnDeviantArtjpg.jpeg"
+        },
+        {
+          "id": "Wf3IEiOih",
+          "name": "garage1920x180.png",
+          "filePath": "../public/plasmic/akyllers/images/garage1920X180Png.png"
+        },
+        {
+          "id": "2H8wdVgxu",
+          "name": "Untitled_Artwork.png",
+          "filePath": "../public/plasmic/akyllers/images/untitledArtworkpng.png"
+        },
+        {
+          "id": "0bd5eNBQk",
+          "name": "95460d1d3b0747ad3a52436e4fec9e3a.jpeg",
+          "filePath": "../public/plasmic/akyllers/images/_95460D1D3B0747Ad3A52436E4Fec9E3Ajpeg.jpeg"
+        },
+        {
+          "id": "7zsXFhpED",
+          "name": "ef22836b29970ddd2ddd67a937dfe85f.jpeg",
+          "filePath": "../public/plasmic/akyllers/images/ef22836B29970Ddd2Ddd67A937Dfe85Fjpeg.jpeg"
+        },
+        {
+          "id": "VQzqUC4W2",
+          "name": "Emojis-13.png",
+          "filePath": "../public/plasmic/akyllers/images/emojis13Png.png"
+        },
+        {
+          "id": "EB-Bagl8K",
+          "name": "Emojis-16.png",
+          "filePath": "../public/plasmic/akyllers/images/emojis16Png.png"
+        },
+        {
+          "id": "fBYhvkR1q",
+          "name": "Untitled design.png",
+          "filePath": "../public/plasmic/akyllers/images/untitledDesignpng.png"
+        },
+        {
+          "id": "9JT0FYHh3",
+          "name": "Emojis-9-min.png",
+          "filePath": "../public/plasmic/akyllers/images/emojis9Minpng.png"
+        },
+        {
+          "id": "BDJc_c5h_",
+          "name": "Emojis-17-min.png",
+          "filePath": "../public/plasmic/akyllers/images/emojis17Minpng.png"
+        },
+        {
+          "id": "7QUJqD7Fe",
+          "name": "Emojis-16-min.png",
+          "filePath": "../public/plasmic/akyllers/images/emojis16Minpng.png"
+        },
+        {
+          "id": "gz62n-Bez",
+          "name": "‘city’ by mewr.jpeg",
+          "filePath": "../public/plasmic/akyllers/images/cityByMewrjpeg.jpeg"
+        },
+        {
+          "id": "umSkbZxjp",
+          "name": "1_outline.png",
+          "filePath": "../public/plasmic/akyllers/images/_1Outlinepng.png"
+        },
+        {
+          "id": "TGnklAgqD",
+          "name": "Copy of Newsletter & Podcast copy.jpg",
+          "filePath": "../public/plasmic/akyllers/images/copyOfNewsletterPodcastCopyjpg.jpeg"
+        },
+        {
+          "id": "jpx1xxQIS",
+          "name": "a.png",
+          "filePath": "../public/plasmic/akyllers/images/apng.png"
+        },
+        {
+          "id": "YRlG0-70M",
+          "name": "f.png",
+          "filePath": "../public/plasmic/akyllers/images/fpng.png"
+        },
+        {
+          "id": "5TSftQEQ_",
+          "name": "e.png",
+          "filePath": "../public/plasmic/akyllers/images/epng.png"
+        },
+        {
+          "id": "9Cuz9pta0",
+          "name": "d.png",
+          "filePath": "../public/plasmic/akyllers/images/dpng.png"
+        },
+        {
+          "id": "JBSGc2-kb",
+          "name": "c.png",
+          "filePath": "../public/plasmic/akyllers/images/cpng.png"
+        },
+        {
+          "id": "dlBAHzKdF",
+          "name": "b.png",
+          "filePath": "../public/plasmic/akyllers/images/bpng.png"
+        },
+        {
+          "id": "-ILXZD7uR",
+          "name": "left line.png",
+          "filePath": "../public/plasmic/akyllers/images/leftLinepng.png"
+        },
+        {
+          "id": "vmob0r2l0",
+          "name": "right line.png",
+          "filePath": "../public/plasmic/akyllers/images/rightLinepng.png"
+        },
+        {
+          "id": "38QsF84nJ",
+          "name": "Subtract.png",
+          "filePath": "../public/plasmic/akyllers/images/subtractpng.png"
+        },
+        {
+          "id": "aTuT3F_-2",
+          "name": "Subtract2.png",
+          "filePath": "../public/plasmic/akyllers/images/subtract2Png.png"
         }
       ],
       "indirect": false,
-      "globalContextsFilePath": "plasmic/akyllers/PlasmicGlobalContextsProvider.jsx",
+      "globalContextsFilePath": "",
       "codeComponents": []
-    },
-    {
-      "projectId": "84wxoth5npGrp6RRXPL88z",
-      "projectApiToken": "hOzXksPB8gkTrKnfJeV9VDS8m8dnIXQn1xxDQZ5MHxv9orQY6JNgwmk6aDMZPLkocV2KtD9gNJXv5JwIbbzIQ",
-      "projectName": "react-scroll-parallax-global",
-      "version": "4.0.1",
-      "cssFilePath": "plasmic/react_scroll_parallax_global/plasmic_react_scroll_parallax_global.module.css",
-      "components": [],
-      "icons": [],
-      "images": [],
-      "indirect": true,
-      "globalContextsFilePath": "plasmic/react_scroll_parallax_global/PlasmicGlobalContextsProvider.jsx",
-      "codeComponents": [
-        {
-          "id": "bozP4lLlAZ",
-          "name": "ParallaxWrapper",
-          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
-        },
-        {
-          "id": "L6MfauX2Cw",
-          "name": "ParallaxProviderWrapper",
-          "componentImportPath": "@plasmicpkgs/react-scroll-parallax"
-        }
-      ]
     },
     {
       "projectId": "28Ba3BDvRe7EiWdfFNnLB6",
@@ -508,7 +747,28 @@
           "name": "Tabs",
           "componentImportPath": "@plasmicpkgs/antd"
         }
-      ]
+      ],
+      "jsBundleThemes": []
+    },
+    {
+      "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
+      "projectApiToken": "3n3SKEMyDjMJptsNvaK6yxRaa8PAgqwkfIhRbKT4ZG9SobeM3Kb5rE2pSYmbR338Z5p6vBTScOAnptZwGSbQ",
+      "projectName": "react-youtube",
+      "version": "3.0.2",
+      "cssFilePath": "plasmic/react_youtube/plasmic_react_youtube.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CHO21V9uYw",
+          "name": "YouTube",
+          "componentImportPath": "@plasmicpkgs/react-youtube"
+        }
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {

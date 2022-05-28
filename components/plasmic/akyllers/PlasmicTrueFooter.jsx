@@ -60,40 +60,55 @@ function PlasmicTrueFooter__RenderFunc(props) {
       <div className={classNames(projectcss.all, sty.freeBox__xRAiw)}>
         {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
           <div className={classNames(projectcss.all, sty.freeBox__krXpl)}>
-            <p.PlasmicImg
-              data-plasmic-name={"img"}
-              data-plasmic-override={overrides.img}
-              alt={""}
-              className={classNames(sty.img, {
-                [sty.imgdarkMode]: hasVariant(variants, "darkMode", "darkMode")
-              })}
-              displayHeight={"auto"}
-              displayMaxHeight={"none"}
-              displayMaxWidth={"100%"}
-              displayMinHeight={"0"}
-              displayMinWidth={"0"}
-              displayWidth={
-                hasVariant(globalVariants, "screen", "mobileOnly")
-                  ? "auto"
-                  : "200px"
-              }
-              loading={"lazy"}
-              src={
-                hasVariant(variants, "darkMode", "darkMode")
-                  ? {
-                      src: "/plasmic/akyllers/images/logoWhitepng.png",
-                      fullWidth: 1560,
-                      fullHeight: 303,
-                      aspectRatio: undefined
-                    }
-                  : {
-                      src: "/plasmic/akyllers/images/logopng.png",
-                      fullWidth: 1560,
-                      fullHeight: 303,
-                      aspectRatio: undefined
-                    }
-              }
-            />
+            <p.PlasmicLink
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                sty.link__eiFPj
+              )}
+              component={Link}
+              href={"/"}
+              platform={"nextjs"}
+            >
+              <p.PlasmicImg
+                data-plasmic-name={"img"}
+                data-plasmic-override={overrides.img}
+                alt={""}
+                className={classNames(sty.img, {
+                  [sty.imgdarkMode]: hasVariant(
+                    variants,
+                    "darkMode",
+                    "darkMode"
+                  )
+                })}
+                displayHeight={"auto"}
+                displayMaxHeight={"none"}
+                displayMaxWidth={"100%"}
+                displayMinHeight={"0"}
+                displayMinWidth={"0"}
+                displayWidth={
+                  hasVariant(globalVariants, "screen", "mobileOnly")
+                    ? "auto"
+                    : "200px"
+                }
+                loading={"lazy"}
+                src={
+                  hasVariant(variants, "darkMode", "darkMode")
+                    ? {
+                        src: "/plasmic/akyllers/images/logoWhitepng.png",
+                        fullWidth: 1560,
+                        fullHeight: 303,
+                        aspectRatio: undefined
+                      }
+                    : {
+                        src: "/plasmic/akyllers/images/logopng.png",
+                        fullWidth: 1560,
+                        fullHeight: 303,
+                        aspectRatio: undefined
+                      }
+                }
+              />
+            </p.PlasmicLink>
           </div>
         ) : null}
         {(hasVariant(globalVariants, "screen", "mobileOnly") ? true : true) ? (
@@ -110,7 +125,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
-              link={"/"}
+              link={"/manifesto-5"}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -126,6 +141,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
+              link={"/manifesto-3"}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -141,6 +157,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
+              link={"/manifesto"}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -154,6 +171,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
+              link={"/-2"}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -175,6 +193,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                 sty.link__sknvu
               )}
               component={Link}
+              href={"https://discord.com/invite/fGbCdPkDwU"}
               platform={"nextjs"}
             >
               <DiscordSvgrepoComsvgIcon
@@ -196,6 +215,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                 sty.link__gN9Au
               )}
               component={Link}
+              href={"https://www.instagram.com/akyllers_/"}
               platform={"nextjs"}
             >
               <InstagramSvgrepoCom2SvgIcon
@@ -217,6 +237,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                 sty.link__etPHl
               )}
               component={Link}
+              href={"https://twitter.com/akyllers?s=21"}
               platform={"nextjs"}
             >
               <TwitterSvgrepoComsvgIcon

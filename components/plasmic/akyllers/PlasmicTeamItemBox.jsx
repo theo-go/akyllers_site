@@ -35,9 +35,9 @@ export const PlasmicTeamItemBox__ArgProps = new Array(
 
 export const defaultTeamItemBox__Args = {
   image: {
-    src: "/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png",
-    fullWidth: 2048,
-    fullHeight: 2048,
+    src: "/plasmic/akyllers/images/copyOfNewsletterPodcastCopyjpg.jpeg",
+    fullWidth: 1080,
+    fullHeight: 1080,
     aspectRatio: undefined
   }
 };

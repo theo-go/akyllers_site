@@ -118,6 +118,7 @@
   width: auto;
   height: auto;
   max-width: 800px;
+  cursor: pointer;
 }
 .link__s5LC7 {
   color: #363636;
@@ -126,6 +127,7 @@
   height: auto;
   max-width: 800px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .link__lxVcx {
   color: #363636;
@@ -134,6 +136,7 @@
   height: auto;
   max-width: 800px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .link__vgXzj {
   color: #363636;
@@ -142,10 +145,12 @@
   height: auto;
   max-width: 800px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .link__tlyIa {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .svg___4YbdT {
   position: relative;
@@ -159,6 +164,7 @@
 .link__f0Zhb {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .svg__rQn5O {
   position: relative;
@@ -172,6 +178,7 @@
 .link___8891 {
   position: relative;
   display: flex;
+  cursor: pointer;
 }
 .svg__cpK9S {
   position: relative;
@@ -182,8 +189,38 @@
   flex-shrink: 0;
   height: 1em;
 }
-.textSection {
+.freeBox__bNqht {
   display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  min-height: 80vh;
+  min-width: 0;
+  padding: 8px;
+}
+.text__xTdFx {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+  margin-top: 80px;
+  min-width: 0;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .text__xTdFx {
+    text-align: center;
+  }
+}
+.boxesFooter:global(.__wab_instance) {
+  max-width: 1000px;
+  position: relative;
+  margin-top: 100px;
+}
+.textSection {
   position: relative;
   flex-direction: column;
   align-items: center;
@@ -193,6 +230,7 @@
   margin-top: calc(60px + 16px) !important;
   min-height: 90vh;
   min-width: 0;
+  display: none;
   padding: 16px;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -802,11 +840,8 @@
   flex-shrink: 0;
   height: 1em;
 }
-.trueFooter__tx3Lu:global(.__wab_instance) {
+.trueFooter:global(.__wab_instance) {
   max-width: 100%;
   position: relative;
-}
-.trueFooter__zExsc:global(.__wab_instance) {
-  max-width: 100%;
-  position: relative;
+  margin-top: calc(70px + 16px) !important;
 }
