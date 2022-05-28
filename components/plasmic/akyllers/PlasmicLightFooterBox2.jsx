@@ -45,6 +45,7 @@ function PlasmicLightFooterBox2__RenderFunc(props) {
         sty.root
       )}
       component={Link}
+      href={"/manifesto-6"}
       platform={"nextjs"}
       target={"_blank"}
     >
