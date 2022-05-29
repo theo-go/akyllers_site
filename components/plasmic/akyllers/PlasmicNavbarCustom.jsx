@@ -72,11 +72,23 @@ function PlasmicNavbarCustom__RenderFunc(props) {
           />
         </p.PlasmicLink>
       }
-      className={classNames("__wab_instance", sty.root)}
+      className={classNames("__wab_instance", sty.root, {
+        [sty.rootdarkLetters]: hasVariant(
+          variants,
+          "darkLetters",
+          "darkLetters"
+        )
+      })}
       closeButton={
         <p.PlasmicImg
           alt={""}
-          className={classNames(sty.img___6KE)}
+          className={classNames(sty.img___6KE, {
+            [sty.imgdarkLetters___6KEdVqUt]: hasVariant(
+              variants,
+              "darkLetters",
+              "darkLetters"
+            )
+          })}
           displayHeight={"auto"}
           displayMaxHeight={"none"}
           displayMaxWidth={"none"}
@@ -84,7 +96,15 @@ function PlasmicNavbarCustom__RenderFunc(props) {
           displayMinWidth={"0"}
           displayWidth={"auto"}
           src={
+            hasVariant(variants, "darkLetters", "darkLetters") &&
             hasVariant(globalVariants, "screen", "mobileOnly")
+              ? {
+                  src: "/plasmic/akyllers/images/pacmanDarkpng.png",
+                  fullWidth: 512,
+                  fullHeight: 512,
+                  aspectRatio: undefined
+                }
+              : hasVariant(globalVariants, "screen", "mobileOnly")
               ? {
                   src: "/plasmic/akyllers/images/ghostWhitepng.png",
                   fullWidth: 32,
@@ -276,7 +296,13 @@ function PlasmicNavbarCustom__RenderFunc(props) {
       openButton={
         <p.PlasmicImg
           alt={""}
-          className={classNames(sty.img__aPIi)}
+          className={classNames(sty.img__aPIi, {
+            [sty.imgdarkLetters__aPIIdVqUt]: hasVariant(
+              variants,
+              "darkLetters",
+              "darkLetters"
+            )
+          })}
           displayHeight={
             hasVariant(globalVariants, "screen", "mobileOnly") ? "30px" : "auto"
           }
@@ -288,9 +314,17 @@ function PlasmicNavbarCustom__RenderFunc(props) {
             hasVariant(globalVariants, "screen", "mobileOnly") ? "30px" : "auto"
           }
           src={
+            hasVariant(variants, "darkLetters", "darkLetters") &&
             hasVariant(globalVariants, "screen", "mobileOnly")
               ? {
                   src: "/plasmic/akyllers/images/pacmanDarkpng.png",
+                  fullWidth: 512,
+                  fullHeight: 512,
+                  aspectRatio: undefined
+                }
+              : hasVariant(globalVariants, "screen", "mobileOnly")
+              ? {
+                  src: "/plasmic/akyllers/images/pacmanWhitepng.png",
                   fullWidth: 512,
                   fullHeight: 512,
                   aspectRatio: undefined
