@@ -27,6 +27,14 @@
 .root > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-top: 16px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    background: linear-gradient(92deg, #090a12cc 19%, #ffffff00 88%) 0% 0% /
+        100% 100% repeat,
+      url("/plasmic/akyllers/images/pg3Croppng.png") top 50% left 50% / cover repeat,
+      linear-gradient(160deg, #0b0d12 0%, #433661 100%) 0% 0% / 100% 100% repeat;
+  }
+}
 .navbarCustom:global(.__wab_instance):global(.__wab_instance) {
   position: relative;
   margin-bottom: 20px;

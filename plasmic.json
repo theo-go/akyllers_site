@@ -619,6 +619,71 @@
           "id": "zHrsrGyFb",
           "name": "ppl.png",
           "filePath": "../public/plasmic/akyllers/images/pplpng.png"
+        },
+        {
+          "id": "ZpPaRn466",
+          "name": "forum2.png",
+          "filePath": "../public/plasmic/akyllers/images/forum2Png.png"
+        },
+        {
+          "id": "Wk5vdXEzD",
+          "name": "1.png",
+          "filePath": "../public/plasmic/akyllers/images/_1Png.png"
+        },
+        {
+          "id": "wJug6huZQ",
+          "name": "2.png",
+          "filePath": "../public/plasmic/akyllers/images/_2Png.png"
+        },
+        {
+          "id": "_4Xqg5Pxs",
+          "name": "3.png",
+          "filePath": "../public/plasmic/akyllers/images/_3Png.png"
+        },
+        {
+          "id": "GjLrRLrjm",
+          "name": "4.png",
+          "filePath": "../public/plasmic/akyllers/images/_4Png.png"
+        },
+        {
+          "id": "onDcdW9Iz",
+          "name": "5.png",
+          "filePath": "../public/plasmic/akyllers/images/_5Png.png"
+        },
+        {
+          "id": "nv7VFfoJC",
+          "name": "6.png",
+          "filePath": "../public/plasmic/akyllers/images/_6Png.png"
+        },
+        {
+          "id": "spgEGZHNY",
+          "name": "7.png",
+          "filePath": "../public/plasmic/akyllers/images/_7Png.png"
+        },
+        {
+          "id": "nU-QwQTCT",
+          "name": "8.png",
+          "filePath": "../public/plasmic/akyllers/images/_8Png.png"
+        },
+        {
+          "id": "A8Ybjb0n6",
+          "name": "pg1_crop.png",
+          "filePath": "../public/plasmic/akyllers/images/pg1Croppng.png"
+        },
+        {
+          "id": "VChtUUnV6",
+          "name": "pg3_crop.png",
+          "filePath": "../public/plasmic/akyllers/images/pg3Croppng.png"
+        },
+        {
+          "id": "Ral77y7Za",
+          "name": "Screenshot_84.png",
+          "filePath": "../public/plasmic/akyllers/images/screenshot84Png.png"
+        },
+        {
+          "id": "-iz_Clid0",
+          "name": "pacman-dark.png",
+          "filePath": "../public/plasmic/akyllers/images/pacmanDarkpng.png"
         }
       ],
       "indirect": false,

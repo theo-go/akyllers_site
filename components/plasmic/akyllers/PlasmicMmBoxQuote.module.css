@@ -4,8 +4,7 @@
   width: 100%;
   height: auto;
   max-width: 900px;
-  background: linear-gradient(#38434ba6, #38434ba6),
-    url("/plasmic/akyllers/images/_198XStory1Png2Jpeg.jpeg") top 50% left 50% / cover repeat;
+  background: url("/plasmic/akyllers/images/_1Png.png") top 50% left 50% / cover repeat;
   box-shadow: 0px 4px 16px 0px #00000033;
   position: relative;
   min-height: 400px;
@@ -27,21 +26,32 @@
 .text > :global(.__wab_flex-container) > :global(.__wab_slot) > picture > img {
   margin-left: 30px;
 }
+@media (min-width: 0px) and (max-width: 768px) {
+  .text {
+    background: url("/plasmic/akyllers/images/_1Png.png") top 50% left 50% / cover no-repeat;
+    min-height: 400px;
+  }
+}
 .textcolor1 {
-  background: linear-gradient(#13583096, #13583096),
-    url("/plasmic/akyllers/images/_198XStory1Png2Jpeg.jpeg") top 50% left 50% / cover repeat;
+  background: url("/plasmic/akyllers/images/_2Png.png") top 50% left 50% / cover repeat;
 }
 .textc2 {
-  background: #281170;
+  background: url("/plasmic/akyllers/images/_3Png.png") top 50% left 50% / cover repeat;
 }
 .textc3 {
-  background: #8b86bb;
+  background: url("/plasmic/akyllers/images/_4Png.png") top 50% left 50% / cover repeat;
 }
 .textc4 {
-  background: #343434;
+  background: url("/plasmic/akyllers/images/_5Png.png") top 50% left 50% / cover repeat;
 }
 .textv5 {
-  background: #4c243a;
+  background: url("/plasmic/akyllers/images/_6Png.png") top 50% left 50% / cover repeat;
+}
+.textunnamedVariant {
+  background: url("/plasmic/akyllers/images/_7Png.png") top 50% left 50% / cover repeat;
+}
+.textunnamedVariant2 {
+  background: url("/plasmic/akyllers/images/_8Png.png") top 50% left 50% / cover repeat;
 }
 .text:hover {
   transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
@@ -52,10 +62,10 @@
   height: auto;
   max-width: 800px;
   align-self: center;
-  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 .freeBoxcolor1 {
   display: flex;

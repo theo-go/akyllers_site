@@ -19,7 +19,6 @@ import {
 } from "@plasmicapp/react-web";
 import NavbarCustom from "../../NavbarCustom"; // plasmic-import: 5sPSsjDnyE/component
 import { Video } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: RhitNJW5Zu-/codeComponent
-import MmBoxQuote from "../../MmBoxQuote"; // plasmic-import: -LEP2YxQV0/component
 import NewArt from "../../NewArt"; // plasmic-import: PrC51OjMk0/component
 import ReadButton from "../../ReadButton"; // plasmic-import: daG_UtRVH0/component
 import TrueFooter from "../../TrueFooter"; // plasmic-import: 1RTRAsLRW5N/component
@@ -136,9 +135,18 @@ function PlasmicManifesto6__RenderFunc(props) {
                       <Video
                         data-plasmic-name={"htmlVideo"}
                         data-plasmic-override={overrides.htmlVideo}
+                        autoPlay={false}
                         className={classNames("__wab_instance", sty.htmlVideo)}
+                        controls={true}
+                        poster={{
+                          src: "/plasmic/akyllers/images/screenshot84Png.png",
+                          fullWidth: 2125,
+                          fullHeight: 2136,
+                          aspectRatio: undefined
+                        }}
+                        preload={"auto"}
                         src={
-                          "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+                          "https://firebasestorage.googleapis.com/v0/b/lexyom-site.appspot.com/o/vid3.mp4?alt=media&token=0b8cd44f-0b19-4160-8c90-38c2f24a1c79"
                         }
                       />
                     </div>
@@ -194,40 +202,151 @@ function PlasmicManifesto6__RenderFunc(props) {
                       sty.h1__jWcku
                     )}
                   >
-                    {"REPRESENT YOUR MURI"}
+                    {"REPRESENT YOUR"}
                   </h1>
 
-                  <MmBoxQuote
-                    className={classNames(
-                      "__wab_instance",
-                      sty.mmBoxQuote__cyCrP
-                    )}
-                  >
-                    {"asdf asdf asd as fdfd sdafasfd adsf"}
-                  </MmBoxQuote>
-
-                  <MmBoxQuote
-                    className={classNames(
-                      "__wab_instance",
-                      sty.mmBoxQuote___71Bvt
-                    )}
-                    color1={true}
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__rfegK)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"1000px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/akyllers/images/_1Png.png",
+                      fullWidth: 1500,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
                   />
 
-                  <MmBoxQuote
-                    c2={true}
-                    className={classNames(
-                      "__wab_instance",
-                      sty.mmBoxQuote__hkcup
-                    )}
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__w7La)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"1000px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/akyllers/images/_2Png.png",
+                      fullWidth: 1500,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
                   />
 
-                  <MmBoxQuote
-                    c3={true}
-                    className={classNames(
-                      "__wab_instance",
-                      sty.mmBoxQuote__iTpHm
-                    )}
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__doiie)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"1000px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/akyllers/images/_3Png.png",
+                      fullWidth: 1500,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__am7Sc)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"1000px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/akyllers/images/_4Png.png",
+                      fullWidth: 1500,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__uczZo)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"1000px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/akyllers/images/_5Png.png",
+                      fullWidth: 1500,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__cUobG)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"1000px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/akyllers/images/_6Png.png",
+                      fullWidth: 1500,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__lQ8RP)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"1000px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/akyllers/images/_7Png.png",
+                      fullWidth: 1500,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__ouN9T)}
+                    displayHeight={"auto"}
+                    displayMaxHeight={"none"}
+                    displayMaxWidth={"1000px"}
+                    displayMinHeight={"0"}
+                    displayMinWidth={"0"}
+                    displayWidth={"auto"}
+                    loading={"lazy"}
+                    src={{
+                      src: "/plasmic/akyllers/images/_8Png.png",
+                      fullWidth: 1500,
+                      fullHeight: 500,
+                      aspectRatio: undefined
+                    }}
                   />
                 </div>
               ) : null}

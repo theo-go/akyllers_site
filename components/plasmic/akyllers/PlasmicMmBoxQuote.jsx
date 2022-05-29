@@ -25,7 +25,9 @@ export const PlasmicMmBoxQuote__VariantProps = new Array(
   "c2",
   "c3",
   "c4",
-  "v5"
+  "v5",
+  "unnamedVariant",
+  "unnamedVariant2"
 );
 
 export const PlasmicMmBoxQuote__ArgProps = new Array("children");
@@ -55,6 +57,18 @@ function PlasmicMmBoxQuote__RenderFunc(props) {
           [sty.textc3]: hasVariant(variants, "c3", "c3"),
           [sty.textc4]: hasVariant(variants, "c4", "c4"),
           [sty.textcolor1]: hasVariant(variants, "color1", "color1"),
+          [sty.textunnamedVariant2]: hasVariant(
+            variants,
+            "unnamedVariant2",
+            "unnamedVariant2"
+          ),
+
+          [sty.textunnamedVariant]: hasVariant(
+            variants,
+            "unnamedVariant",
+            "unnamedVariant"
+          ),
+
           [sty.textv5]: hasVariant(variants, "v5", "v5")
         }
       )}
@@ -67,18 +81,20 @@ function PlasmicMmBoxQuote__RenderFunc(props) {
             [sty.freeBoxcolor1]: hasVariant(variants, "color1", "color1")
           })}
         >
-          {p.renderPlasmicSlot({
-            defaultContents: "asdfasdfasdfasdf",
-            value: args.children,
-            className: classNames(sty.slotTargetChildren, {
-              [sty.slotTargetChildrenc2]: hasVariant(variants, "c2", "c2"),
-              [sty.slotTargetChildrencolor1]: hasVariant(
-                variants,
-                "color1",
-                "color1"
-              )
-            })
-          })}
+          {false
+            ? p.renderPlasmicSlot({
+                defaultContents: "asdfasdfasdfasdf",
+                value: args.children,
+                className: classNames(sty.slotTargetChildren, {
+                  [sty.slotTargetChildrenc2]: hasVariant(variants, "c2", "c2"),
+                  [sty.slotTargetChildrencolor1]: hasVariant(
+                    variants,
+                    "color1",
+                    "color1"
+                  )
+                })
+              })
+            : null}
         </div>
       ) : null}
     </p.Stack>

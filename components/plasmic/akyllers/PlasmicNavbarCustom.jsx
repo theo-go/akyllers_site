@@ -290,7 +290,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
           src={
             hasVariant(globalVariants, "screen", "mobileOnly")
               ? {
-                  src: "/plasmic/akyllers/images/pacmanWhitepng.png",
+                  src: "/plasmic/akyllers/images/pacmanDarkpng.png",
                   fullWidth: 512,
                   fullHeight: 512,
                   aspectRatio: undefined
