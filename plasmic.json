@@ -604,6 +604,21 @@
           "id": "aTuT3F_-2",
           "name": "Subtract2.png",
           "filePath": "../public/plasmic/akyllers/images/subtract2Png.png"
+        },
+        {
+          "id": "exc-hQzBg",
+          "name": "Delivery.png",
+          "filePath": "../public/plasmic/akyllers/images/deliverypng.png"
+        },
+        {
+          "id": "SrriUgD4B",
+          "name": "gal.png",
+          "filePath": "../public/plasmic/akyllers/images/galpng.png"
+        },
+        {
+          "id": "zHrsrGyFb",
+          "name": "ppl.png",
+          "filePath": "../public/plasmic/akyllers/images/pplpng.png"
         }
       ],
       "indirect": false,
@@ -769,6 +784,41 @@
         }
       ],
       "jsBundleThemes": []
+    },
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": "2.2.1",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic_plasmic_basic_components.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "Tg8iODh_BQ",
+          "name": "EmbedCss",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        }
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
@@ -778,6 +828,12 @@
         "name": "Screen",
         "projectId": "cELQgcBTCpXC8URn4hyouo",
         "contextFilePath": "plasmic/akyllers/PlasmicGlobalVariant__Screen.jsx"
+      },
+      {
+        "id": "q2e6W8ulGYz",
+        "name": "Screen",
+        "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+        "contextFilePath": "plasmic/plasmic_basic_components/PlasmicGlobalVariant__Screen.jsx"
       }
     ]
   },

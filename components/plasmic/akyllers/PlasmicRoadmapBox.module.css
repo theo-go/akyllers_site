@@ -5,7 +5,6 @@
   justify-content: flex-start;
   width: 210px;
   height: 300px;
-  max-width: 100%;
   background: #eeeeee;
   position: relative;
   cursor: pointer;
@@ -24,24 +23,23 @@
 }
 .img {
   position: relative;
-  object-fit: cover;
-  max-width: 100%;
+  object-fit: contain;
+  width: 150px;
+  height: auto;
 }
 .img > picture > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .img > .__wab_img-spacer > img {
-  object-fit: cover;
+  object-fit: contain;
 }
 .freeBox__rOg0N {
   position: relative;
-  width: 100%;
+  width: auto;
   height: auto;
-  max-width: 800px;
   justify-content: center;
   display: flex;
   flex-direction: row;
-  min-width: 0;
 }
 .slotTargetTitle {
   color: #5b5b5b;

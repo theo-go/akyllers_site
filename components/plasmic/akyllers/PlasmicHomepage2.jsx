@@ -122,7 +122,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                     )}
                   >
                     {
-                      "Akyllers is a web 3.0 brand with a vision.\nTurn Boring parts of life into a game."
+                      "Akyllers is a web 3.0 brand with a vision.\nLiberating minds."
                     }
                   </div>
                 </div>

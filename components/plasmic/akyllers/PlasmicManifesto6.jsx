@@ -18,6 +18,7 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import NavbarCustom from "../../NavbarCustom"; // plasmic-import: 5sPSsjDnyE/component
+import { Video } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: RhitNJW5Zu-/codeComponent
 import MmBoxQuote from "../../MmBoxQuote"; // plasmic-import: -LEP2YxQV0/component
 import NewArt from "../../NewArt"; // plasmic-import: PrC51OjMk0/component
 import ReadButton from "../../ReadButton"; // plasmic-import: daG_UtRVH0/component
@@ -114,6 +115,59 @@ function PlasmicManifesto6__RenderFunc(props) {
                       </div>
                     </div>
                   ) : null}
+                </div>
+              ) : null}
+              {true ? (
+                <div
+                  data-plasmic-name={"song"}
+                  data-plasmic-override={overrides.song}
+                  className={classNames(projectcss.all, sty.song)}
+                >
+                  <p.Stack
+                    as={"div"}
+                    data-plasmic-name={"columns"}
+                    data-plasmic-override={overrides.columns}
+                    hasGap={true}
+                    className={classNames(projectcss.all, sty.columns)}
+                  >
+                    <div
+                      className={classNames(projectcss.all, sty.column__eAuqq)}
+                    >
+                      <Video
+                        data-plasmic-name={"htmlVideo"}
+                        data-plasmic-override={overrides.htmlVideo}
+                        className={classNames("__wab_instance", sty.htmlVideo)}
+                        src={
+                          "https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.webm"
+                        }
+                      />
+                    </div>
+
+                    <div
+                      className={classNames(projectcss.all, sty.column__bqKl)}
+                    >
+                      <h1
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.h1,
+                          projectcss.__wab_text,
+                          sty.h1__rghkH
+                        )}
+                      >
+                        {"REPRESENT YOUR"}
+                      </h1>
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__piHA
+                        )}
+                      >
+                        {"asdfasdfasdfasdfasdf"}
+                      </div>
+                    </div>
+                  </p.Stack>
                 </div>
               ) : null}
               {true ? (
@@ -276,6 +330,9 @@ const PlasmicDescendants = {
     "restOfSite",
     "quote",
     "freeBox",
+    "song",
+    "columns",
+    "htmlVideo",
     "banners",
     "newArtDiv",
     "artStack",
@@ -291,6 +348,9 @@ const PlasmicDescendants = {
     "restOfSite",
     "quote",
     "freeBox",
+    "song",
+    "columns",
+    "htmlVideo",
     "banners",
     "newArtDiv",
     "artStack",
@@ -302,6 +362,9 @@ const PlasmicDescendants = {
 
   quote: ["quote", "freeBox"],
   freeBox: ["freeBox"],
+  song: ["song", "columns", "htmlVideo"],
+  columns: ["columns", "htmlVideo"],
+  htmlVideo: ["htmlVideo"],
   banners: ["banners"],
   newArtDiv: ["newArtDiv", "artStack", "newArt"],
   artStack: ["artStack", "newArt"],
@@ -345,6 +408,9 @@ export const PlasmicManifesto6 = Object.assign(
     restOfSite: makeNodeComponent("restOfSite"),
     quote: makeNodeComponent("quote"),
     freeBox: makeNodeComponent("freeBox"),
+    song: makeNodeComponent("song"),
+    columns: makeNodeComponent("columns"),
+    htmlVideo: makeNodeComponent("htmlVideo"),
     banners: makeNodeComponent("banners"),
     newArtDiv: makeNodeComponent("newArtDiv"),
     artStack: makeNodeComponent("artStack"),

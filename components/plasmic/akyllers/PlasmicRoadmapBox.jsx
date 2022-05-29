@@ -62,10 +62,10 @@ function PlasmicRoadmapBox__RenderFunc(props) {
         className={classNames(sty.img)}
         displayHeight={"auto"}
         displayMaxHeight={"none"}
-        displayMaxWidth={"100%"}
+        displayMaxWidth={"none"}
         displayMinHeight={"0"}
         displayMinWidth={"0"}
-        displayWidth={"auto"}
+        displayWidth={"150px"}
         loading={"lazy"}
         src={args.image}
       />

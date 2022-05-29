@@ -14,14 +14,12 @@ import * as p from "@plasmicapp/react-web";
 import {
   classNames,
   createPlasmicElementProxy,
-  deriveRenderOpts,
-  ensureGlobalVariants
+  deriveRenderOpts
 } from "@plasmicapp/react-web";
 import NavbarCustom from "../../NavbarCustom"; // plasmic-import: 5sPSsjDnyE/component
 import FullText from "../../FullText"; // plasmic-import: JxzItQHtdP/component
 import RoadmapBox from "../../RoadmapBox"; // plasmic-import: DlZHxOtpOm/component
 import TrueFooter from "../../TrueFooter"; // plasmic-import: 1RTRAsLRW5N/component
-import { useScreenVariants as useScreenVariantsnK2Y1P6I3Vepj } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: nK2Y1p6i3Vepj/globalVariant
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_akyllers.module.css"; // plasmic-import: cELQgcBTCpXC8URn4hyouo/projectcss
 import sty from "./PlasmicManifesto3.module.css"; // plasmic-import: 9_TSPIaD38m/css
@@ -36,10 +34,6 @@ function PlasmicManifesto3__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultManifesto3__Args, props.args);
   const $props = args;
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsnK2Y1P6I3Vepj()
-  });
-
   return (
     <React.Fragment>
       <Head>
@@ -76,60 +70,65 @@ function PlasmicManifesto3__RenderFunc(props) {
             className={classNames("__wab_instance", sty.navbarCustom)}
           />
 
-          <p.Stack
-            as={"div"}
-            data-plasmic-name={"freeBox"}
-            data-plasmic-override={overrides.freeBox}
-            hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox)}
+          <div
+            data-plasmic-name={"columns"}
+            data-plasmic-override={overrides.columns}
+            className={classNames(projectcss.all, sty.columns)}
           >
-            <div
-              data-plasmic-name={"descCol"}
-              data-plasmic-override={overrides.descCol}
-              className={classNames(projectcss.all, sty.descCol)}
-            >
-              <FullText
-                data-plasmic-name={"fullText"}
-                data-plasmic-override={overrides.fullText}
-                className={classNames("__wab_instance", sty.fullText)}
-                description={
-                  "We are the Yuppies of the Metaverse. We’re riding on the thin line that separates the past from the future. We are a community of people who are bold yet kind, generous yet fair, Peaceful yet rebels, building what Woodstock was meant for.\n\nVISION:\nA SIMPLE YET COMPLEX VISION DRIVES US – DISRUPT ENTREPRENEURSHIP BY CREATING THE LARGEST DECENTRALIZED BRAND FOR THE METAVERSE, BUILT AND OWNED BY THE COMMUNITY.\n\nVALUES:\nCOMMUNITY FIRST: BUILT BY AKYLLERS TO THE WORLD. #1 WILL ALWAYS BE AKYLLERS & #2 AKYLLERS & #3, WELL…. YOU KNOW.\n\nTRUST THE PROCESS:\nTIME WILL TELL WHAT WE ARE AIMING TO BUILD. IT IS AN EFFORT BY MANY TO THE BENEFIT OF ALL. DECENTRALIZED DOES NOT MEAN THERE IS NO LEADERSHIP, AND THE CORE TEAM WILL PROVIDE THE GUARD RAILS AND TOOLS FOR ALL SEEDS TO GROW TOGETHER.\n\nCREATIVE FIRST:\nAKYLLERS IS CREATIVITY AND RELENTLESS PASSION. WE ARE TAKING A UNIQUE ROUTE, KNOWING THAT SOME WILL CRITICIZE AND MANY WILL NOT UNDERSTAND BEFORE IT BECOMES MAINSTREAM. BUT, WE ARE PAVING THE PATH."
-                }
-              />
+            <div className={classNames(projectcss.all, sty.column__hdGgl)}>
+              <div
+                data-plasmic-name={"descCol"}
+                data-plasmic-override={overrides.descCol}
+                className={classNames(projectcss.all, sty.descCol)}
+              >
+                <FullText
+                  data-plasmic-name={"fullText"}
+                  data-plasmic-override={overrides.fullText}
+                  className={classNames("__wab_instance", sty.fullText)}
+                  description={
+                    "We are the Yuppies of the Metaverse. We’re riding on the thin line that separates the past from the future. We are a community of people who are bold yet kind, generous yet fair, Peaceful yet rebels, building what Woodstock was meant for.\n\nVISION:\nA SIMPLE YET COMPLEX VISION DRIVES US – DISRUPT ENTREPRENEURSHIP BY CREATING THE LARGEST DECENTRALIZED BRAND FOR THE METAVERSE, BUILT AND OWNED BY THE COMMUNITY.\n\nVALUES:\nCOMMUNITY FIRST: BUILT BY AKYLLERS TO THE WORLD. #1 WILL ALWAYS BE AKYLLERS & #2 AKYLLERS & #3, WELL…. YOU KNOW.\n\nTRUST THE PROCESS:\nTIME WILL TELL WHAT WE ARE AIMING TO BUILD. IT IS AN EFFORT BY MANY TO THE BENEFIT OF ALL. DECENTRALIZED DOES NOT MEAN THERE IS NO LEADERSHIP, AND THE CORE TEAM WILL PROVIDE THE GUARD RAILS AND TOOLS FOR ALL SEEDS TO GROW TOGETHER.\n\nCREATIVE FIRST:\nAKYLLERS IS CREATIVITY AND RELENTLESS PASSION. WE ARE TAKING A UNIQUE ROUTE, KNOWING THAT SOME WILL CRITICIZE AND MANY WILL NOT UNDERSTAND BEFORE IT BECOMES MAINSTREAM. BUT, WE ARE PAVING THE PATH."
+                  }
+                />
+              </div>
             </div>
 
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"boxes"}
-              data-plasmic-override={overrides.boxes}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.boxes)}
-            >
-              <RoadmapBox
-                className={classNames("__wab_instance", sty.roadmapBox__llNuK)}
-              />
+            <div className={classNames(projectcss.all, sty.column__bkplj)}>
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"boxes"}
+                data-plasmic-override={overrides.boxes}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.boxes)}
+              >
+                <div className={classNames(projectcss.all, sty.column___01Zj)}>
+                  <RoadmapBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.roadmapBox__llNuK
+                    )}
+                  />
+                </div>
 
-              <RoadmapBox
-                className={classNames("__wab_instance", sty.roadmapBox___531O)}
-              />
+                <div className={classNames(projectcss.all, sty.column__yWg6A)}>
+                  <RoadmapBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.roadmapBox__pCkm
+                    )}
+                  />
+                </div>
 
-              <RoadmapBox
-                className={classNames("__wab_instance", sty.roadmapBox__ubHrQ)}
-              />
-
-              <RoadmapBox
-                className={classNames("__wab_instance", sty.roadmapBox__tmjAy)}
-              />
-
-              <RoadmapBox
-                className={classNames("__wab_instance", sty.roadmapBox__ug6E8)}
-              />
-
-              <RoadmapBox
-                className={classNames("__wab_instance", sty.roadmapBox__tI7WU)}
-              />
-            </p.Stack>
-          </p.Stack>
+                <div className={classNames(projectcss.all, sty.column__lLnEg)}>
+                  <RoadmapBox
+                    className={classNames(
+                      "__wab_instance",
+                      sty.roadmapBox__tZpe1
+                    )}
+                  />
+                </div>
+              </p.Stack>
+            </div>
+          </div>
 
           <TrueFooter
             data-plasmic-name={"trueFooter"}
@@ -147,7 +146,7 @@ const PlasmicDescendants = {
   root: [
     "root",
     "navbarCustom",
-    "freeBox",
+    "columns",
     "descCol",
     "fullText",
     "boxes",
@@ -155,7 +154,7 @@ const PlasmicDescendants = {
   ],
 
   navbarCustom: ["navbarCustom"],
-  freeBox: ["freeBox", "descCol", "fullText", "boxes"],
+  columns: ["columns", "descCol", "fullText", "boxes"],
   descCol: ["descCol", "fullText"],
   fullText: ["fullText"],
   boxes: ["boxes"],
@@ -192,7 +191,7 @@ export const PlasmicManifesto3 = Object.assign(
   {
     // Helper components rendering sub-elements
     navbarCustom: makeNodeComponent("navbarCustom"),
-    freeBox: makeNodeComponent("freeBox"),
+    columns: makeNodeComponent("columns"),
     descCol: makeNodeComponent("descCol"),
     fullText: makeNodeComponent("fullText"),
     boxes: makeNodeComponent("boxes"),
