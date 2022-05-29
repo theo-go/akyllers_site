@@ -118,35 +118,19 @@ function PlasmicTrueFooter__RenderFunc(props) {
             className={classNames(projectcss.all, sty.freeBox__vVTq)}
           >
             <FooterLink
-              className={classNames("__wab_instance", sty.footerLink__t0Pq, {
-                [sty.footerLinkdarkMode__t0PqIscWr]: hasVariant(
+              className={classNames("__wab_instance", sty.footerLink__rOA, {
+                [sty.footerLinkdarkMode__rOAiscWr]: hasVariant(
                   variants,
                   "darkMode",
                   "darkMode"
                 )
               })}
-              link={"/manifesto-5"}
+              link={"/about"}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
             >
-              {"Gallery"}
-            </FooterLink>
-
-            <FooterLink
-              className={classNames("__wab_instance", sty.footerLink__vWvtN, {
-                [sty.footerLinkdarkMode__vWvtNiscWr]: hasVariant(
-                  variants,
-                  "darkMode",
-                  "darkMode"
-                )
-              })}
-              link={"/manifesto-3"}
-              whiteColor={
-                hasVariant(variants, "darkMode", "darkMode") ? true : undefined
-              }
-            >
-              {"Roadmap"}
+              {"ABOUT"}
             </FooterLink>
 
             <FooterLink
@@ -164,19 +148,51 @@ function PlasmicTrueFooter__RenderFunc(props) {
             />
 
             <FooterLink
-              className={classNames("__wab_instance", sty.footerLink__rOA, {
-                [sty.footerLinkdarkMode__rOAiscWr]: hasVariant(
+              className={classNames("__wab_instance", sty.footerLink__vWvtN, {
+                [sty.footerLinkdarkMode__vWvtNiscWr]: hasVariant(
                   variants,
                   "darkMode",
                   "darkMode"
                 )
               })}
-              link={"/-2"}
+              link={"/roadmap"}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
             >
-              {"arcade"}
+              {"Roadmap"}
+            </FooterLink>
+
+            <FooterLink
+              className={classNames("__wab_instance", sty.footerLink__sDx6, {
+                [sty.footerLinkdarkMode__sDx6IscWr]: hasVariant(
+                  variants,
+                  "darkMode",
+                  "darkMode"
+                )
+              })}
+              link={"/forum"}
+              whiteColor={
+                hasVariant(variants, "darkMode", "darkMode") ? true : undefined
+              }
+            >
+              {"FORUM"}
+            </FooterLink>
+
+            <FooterLink
+              className={classNames("__wab_instance", sty.footerLink__t0Pq, {
+                [sty.footerLinkdarkMode__t0PqIscWr]: hasVariant(
+                  variants,
+                  "darkMode",
+                  "darkMode"
+                )
+              })}
+              link={"/gallery"}
+              whiteColor={
+                hasVariant(variants, "darkMode", "darkMode") ? true : undefined
+              }
+            >
+              {"Gallery"}
             </FooterLink>
           </p.Stack>
         ) : null}

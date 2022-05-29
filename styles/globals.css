@@ -14,3 +14,11 @@ a {
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'American Sporty';
+  src: url('./fonts/Americansporty-1GM84.otf') format('woff2');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}

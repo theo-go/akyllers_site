@@ -13,8 +13,8 @@
   background: linear-gradient(258deg, #f9f9f9 77%, #f9e8ec 100%) 0% 0% / 100%
     100% repeat;
   box-shadow: 0px 4px 16px 0px #00000033;
+  transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
   border-radius: 15px;
-  padding: 16px;
 }
 .img {
   position: relative;

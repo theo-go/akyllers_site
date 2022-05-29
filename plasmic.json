@@ -49,32 +49,6 @@
       "cssFilePath": "plasmic/akyllers/plasmic_akyllers.module.css",
       "components": [
         {
-          "id": "OLVR3QMVAjAf",
-          "name": "Homepage",
-          "type": "managed",
-          "projectId": "cELQgcBTCpXC8URn4hyouo",
-          "renderModuleFilePath": "plasmic/akyllers/PlasmicHomepage.jsx",
-          "importSpec": {
-            "modulePath": "../pages/index.jsx"
-          },
-          "cssFilePath": "plasmic/akyllers/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
-          "id": "IUhmGZz1se",
-          "name": "Homepage2",
-          "type": "managed",
-          "projectId": "cELQgcBTCpXC8URn4hyouo",
-          "renderModuleFilePath": "plasmic/akyllers/PlasmicHomepage2.jsx",
-          "importSpec": {
-            "modulePath": "../pages/-2.jsx"
-          },
-          "cssFilePath": "plasmic/akyllers/PlasmicHomepage2.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "nG5tYecuo7",
           "name": "ItemInside",
           "type": "managed",
@@ -146,7 +120,7 @@
           "projectId": "cELQgcBTCpXC8URn4hyouo",
           "renderModuleFilePath": "plasmic/akyllers/PlasmicManifesto2.jsx",
           "importSpec": {
-            "modulePath": "../pages/manifesto-2.jsx"
+            "modulePath": "../pages/legal.jsx"
           },
           "cssFilePath": "plasmic/akyllers/PlasmicManifesto2.module.css",
           "scheme": "blackbox",
@@ -159,7 +133,7 @@
           "projectId": "cELQgcBTCpXC8URn4hyouo",
           "renderModuleFilePath": "plasmic/akyllers/PlasmicManifesto3.jsx",
           "importSpec": {
-            "modulePath": "../pages/manifesto-3.jsx"
+            "modulePath": "../pages/roadmap.jsx"
           },
           "cssFilePath": "plasmic/akyllers/PlasmicManifesto3.module.css",
           "scheme": "blackbox",
@@ -185,7 +159,7 @@
           "projectId": "cELQgcBTCpXC8URn4hyouo",
           "renderModuleFilePath": "plasmic/akyllers/PlasmicManifesto5.jsx",
           "importSpec": {
-            "modulePath": "../pages/manifesto-5.jsx"
+            "modulePath": "../pages/gallery.jsx"
           },
           "cssFilePath": "plasmic/akyllers/PlasmicManifesto5.module.css",
           "scheme": "blackbox",
@@ -341,7 +315,7 @@
           "projectId": "cELQgcBTCpXC8URn4hyouo",
           "renderModuleFilePath": "plasmic/akyllers/PlasmicManifesto6.jsx",
           "importSpec": {
-            "modulePath": "../pages/manifesto-6.jsx"
+            "modulePath": "../pages/forum.jsx"
           },
           "cssFilePath": "plasmic/akyllers/PlasmicManifesto6.module.css",
           "scheme": "blackbox",
@@ -385,6 +359,32 @@
           "cssFilePath": "plasmic/akyllers/PlasmicReadButton.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "OLVR3QMVAjAf",
+          "name": "Home",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicHome.jsx",
+          "importSpec": {
+            "modulePath": "../pages/index.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicHome.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "IUhmGZz1se",
+          "name": "Homepage2",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicHomepage2.jsx",
+          "importSpec": {
+            "modulePath": "../pages/about.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicHomepage2.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

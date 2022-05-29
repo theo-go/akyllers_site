@@ -27,7 +27,7 @@ import DiscordSvgrepoComsvgIcon from "./icons/PlasmicIcon__DiscordSvgrepoComsvg"
 import InstagramSvgrepoCom2SvgIcon from "./icons/PlasmicIcon__InstagramSvgrepoCom2Svg"; // plasmic-import: DNMeweYbp-/icon
 import TwitterSvgrepoComsvgIcon from "./icons/PlasmicIcon__TwitterSvgrepoComsvg"; // plasmic-import: SCWRDWiaJn/icon
 
-export const PlasmicNavbarCustom__VariantProps = new Array();
+export const PlasmicNavbarCustom__VariantProps = new Array("darkLetters");
 
 export const PlasmicNavbarCustom__ArgProps = new Array();
 
@@ -103,13 +103,20 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               projectcss.all,
               projectcss.a,
               projectcss.__wab_text,
-              sty.link__cqn6
+              sty.link__vgXzj,
+              {
+                [sty.linkdarkLetters__vgXzjdVqUt]: hasVariant(
+                  variants,
+                  "darkLetters",
+                  "darkLetters"
+                )
+              }
             )}
             component={Link}
-            href={"/manifesto-5"}
+            href={"/about"}
             platform={"nextjs"}
           >
-            {"Gallery"}
+            {"ABOUT"}
           </p.PlasmicLink>
 
           <p.PlasmicLink
@@ -117,21 +124,14 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               projectcss.all,
               projectcss.a,
               projectcss.__wab_text,
-              sty.link__s5LC7
-            )}
-            component={Link}
-            href={"/manifesto-3"}
-            platform={"nextjs"}
-          >
-            {"Roadmap"}
-          </p.PlasmicLink>
-
-          <p.PlasmicLink
-            className={classNames(
-              projectcss.all,
-              projectcss.a,
-              projectcss.__wab_text,
-              sty.link__lxVcx
+              sty.link__lxVcx,
+              {
+                [sty.linkdarkLetters__lxVcXdVqUt]: hasVariant(
+                  variants,
+                  "darkLetters",
+                  "darkLetters"
+                )
+              }
             )}
             component={Link}
             href={"/manifesto"}
@@ -145,13 +145,62 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               projectcss.all,
               projectcss.a,
               projectcss.__wab_text,
-              sty.link__vgXzj
+              sty.link__s5LC7,
+              {
+                [sty.linkdarkLetters__s5LC7DVqUt]: hasVariant(
+                  variants,
+                  "darkLetters",
+                  "darkLetters"
+                )
+              }
             )}
             component={Link}
-            href={"/-2"}
+            href={"/roadmap"}
             platform={"nextjs"}
           >
-            {"arcade"}
+            {"Roadmap"}
+          </p.PlasmicLink>
+
+          <p.PlasmicLink
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__dJmA,
+              {
+                [sty.linkdarkLetters__dJmAdVqUt]: hasVariant(
+                  variants,
+                  "darkLetters",
+                  "darkLetters"
+                )
+              }
+            )}
+            component={Link}
+            href={"/forum"}
+            platform={"nextjs"}
+          >
+            {"FORUM"}
+          </p.PlasmicLink>
+
+          <p.PlasmicLink
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              projectcss.__wab_text,
+              sty.link__cqn6,
+              {
+                [sty.linkdarkLetters__cqn6DVqUt]: hasVariant(
+                  variants,
+                  "darkLetters",
+                  "darkLetters"
+                )
+              }
+            )}
+            component={Link}
+            href={"/gallery"}
+            platform={"nextjs"}
+          >
+            {"Gallery"}
           </p.PlasmicLink>
 
           <p.PlasmicLink
@@ -161,10 +210,18 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               sty.link__tlyIa
             )}
             component={Link}
+            href={"https://discord.com/invite/fGbCdPkDwU"}
             platform={"nextjs"}
+            target={"_blank"}
           >
             <DiscordSvgrepoComsvgIcon
-              className={classNames(projectcss.all, sty.svg___4YbdT)}
+              className={classNames(projectcss.all, sty.svg___4YbdT, {
+                [sty.svgdarkLetters___4YbdTdVqUt]: hasVariant(
+                  variants,
+                  "darkLetters",
+                  "darkLetters"
+                )
+              })}
               role={"img"}
             />
           </p.PlasmicLink>
@@ -176,10 +233,18 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               sty.link__f0Zhb
             )}
             component={Link}
+            href={"https://www.instagram.com/akyllers_/"}
             platform={"nextjs"}
+            target={"_blank"}
           >
             <InstagramSvgrepoCom2SvgIcon
-              className={classNames(projectcss.all, sty.svg__rQn5O)}
+              className={classNames(projectcss.all, sty.svg__rQn5O, {
+                [sty.svgdarkLetters__rQn5OdVqUt]: hasVariant(
+                  variants,
+                  "darkLetters",
+                  "darkLetters"
+                )
+              })}
               role={"img"}
             />
           </p.PlasmicLink>
@@ -191,10 +256,18 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               sty.link___8891
             )}
             component={Link}
+            href={"https://twitter.com/akyllers?s=21"}
             platform={"nextjs"}
+            target={"_blank"}
           >
             <TwitterSvgrepoComsvgIcon
-              className={classNames(projectcss.all, sty.svg__cpK9S)}
+              className={classNames(projectcss.all, sty.svg__cpK9S, {
+                [sty.svgdarkLetters__cpK9SdVqUt]: hasVariant(
+                  variants,
+                  "darkLetters",
+                  "darkLetters"
+                )
+              })}
               role={"img"}
             />
           </p.PlasmicLink>

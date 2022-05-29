@@ -10,16 +10,14 @@
 // Component: 9_TSPIaD38m
 import * as React from "react";
 import Head from "next/head";
-import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
-  hasVariant,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
-import { NavigationBar } from "@plasmicpkgs/plasmic-nav"; // plasmic-import: jGx9tiKJoex/codeComponent
+import NavbarCustom from "../../NavbarCustom"; // plasmic-import: 5sPSsjDnyE/component
 import FullText from "../../FullText"; // plasmic-import: JxzItQHtdP/component
 import RoadmapBox from "../../RoadmapBox"; // plasmic-import: DlZHxOtpOm/component
 import TrueFooter from "../../TrueFooter"; // plasmic-import: 1RTRAsLRW5N/component
@@ -27,9 +25,6 @@ import { useScreenVariants as useScreenVariantsnK2Y1P6I3Vepj } from "./PlasmicGl
 import "@plasmicapp/react-web/lib/plasmic.css";
 import projectcss from "./plasmic_akyllers.module.css"; // plasmic-import: cELQgcBTCpXC8URn4hyouo/projectcss
 import sty from "./PlasmicManifesto3.module.css"; // plasmic-import: 9_TSPIaD38m/css
-import DiscordSvgrepoComsvgIcon from "./icons/PlasmicIcon__DiscordSvgrepoComsvg"; // plasmic-import: DZ_ZJwIq1b/icon
-import InstagramSvgrepoCom2SvgIcon from "./icons/PlasmicIcon__InstagramSvgrepoCom2Svg"; // plasmic-import: DNMeweYbp-/icon
-import TwitterSvgrepoComsvgIcon from "./icons/PlasmicIcon__TwitterSvgrepoComsvg"; // plasmic-import: SCWRDWiaJn/icon
 
 export const PlasmicManifesto3__VariantProps = new Array();
 
@@ -49,8 +44,8 @@ function PlasmicManifesto3__RenderFunc(props) {
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
-        <title key="title">{"asdf"}</title>
-        <meta key="og:title" property="og:title" content={"asdf"} />
+        <title key="title">{"Roadmap"}</title>
+        <meta key="og:title" property="og:title" content={"Roadmap"} />
       </Head>
 
       <style>{`
@@ -75,197 +70,10 @@ function PlasmicManifesto3__RenderFunc(props) {
             sty.root
           )}
         >
-          <NavigationBar
-            data-plasmic-name={"navigationBar"}
-            data-plasmic-override={overrides.navigationBar}
-            brand={
-              <p.PlasmicLink
-                className={classNames(
-                  projectcss.all,
-                  projectcss.a,
-                  sty.link__wlwpM
-                )}
-                component={Link}
-                href={"/"}
-                platform={"nextjs"}
-              >
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__zjipH)}
-                  displayHeight={"40px"}
-                  displayMaxHeight={"none"}
-                  displayMaxWidth={"none"}
-                  displayMinHeight={"0"}
-                  displayMinWidth={"0"}
-                  displayWidth={"auto"}
-                  src={{
-                    src: "/plasmic/akyllers/images/logopng.png",
-                    fullWidth: 1560,
-                    fullHeight: 303,
-                    aspectRatio: undefined
-                  }}
-                />
-              </p.PlasmicLink>
-            }
-            className={classNames("__wab_instance", sty.navigationBar)}
-            closeButton={
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__a7ZG)}
-                displayHeight={"auto"}
-                displayMaxHeight={"none"}
-                displayMaxWidth={"none"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={"auto"}
-                src={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? {
-                        src: "/plasmic/akyllers/images/ghostWhitepng.png",
-                        fullWidth: 32,
-                        fullHeight: 32,
-                        aspectRatio: undefined
-                      }
-                    : "https://static1.plasmic.app/close.svg"
-                }
-              />
-            }
-            itemsGap={12}
-            menuItems={
-              <React.Fragment>
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__qwJ4O
-                  )}
-                  component={Link}
-                  href={"/manifesto-5"}
-                  platform={"nextjs"}
-                >
-                  {"Gallery"}
-                </p.PlasmicLink>
-
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__s5LC7
-                  )}
-                  component={Link}
-                  href={"/manifesto-3"}
-                  platform={"nextjs"}
-                >
-                  {"Roadmap"}
-                </p.PlasmicLink>
-
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__lxVcx
-                  )}
-                  component={Link}
-                  href={"/manifesto"}
-                  platform={"nextjs"}
-                >
-                  {"manifesto"}
-                </p.PlasmicLink>
-
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    projectcss.__wab_text,
-                    sty.link__vgXzj
-                  )}
-                  component={Link}
-                  href={"/-2"}
-                  platform={"nextjs"}
-                >
-                  {"arcade"}
-                </p.PlasmicLink>
-
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__tlyIa
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <DiscordSvgrepoComsvgIcon
-                    className={classNames(projectcss.all, sty.svg___4YbdT)}
-                    role={"img"}
-                  />
-                </p.PlasmicLink>
-
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link__f0Zhb
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <InstagramSvgrepoCom2SvgIcon
-                    className={classNames(projectcss.all, sty.svg__rQn5O)}
-                    role={"img"}
-                  />
-                </p.PlasmicLink>
-
-                <p.PlasmicLink
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.a,
-                    sty.link___8891
-                  )}
-                  component={Link}
-                  platform={"nextjs"}
-                >
-                  <TwitterSvgrepoComsvgIcon
-                    className={classNames(projectcss.all, sty.svg__cpK9S)}
-                    role={"img"}
-                  />
-                </p.PlasmicLink>
-              </React.Fragment>
-            }
-            openButton={
-              <p.PlasmicImg
-                alt={""}
-                className={classNames(sty.img__nJv2V)}
-                displayHeight={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "30px"
-                    : "auto"
-                }
-                displayMaxHeight={"none"}
-                displayMaxWidth={"none"}
-                displayMinHeight={"0"}
-                displayMinWidth={"0"}
-                displayWidth={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? "30px"
-                    : "auto"
-                }
-                src={
-                  hasVariant(globalVariants, "screen", "mobileOnly")
-                    ? {
-                        src: "/plasmic/akyllers/images/pacmanWhitepng.png",
-                        fullWidth: 512,
-                        fullHeight: 512,
-                        aspectRatio: undefined
-                      }
-                    : "https://static1.plasmic.app/menu.svg"
-                }
-              />
-            }
-            responsiveBreakpoint={768}
+          <NavbarCustom
+            data-plasmic-name={"navbarCustom"}
+            data-plasmic-override={overrides.navbarCustom}
+            className={classNames("__wab_instance", sty.navbarCustom)}
           />
 
           <p.Stack
@@ -338,7 +146,7 @@ function PlasmicManifesto3__RenderFunc(props) {
 const PlasmicDescendants = {
   root: [
     "root",
-    "navigationBar",
+    "navbarCustom",
     "freeBox",
     "descCol",
     "fullText",
@@ -346,7 +154,7 @@ const PlasmicDescendants = {
     "trueFooter"
   ],
 
-  navigationBar: ["navigationBar"],
+  navbarCustom: ["navbarCustom"],
   freeBox: ["freeBox", "descCol", "fullText", "boxes"],
   descCol: ["descCol", "fullText"],
   fullText: ["fullText"],
@@ -383,7 +191,7 @@ export const PlasmicManifesto3 = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    navigationBar: makeNodeComponent("navigationBar"),
+    navbarCustom: makeNodeComponent("navbarCustom"),
     freeBox: makeNodeComponent("freeBox"),
     descCol: makeNodeComponent("descCol"),
     fullText: makeNodeComponent("fullText"),

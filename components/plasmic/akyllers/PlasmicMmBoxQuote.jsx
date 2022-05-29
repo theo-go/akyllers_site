@@ -59,24 +59,6 @@ function PlasmicMmBoxQuote__RenderFunc(props) {
         }
       )}
     >
-      <p.PlasmicImg
-        alt={""}
-        className={classNames(sty.img__oQa6)}
-        displayHeight={"auto"}
-        displayMaxHeight={"none"}
-        displayMaxWidth={"none"}
-        displayMinHeight={"0"}
-        displayMinWidth={"0"}
-        displayWidth={"auto"}
-        loading={"lazy"}
-        src={{
-          src: "/plasmic/akyllers/images/leftLinepng.png",
-          fullWidth: 646,
-          fullHeight: 83,
-          aspectRatio: undefined
-        }}
-      />
-
       {(hasVariant(variants, "color1", "color1") ? true : true) ? (
         <div
           data-plasmic-name={"freeBox"}
@@ -99,24 +81,6 @@ function PlasmicMmBoxQuote__RenderFunc(props) {
           })}
         </div>
       ) : null}
-
-      <p.PlasmicImg
-        alt={""}
-        className={classNames(sty.img__o2RdF)}
-        displayHeight={"auto"}
-        displayMaxHeight={"none"}
-        displayMaxWidth={"none"}
-        displayMinHeight={"0"}
-        displayMinWidth={"0"}
-        displayWidth={"auto"}
-        loading={"lazy"}
-        src={{
-          src: "/plasmic/akyllers/images/rightLinepng.png",
-          fullWidth: 615,
-          fullHeight: 84,
-          aspectRatio: undefined
-        }}
-      />
     </p.Stack>
   );
 }

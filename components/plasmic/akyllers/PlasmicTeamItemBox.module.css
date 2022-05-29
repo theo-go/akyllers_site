@@ -15,8 +15,7 @@
 .root:hover {
   width: 250px;
   background: #c00130;
-  height: 100%;
-  min-height: 0;
+  height: 360px;
 }
 .img {
   position: relative;

@@ -8,9 +8,10 @@
     url("/plasmic/akyllers/images/_198XStory1Png2Jpeg.jpeg") top 50% left 50% / cover repeat;
   box-shadow: 0px 4px 16px 0px #00000033;
   position: relative;
+  min-height: 400px;
   min-width: 0;
   border-radius: 6px;
-  padding: 140px 8px;
+  padding: 8px;
 }
 .text > :global(.__wab_flex-container) {
   flex-direction: row;
@@ -45,19 +46,6 @@
 .text:hover {
   transform: scaleX(1.1) scaleY(1.1) scaleZ(1);
 }
-.img__oQa6 {
-  width: 100px;
-  max-width: 100%;
-  position: relative;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-.img__oQa6 > picture > img {
-  object-fit: cover;
-}
-.img__oQa6 > .__wab_img-spacer > img {
-  object-fit: cover;
-}
 .freeBox {
   position: relative;
   width: auto;
@@ -66,23 +54,15 @@
   align-self: center;
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .freeBoxcolor1 {
   display: flex;
 }
 .slotTargetChildren {
   color: #ffffff;
-}
-.img__o2RdF {
-  width: 100px;
-  max-width: 100%;
-  position: relative;
-  object-fit: cover;
-  flex-shrink: 0;
-}
-.img__o2RdF > picture > img {
-  object-fit: cover;
-}
-.img__o2RdF > .__wab_img-spacer > img {
-  object-fit: cover;
+  font-family: "American Sporty";
+  font-size: 48px;
+  text-align: center;
 }

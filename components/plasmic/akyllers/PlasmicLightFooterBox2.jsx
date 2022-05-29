@@ -45,9 +45,9 @@ function PlasmicLightFooterBox2__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"/manifesto-6"}
+      href={"/forum"}
       platform={"nextjs"}
-      target={"_blank"}
+      target={undefined}
     >
       <div
         data-plasmic-name={"lightFooterBox2"}
