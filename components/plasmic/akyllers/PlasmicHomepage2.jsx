@@ -12,12 +12,14 @@ import * as React from "react";
 import Head from "next/head";
 import * as p from "@plasmicapp/react-web";
 import {
+  hasVariant,
   classNames,
   createPlasmicElementProxy,
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import NavbarCustom from "../../NavbarCustom"; // plasmic-import: 5sPSsjDnyE/component
+import BigImgLeft from "../../BigImgLeft"; // plasmic-import: EKBe6rLTgz/component
 import ItemInside from "../../ItemInside"; // plasmic-import: nG5tYecuo7/component
 import TeamItemBox from "../../TeamItemBox"; // plasmic-import: Df4ah1WY7c/component
 import BoxesFooter from "../../BoxesFooter"; // plasmic-import: oP4880RYxJw/component
@@ -85,8 +87,10 @@ function PlasmicHomepage2__RenderFunc(props) {
             {true ? (
               <div className={classNames(projectcss.all, sty.freeBox__fH6Ts)}>
                 <p.PlasmicImg
+                  data-plasmic-name={"img"}
+                  data-plasmic-override={overrides.img}
                   alt={""}
-                  className={classNames(sty.img__lfBrf)}
+                  className={classNames(sty.img)}
                   displayHeight={"auto"}
                   displayMaxHeight={"none"}
                   displayMaxWidth={"none"}
@@ -144,22 +148,10 @@ function PlasmicHomepage2__RenderFunc(props) {
             >
               <div className={classNames(projectcss.all, sty.columns__mw7Mj)}>
                 <div className={classNames(projectcss.all, sty.column__k1YKy)}>
-                  <p.PlasmicImg
-                    alt={""}
-                    className={classNames(sty.img__yzMV)}
-                    displayHeight={"427px"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"100%"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"auto"}
-                    loading={"lazy"}
-                    src={{
-                      src: "/plasmic/akyllers/images/untitledArtworkpng.png",
-                      fullWidth: 3000,
-                      fullHeight: 3798,
-                      aspectRatio: undefined
-                    }}
+                  <BigImgLeft
+                    data-plasmic-name={"bigImgLeft"}
+                    data-plasmic-override={overrides.bigImgLeft}
+                    className={classNames("__wab_instance", sty.bigImgLeft)}
                   />
                 </div>
 
@@ -427,11 +419,15 @@ function PlasmicHomepage2__RenderFunc(props) {
               </p.Stack>
             </div>
 
-            <BoxesFooter
-              data-plasmic-name={"boxesFooter"}
-              data-plasmic-override={overrides.boxesFooter}
-              className={classNames("__wab_instance", sty.boxesFooter)}
-            />
+            {(
+              hasVariant(globalVariants, "screen", "mobileOnly") ? true : true
+            ) ? (
+              <BoxesFooter
+                data-plasmic-name={"boxesFooter"}
+                data-plasmic-override={overrides.boxesFooter}
+                className={classNames("__wab_instance", sty.boxesFooter)}
+              />
+            ) : null}
 
             <TrueFooter
               data-plasmic-name={"trueFooter"}
@@ -450,10 +446,12 @@ const PlasmicDescendants = {
     "root",
     "hero",
     "navbarCustom",
+    "img",
     "fakeRoot",
     "mission",
     "section2",
     "imgLeftTextRight",
+    "bigImgLeft",
     "items",
     "team",
     "photos",
@@ -461,13 +459,15 @@ const PlasmicDescendants = {
     "trueFooter"
   ],
 
-  hero: ["hero", "navbarCustom", "fakeRoot", "mission"],
+  hero: ["hero", "navbarCustom", "img", "fakeRoot", "mission"],
   navbarCustom: ["navbarCustom"],
+  img: ["img"],
   fakeRoot: ["fakeRoot", "mission"],
   mission: ["mission"],
   section2: [
     "section2",
     "imgLeftTextRight",
+    "bigImgLeft",
     "items",
     "team",
     "photos",
@@ -475,7 +475,8 @@ const PlasmicDescendants = {
     "trueFooter"
   ],
 
-  imgLeftTextRight: ["imgLeftTextRight"],
+  imgLeftTextRight: ["imgLeftTextRight", "bigImgLeft"],
+  bigImgLeft: ["bigImgLeft"],
   items: ["items"],
   team: ["team", "photos"],
   photos: ["photos"],
@@ -514,10 +515,12 @@ export const PlasmicHomepage2 = Object.assign(
     // Helper components rendering sub-elements
     hero: makeNodeComponent("hero"),
     navbarCustom: makeNodeComponent("navbarCustom"),
+    img: makeNodeComponent("img"),
     fakeRoot: makeNodeComponent("fakeRoot"),
     mission: makeNodeComponent("mission"),
     section2: makeNodeComponent("section2"),
     imgLeftTextRight: makeNodeComponent("imgLeftTextRight"),
+    bigImgLeft: makeNodeComponent("bigImgLeft"),
     items: makeNodeComponent("items"),
     team: makeNodeComponent("team"),
     photos: makeNodeComponent("photos"),

@@ -95,7 +95,9 @@ function PlasmicManifesto__RenderFunc(props) {
                 sty.text
               )}
             >
-              {"Enter some text"}
+              {
+                "A lot have written, but few have acted, \nhere is to the ones who work in silence\nto the beavers, the emmets, the creators.\n\nHere goest to the misfits, the humble, the loving\npeeps who enjoy bein' part of a family, part of a crew\nHere is to those who do not believe in hierarchy\nbut still believe in order. \n\nAkyllers is a brand created by akyllers, to a world\nthat has yet to discover the beauty of buildin' as a fam\nbringing gamers, skaters, engineers, creators, writers, \nphotographers, philosophers, doctors all together as one.\n\nGet ready to jump into a new world, a world insipired by \nbeautiful things that actually work. A new way of doing things\nof living, working and learning while having fun, \n\nWho said things have to be hard, who said things have to be complex\nWe believe in a new way of life, we are liberating minds\nWe are Akyllers.  "
+              }
             </div>
           </div>
 

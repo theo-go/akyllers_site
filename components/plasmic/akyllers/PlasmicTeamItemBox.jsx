@@ -72,7 +72,7 @@ function PlasmicTeamItemBox__RenderFunc(props) {
         alt={""}
         className={classNames(sty.img)}
         displayHeight={"auto"}
-        displayMaxHeight={"none"}
+        displayMaxHeight={"180px"}
         displayMaxWidth={"100%"}
         displayMinHeight={"0"}
         displayMinWidth={"0"}

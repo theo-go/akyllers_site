@@ -162,7 +162,7 @@ function PlasmicManifesto6__RenderFunc(props) {
                           sty.h1__rghkH
                         )}
                       >
-                        {"REPRESENT YOUR"}
+                        {"LOOK BACK"}
                       </h1>
 
                       <div
@@ -172,7 +172,9 @@ function PlasmicManifesto6__RenderFunc(props) {
                           sty.text__piHA
                         )}
                       >
-                        {"asdfasdfasdfasdfasdf"}
+                        {
+                          "Look back is an amazin' creation by @sirendontplay for the Akyllers Fam. It represents our Ethos, where we came from, how we did things. Reminiscing on where we came from, how we did things, proud of the moments when we had our back against the wall; when nothing made sense, but still we dreamt. \n\nLook back is a song for everyone to remember that family is the n'1 super power in everythin' that we do, everyday. \n\nHere is to the Misfits, ohh wait, there are non here.  "
+                        }
                       </div>
                     </div>
                   </p.Stack>
@@ -202,7 +204,7 @@ function PlasmicManifesto6__RenderFunc(props) {
                       sty.h1__jWcku
                     )}
                   >
-                    {"REPRESENT YOUR"}
+                    {"Twitter is cool with this"}
                   </h1>
 
                   <p.PlasmicImg

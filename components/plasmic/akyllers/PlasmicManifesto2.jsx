@@ -85,14 +85,16 @@ function PlasmicManifesto2__RenderFunc(props) {
             className={classNames(projectcss.all, sty.textSection)}
           >
             <h1
+              data-plasmic-name={"h1"}
+              data-plasmic-override={overrides.h1}
               className={classNames(
                 projectcss.all,
                 projectcss.h1,
                 projectcss.__wab_text,
-                sty.h1__ah1PW
+                sty.h1
               )}
             >
-              {"License Agreement"}
+              {"Terms of Sale"}
             </h1>
 
             <div
@@ -102,7 +104,7 @@ function PlasmicManifesto2__RenderFunc(props) {
                 sty.text__lh9T
               )}
             >
-              {"LAST REVIEWED ON THIS DATE"}
+              {"LAST REVIEWED ON 6/5/222"}
             </div>
 
             <div
@@ -112,7 +114,9 @@ function PlasmicManifesto2__RenderFunc(props) {
                 sty.text__hoEeD
               )}
             >
-              {"Enter some text"}
+              {
+                "Akalabs, Inc (“Akalabs,” “we,” “us,” or “our”) provides its services (described below) and related content to you (“you” or “User”) through its website and platform for Akyllers located at akyllers.com (the “Site”), subject to these Terms of Use (as amended from time to time, the “Terms”). The Privacy Policy and all such additional terms, guidelines, and rules as set forth on the Site are hereby incorporated by reference into these Terms and expressly agreed to and acknowledged by you. These terms govern your access to and use of this Site, as well as all content, functionality, and services offered on or through the Site, including Perks (as defined below) (collectively, the “Services”), and AKYLLERS Collective NFTs. By signing up for an account on the Site, connecting your cryptocurrency wallet (e.g., MetaMask or WalletConnect) to the Services, or otherwise using or accessing the Services, Perks or any AKYLLERS NFTs, you acknowledge that you have read and agree to these Terms.\n\nBy agreeing to these Terms, you hereby certify that you are at least 18 years of age. If you do not agree to these Terms, you must not access or use the Site.\nPLEASE READ THESE TERMS CAREFULLY, AS THEY CONTAIN AN AGREEMENT TO ARBITRATE AND OTHER IMPORTANT INFORMATION REGARDING YOUR LEGAL RIGHTS, REMEDIES, AND OBLIGATIONS. THE AGREEMENT TO ARBITRATE REQUIRES (WITH LIMITED EXCEPTION) THAT YOU SUBMIT CLAIMS YOU HAVE AGAINST US TO BINDING AND FINAL ARBITRATION, AND FURTHER (1) YOU WILL ONLY BE PERMITTED TO PURSUE CLAIMS AGAINST AKALABS ON AN INDIVIDUAL BASIS, NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY CLASS OR REPRESENTATIVE ACTION OR PROCEEDING, (2) YOU WILL ONLY BE PERMITTED TO SEEK RELIEF (INCLUDING MONETARY, INJUNCTIVE, AND DECLARATORY RELIEF) ON AN INDIVIDUAL BASIS, AND (3) YOU MAY NOT BE ABLE TO HAVE ANY CLAIMS YOU HAVE AGAINST US RESOLVED BY A JURY OR IN A COURT OF LAW.\n ss\n\nSMART CONTRACT ENABLED\n\nAN AKYLLER NFT is a non-fungible Ethereum-based token that uses smart contracts on the Ethereum blockchain (“Smart Contracts”). The Ethereum blockchain provides an immutable ledger of all transactions that occur on the blockchain. This means that all Akyller NFTs are outside of the control of any one party, including AKALABS, and are subject to many risks and uncertainties. AKALABS neither owns nor controls MetaMask, WalletConnect, the Ethereum network, your browser, or any other third party site, product, or service (including third party wallets or marketplaces) that you might access, visit, or use for the purpose of enabling you to use the Services or to purchase, list, auction, or sell AKYLLER NFTs (“Transaction”), and that, except with respect to transferring control of a AKYLLERS NFT to the initial purchaser through the Services (“Initial Purchaser”), AKALABS has no responsibility with respect to any Transaction. AKALABS will not be liable for the acts or omissions of any third parties, nor will AKALABS be liable for any damage that you may suffer as a result of your transactions or any other interaction with any third parties. You understand that your Ethereum public address will be made publicly visible whenever you engage in a Transaction. Aside from transferring control of the AKYLLER NFT to the Initial Purchaser, AKALABS has no control over the transfer, storage, ownership or maintenance of the AKYLLER NFT.\nChanges to services\nAKALABS reserves the right to modify or discontinue, temporarily or permanently, the Services (or any part thereof) with or without notice. You agree that AKALABS will not be liable to you or to any third party for any modification, suspension, or discontinuance of the Services, including in relation to any AKYLLER NFT.\n\nAKALABS Perks\nA Collector (as defined below) of an AKYLLER NFT may receive special perks, experience, or opportunities as determined by AKALABS in its sole discretion (“Perks”) after the AKYLLER NFTs are first made available for sale (i.e., dropped) by AKALABS. AKALABS does not make any representation or guarantee that any Collector will receive any Perks or achieve any particular outcome as a result of owning any AKYLLER NFT. AKALABS reserves the right, at its sole discretion, to restrict, limit, or deny any Perks to any Collector, including to limit the period of time when a Perk is available, for any reason, at any time. Perks are not intended to be an endorsement of any project, creator, NFT, individual or any other thing, and AKALABS makes no recommendation and provides no investment advice in connection with any Perks or otherwise as a result of holding or owning the AKYLLER NFT.\n\nConnecting your wallet\nIn order to access and use the Services, including engaging in a Transaction on the Services, you must connect your account to your digital wallet supported on MetaMask, WalletConnect or other wallet extensions or gateways as allowed on the Services. Such digital wallets allow you to purchase, store, and engage in transactions using the native Ethereum cryptocurrency, ETH. When you link your cryptocurrency wallet, you understand and agree that you are solely responsible for maintaining the security of your wallet and your control over any wallet-related authentication credentials, private or public cryptocurrency keys, non-fungible tokens or cryptocurrencies that are stored in or are accessible through your wallet. Any unauthorized access to your cryptocurrency wallet by third parties could result in the loss or theft of AKYLLER NFTs and/or funds held in your wallet and any associated wallets, including any linked\n\n financial information such as bank account(s) or credit card(s). AKALABS is not responsible for managing and maintaining the security of your cryptocurrency wallet. AKALABS has no responsibility or liability to you for any unauthorized access to or use of your cryptocurrency wallet or if you are unable to locate your credentials. If you notice any unauthorized or suspicious activity in your cryptocurrency wallet that seems to be related to the Services, please notify us immediately.\n\nSale of AKYLLER NFT\nWhen each AKYLLER NFT is sold for the first time, the agreement for sale is between AKALABS and the Initial Purchaser. If the Initial Purchaser decides to sell an AKYLLER NFT (“Secondary Sale”), then AKALABS is not a party to any agreement between the applicable buyer, seller, or facilitator of the Secondary Sale.\nIf you or any owner of an AKLLER NFT (“Collector”) sells or transfers an AKYLLER NFT to another collector, (a) then you, as Collector, represent and warrant that you will notify the subsequent collector of these Terms and require the subsequent collector to comply with these Terms, (b) the Collector License (as defined below) as set forth herein will automatically transfer to such subsequent collector, and such other collector will be deemed the “Collector” (for purposes of such AKYLLER NFT and the Collector License to the underlying Art (as defined below)) and will be subject to these Terms, and (c) you, as the seller or transferor of such AKYLLER NFT, will cease to have any further rights to such AKYLLER NFT or underlying Art.\nBy placing an order on the Site or through the Services (including by bidding in an auction), you agree that you are submitting a binding offer to purchase an AKYLLER NFT, you agree to pay all applicable fees associated with the Transaction, and you authorize AKALABS to automatically charge and collect such fees from your payment instrument or wallet. If you are an Initial Purchaser, then all amounts due are to be paid to AKALABS. If you are not the Initial Purchaser of an AKYLLER NFT, then amounts may be paid to the seller of such AKYLLER NFT.\n\nYou acknowledge and agree that AKALABS receives 5.0% of every Secondary Sale of an AKYLLER NFT (“Royalty”). AKALABS has the right to collect Royalties for AKALABS sales in perpetuity. As such, if you sell an AKYLLER NFT on a third-party marketplace, you agree to include a statement substantially similar to the following in the description of the NFT: “5.0% Royalty Applies. By purchasing an AKYLLER NFT, you agree to the Terms of Use located at https://akyllers.com/terms”\nNo refunds are permitted except with respect to any statutory warranties or guaranties that cannot be excluded or limited by law.\n\nTaxes\nYou are responsible for any and all sales, use, value-added and other taxes, duties, and assessments now or hereafter claimed or imposed by any governmental authority, associated with your use of the Services, Perks or AKYLLER NFTs (including, without limitation, any taxes that may become payable as the result of your ownership, transfer, purchase, or sale of an AKYLLER NFT).\n\nAKALABS Intellectual Property Rights\nYou acknowledge and agree that the Services may contain content or features (“Services Content”) that are protected by copyright, patent, trademark, trade secret, or other proprietary rights and laws. Except as expressly authorized by AKALABS, you agree not to modify, copy, frame, scrape, rent, lease, loan, sell, distribute, or create derivative works based on the Services or the Services Content, in whole or in part. Any use of the Services or the Services Content other than as specifically authorized herein is strictly prohibited.\nAKALABS's name and logos, including the terms AKALABS and AKYLLER, are trademarks and service marks of AKALABS (collectively the “AKALABS Trademarks”). Other company, product, and service names and logos used and displayed via the Services may be trademarks or service marks of their respective owners who may or may not endorse or be affiliated with or connected to AKALABS. All of these rights are expressly reserved in the name of AKALABS and/ or its affiliates. Nothing in these Terms or the Services should be construed as granting, by implication, estoppel, or otherwise, any license or right to use any of AKALABS Trademarks or, other than the rights to the Art (as set forth below), any other intellectual property of AKALABS, without AKALABS's prior written permission in each instance. All rights in such intellectual property are reserved by AKALABS and/or its affiliates, and all goodwill generated from the use of AKALABS Trademarks will inure to our exclusive benefit.\n\nRIGHTS TO AKYLLERS NFTS YOU OWN\nPersonal Use. Subject to your continued compliance with these Terms, AKALABS grants you a worldwide, royalty-free license to use, copy, and display the digital art represented by your AKYLLER NFT (“Art”), along with any extensions that you choose to create or use, solely for the following purposes: (i) for your own personal, non-commercial use; (ii) as part of a marketplace that permits the purchase and sale of your AKYLLER NFT, provided that the marketplace cryptographically verifies each akyller NFT owner’s rights to display the Art for their AKYLLER NFT to ensure that only the actual owner can display the Art; or (iii) as part of a third party website or application that permits the inclusion, involvement, or participation of your AKYLLER NFT, provided that the website/application cryptographically verifies each AKYLLER NFT owner’s rights to display the Art for their AKYLLER NFT to ensure that only the actual owner can display the Art, and provided that the Art is no longer visible once the owner of the AKYLLER NFT leaves the website/application.\nCommercial Use. Subject to your continued compliance with these Terms, AKALABS grants you a worldwide license to use, copy, and display the Art represented by your AKYLLER NFT for the purpose of creating derivative works based upon the Art (“Commercial Use”). Examples of such Commercial Use would be the use of the Art to produce and sell merchandise products (e.g., T-Shirts etc.) displaying copies of the Art. For the sake of clarity, nothing in this Section will be deemed to restrict you from (i) owning or operating a marketplace that permits the use and sale of AKYLLERS NFT generally, provided that the marketplace cryptographically verifies each AKYLLER NFT owner’s rights to display the Art for their AKYLLERS NFT to ensure that only the actual owner can display the Art; (ii) owning or operating a third party website or application that permits the inclusion, involvement, or participation of AKYLLER NFT generally, provided that the third party website or application cryptographically verifies each AKYLLER NFT owner’s rights to display the Art for their AKYLLER NFT to ensure that only the actual owner can display the Art, and provided that the Art is no longer visible once the owner of the AKYLLER NFT leaves the website/application; or (iii) earning revenue from any of the foregoing.\n\nNO PROFESSIONAL ADVICE; TRANSACTION RISKS\nThe information on this Site and any information provided in connection with the Services or Perks are provided to AKYLLER NFT owners only and for information only and do not constitute, and should not be construed as, professional advice or a recommendation to purchase, sell, trade, or otherwise transact in any digital asset including any products or services or an invitation, offer or solicitation to engage in any purchase, sale, trade, or other transaction with respect to any digital asset.\nThe information on this Site and any information provided in connection with the Services or Perks provided to AKYLLER NFT owners are provided solely on the basis that you will make your own transaction decisions, and AKALABS does not take account of any person's financial or other objectives, particular needs, or financial situation. In addition, nothing on this Site or any information provided in connection with the Services or Perks provided to AKYLLER NFT owners shall, or is intended to, constitute financial, legal, accounting or tax advice. It is strongly recommended that you seek professional advice before making any transaction decision. Any decision that you make should be based on an assessment of your risks in consultation with your professional adviser(s).\n\nThe digital assets about which information is provided on the Site and any information provided in connection with the Services or Perks provided to AKYLLER NFT owners are not viewed by the issuer or sponsor of any such digital assets, or those buying or selling the digital asset, as securities under U.S. laws or relevant applicable laws. As a result it is unlikely that fulsome disclosures from the issuer or sponsor, or any executive officer associated with the digital asset or related protocol have been provided, and others may have better, if you reached this it means you are serious and deserve to be an akyller so message the a guy cause you just received a gift, or more information than the information made available to you via the Site, or any information provided in connection with the Services or Perks provided to AKYLLER NFT owners or to which you may independently have access.\nThere are risks associated with purchasing and holding digital assets. Loss of the full amount of the purchase price is possible. Volatility is highly likely, and some of the protocols and platforms may fail entirely due to forking, flaws in the code, hacking or other malicious attacks.\nTHESE TERMS DO NOT REPRESENT A COMPLETE STATEMENT OF RISK FACTORS ASSOCIATED WITH THE DIGITAL ASSETS OR PRODUCTS OR SERVICES THAT MAY BE VIEWED OR TRACKED ON THIS SITE OR THAT MAY BE FEATURED OR DISCUSSED IN CONNECTION WITH THE SERVICES OR PERKS FOR AKYLLER NFT OWNERS. YOU SHOULD CONSIDER THESE RISK WARNINGS CAREFULLY AND TAKE APPROPRIATE ADVICE BEFORE TAKING ANY DECISION TO PURCHASE, SELL, TRADE OR OTHERWISE TRANSACT IN A DIGITAL ASSET.\nRestrictions\nYou agree that you will not, and will not permit any third party to, do or attempt to do any of the following without the AKALABS's express prior written consent in each case: interfere with or disrupt the Services or servers or networks connected to the Services in any manner that could negatively affect or inhibit other Users from fully enjoying the Services or that could damage, disable,\noverburden or impair the functioning of the Services in any manner; violate any applicable local, state, national or international law, or any regulations having the force of law, including but not limited to the U.S. Department of Treasury's Office of Foreign Assets Control (“OFAC”), or which would involve proceeds of any unlawful activity;"
+              }
             </div>
 
             <div
@@ -120,33 +124,14 @@ function PlasmicManifesto2__RenderFunc(props) {
               data-plasmic-override={overrides.bigSection}
               className={classNames(projectcss.all, sty.bigSection)}
             >
-              <h1
-                className={classNames(
-                  projectcss.all,
-                  projectcss.h1,
-                  projectcss.__wab_text,
-                  sty.h1__rbv8F
-                )}
-              >
-                {"DEFINITIONS"}
-              </h1>
-
               <div
                 data-plasmic-name={"columns"}
                 data-plasmic-override={overrides.columns}
                 className={classNames(projectcss.all, sty.columns)}
               >
-                <div className={classNames(projectcss.all, sty.column__uoA8M)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___1Ia2T
-                    )}
-                  >
-                    {"Enter some text"}
-                  </div>
-                </div>
+                <div
+                  className={classNames(projectcss.all, sty.column__uoA8M)}
+                />
 
                 {(
                   hasVariant(globalVariants, "screen", "mobileOnly")
@@ -194,6 +179,7 @@ const PlasmicDescendants = {
     "root",
     "navbarCustom",
     "textSection",
+    "h1",
     "bigSection",
     "columns",
     "freeBox",
@@ -201,7 +187,8 @@ const PlasmicDescendants = {
   ],
 
   navbarCustom: ["navbarCustom"],
-  textSection: ["textSection", "bigSection", "columns", "freeBox"],
+  textSection: ["textSection", "h1", "bigSection", "columns", "freeBox"],
+  h1: ["h1"],
   bigSection: ["bigSection", "columns", "freeBox"],
   columns: ["columns", "freeBox"],
   freeBox: ["freeBox"],
@@ -239,6 +226,7 @@ export const PlasmicManifesto2 = Object.assign(
     // Helper components rendering sub-elements
     navbarCustom: makeNodeComponent("navbarCustom"),
     textSection: makeNodeComponent("textSection"),
+    h1: makeNodeComponent("h1"),
     bigSection: makeNodeComponent("bigSection"),
     columns: makeNodeComponent("columns"),
     freeBox: makeNodeComponent("freeBox"),

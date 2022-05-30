@@ -13,20 +13,27 @@
   padding: 8px;
 }
 .root:hover {
-  width: 250px;
+  width: 200px;
   background: #c00130;
-  height: 360px;
+  height: 300px;
+  transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
 }
 .img {
   position: relative;
   object-fit: cover;
   max-width: 100%;
+  max-height: 180px;
+  z-index: -1;
+  border-radius: 4px;
 }
 .img > picture > img {
   object-fit: cover;
 }
 .img > .__wab_img-spacer > img {
   object-fit: cover;
+}
+.root:hover .img {
+  max-height: 130px;
 }
 .h1 {
   position: relative;
@@ -144,4 +151,30 @@
 }
 .root:hover .slotTargetDescription {
   color: #ffffff;
+  font-size: 9px;
+  line-height: 1.1;
+}
+.root:hover .slotTargetDescription > .__wab_text,
+.root:hover .slotTargetDescription > .__wab_slot-string-wrapper,
+.root:hover .slotTargetDescription > .__wab_slot > .__wab_text,
+.root:hover .slotTargetDescription > .__wab_slot > .__wab_slot-string-wrapper,
+.root:hover .slotTargetDescription > .__wab_slot > .__wab_slot > .__wab_text,
+.root:hover
+  .slotTargetDescription
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper,
+.root:hover
+  .slotTargetDescription
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_text,
+.root:hover
+  .slotTargetDescription
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot-string-wrapper {
+  text-decoration-line: none;
 }

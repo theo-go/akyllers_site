@@ -1,0 +1,21 @@
+.root {
+  object-fit: cover;
+  max-width: 100%;
+  height: 427px;
+  transform: none;
+  position: relative;
+}
+.root > picture > img {
+  object-fit: cover;
+}
+.root > .__wab_img-spacer > img {
+  object-fit: cover;
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .root {
+    transform: none;
+  }
+}
+.root:hover {
+  transform: scaleX(1.2) scaleY(1.2) scaleZ(1);
+}
