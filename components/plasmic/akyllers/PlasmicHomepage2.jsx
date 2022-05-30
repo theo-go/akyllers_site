@@ -147,7 +147,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                   <p.PlasmicImg
                     alt={""}
                     className={classNames(sty.img__yzMV)}
-                    displayHeight={"auto"}
+                    displayHeight={"427px"}
                     displayMaxHeight={"none"}
                     displayMaxWidth={"100%"}
                     displayMinHeight={"0"}
@@ -179,7 +179,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         sty.h1__vdsuy
                       )}
                     >
-                      {"LFG = Life is a Game"}
+                      {"We are Fam."}
                     </h1>
 
                     <div
@@ -190,7 +190,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                       )}
                     >
                       {
-                        "From the Hood, to the Arcade, we're bringing decentralized stuff to the 80s."
+                        "From the Hood, to the Arcade, a decentralized brand with a vision to bridge fun, learning, & earning. "
                       }
                     </div>
                   </div>
@@ -217,7 +217,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                       )}
                     >
                       {
-                        "Here is to all the misfits, the rebels, the gamers who rejected reality and created one of their own. Here's what we are here to build: A new way of doin' things."
+                        "To all the misfits, the rebels, the gamers who rejected reality and created one of their own. Here's what we are here to build: A new way of doin' things."
                       }
                     </div>
                   </div>
@@ -249,7 +249,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                 )}
               >
                 {
-                  "We are here to build together, to create together, to have fun & grow together as we embark on a journey that has no attachment to status quo. We, Akyllers, live in a world beyond your world, in a hood that joins creators, builders, individuals who are bold enough to be humble, proud, and defiant. "
+                  "We are here to build, to create, have fun & grow together as we embark on a journey that has no attachment to status quo. We, Akyllers, live in a world beyond your world, in a hood that joins creators, builders, individuals who are bold enough to be humble, proud, and defiant. "
                 }
               </div>
 
