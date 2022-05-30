@@ -38,7 +38,8 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "cELQgcBTCpXC8URn4hyouo",
@@ -706,6 +707,11 @@
           "id": "nBsNmOwk6",
           "name": "Untitled_Artwork 2 copy 2.jpg",
           "filePath": "../public/plasmic/akyllers/images/untitledArtwork2Copy2Jpg.jpeg"
+        },
+        {
+          "id": "N_YfLRcG6",
+          "name": "vhs.png",
+          "filePath": "../public/plasmic/akyllers/images/vhspng.png"
         }
       ],
       "indirect": false,
@@ -849,7 +855,8 @@
           "name": "Tabs",
           "componentImportPath": "@plasmicpkgs/antd"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -868,7 +875,8 @@
           "name": "YouTube",
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -902,7 +910,8 @@
           "name": "Embed",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ]
+      ],
+      "jsBundleThemes": []
     }
   ],
   "globalVariants": {
