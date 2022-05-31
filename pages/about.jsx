@@ -9,7 +9,7 @@ function Homepage2() {
   const [resources, setResources] = useState([]);
 
   useEffect(() => {
-    var airtable_url = "https://api.airtable.com/v0/appaMdZWgP7E2X944/Team?api_key=" + "key5t3q3H8TgvBOMs"
+    var airtable_url = "https://api.airtable.com/v0/appaMdZWgP7E2X944/Team?api_key=" + "key5t3q3H8TgvBOMs" + "&view=Grid%20view"
     fetch(airtable_url)
       .then((res) => res.json())
       .then((resources) => {

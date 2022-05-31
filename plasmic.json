@@ -712,6 +712,31 @@
           "id": "N_YfLRcG6",
           "name": "vhs.png",
           "filePath": "../public/plasmic/akyllers/images/vhspng.png"
+        },
+        {
+          "id": "1WgNVb2J8",
+          "name": "Twitter Banner.jpg",
+          "filePath": "../public/plasmic/akyllers/images/twitterBannerjpg.jpeg"
+        },
+        {
+          "id": "1_tppgXkO",
+          "name": "pexels-aleksandar-pasaric-2385210.jpg",
+          "filePath": "../public/plasmic/akyllers/images/pexelsAleksandarPasaric2385210Jpg.jpeg"
+        },
+        {
+          "id": "-DiIvP1_p",
+          "name": "pexels-aleksandar-pasaric-2338113.jpg",
+          "filePath": "../public/plasmic/akyllers/images/pexelsAleksandarPasaric2338113Jpg.jpeg"
+        },
+        {
+          "id": "M2tw79rCY",
+          "name": "Untitled design.png 2",
+          "filePath": "../public/plasmic/akyllers/images/untitledDesignpng2.png"
+        },
+        {
+          "id": "g-EtGokY5",
+          "name": "Main page.png",
+          "filePath": "../public/plasmic/akyllers/images/mainPagepng.png"
         }
       ],
       "indirect": false,

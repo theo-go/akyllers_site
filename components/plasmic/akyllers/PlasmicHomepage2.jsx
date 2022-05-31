@@ -198,7 +198,7 @@ function PlasmicHomepage2__RenderFunc(props) {
                         sty.h1__pOx8O
                       )}
                     >
-                      {"We are gamers... processing..."}
+                      {"Initiating... please wait..."}
                     </h1>
 
                     <div
