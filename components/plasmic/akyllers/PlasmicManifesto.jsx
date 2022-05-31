@@ -101,12 +101,18 @@ function PlasmicManifesto__RenderFunc(props) {
             </div>
           </div>
 
-          <TrueFooter
-            data-plasmic-name={"trueFooter"}
-            data-plasmic-override={overrides.trueFooter}
-            className={classNames("__wab_instance", sty.trueFooter)}
-            darkMode={true}
-          />
+          <div
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
+            <TrueFooter
+              data-plasmic-name={"trueFooter"}
+              data-plasmic-override={overrides.trueFooter}
+              className={classNames("__wab_instance", sty.trueFooter)}
+              darkMode={true}
+            />
+          </div>
         </p.Stack>
       </div>
     </React.Fragment>
@@ -114,11 +120,21 @@ function PlasmicManifesto__RenderFunc(props) {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "navbarCustom", "textSection", "h1", "text", "trueFooter"],
+  root: [
+    "root",
+    "navbarCustom",
+    "textSection",
+    "h1",
+    "text",
+    "freeBox",
+    "trueFooter"
+  ],
+
   navbarCustom: ["navbarCustom"],
   textSection: ["textSection", "h1", "text"],
   h1: ["h1"],
   text: ["text"],
+  freeBox: ["freeBox", "trueFooter"],
   trueFooter: ["trueFooter"]
 };
 
@@ -155,6 +171,7 @@ export const PlasmicManifesto = Object.assign(
     textSection: makeNodeComponent("textSection"),
     h1: makeNodeComponent("h1"),
     text: makeNodeComponent("text"),
+    freeBox: makeNodeComponent("freeBox"),
     trueFooter: makeNodeComponent("trueFooter"),
     // Metadata about props expected for PlasmicManifesto
     internalVariantProps: PlasmicManifesto__VariantProps,
