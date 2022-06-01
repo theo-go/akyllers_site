@@ -144,7 +144,7 @@ function PlasmicManifesto6__RenderFunc(props) {
                           fullHeight: 2136,
                           aspectRatio: undefined
                         }}
-                        preload={"auto"}
+                        preload={"none"}
                         src={
                           "https://firebasestorage.googleapis.com/v0/b/lexyom-site.appspot.com/o/vid3.mp4?alt=media&token=0b8cd44f-0b19-4160-8c90-38c2f24a1c79"
                         }
