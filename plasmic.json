@@ -742,6 +742,11 @@
           "id": "iaJAd6P9S",
           "name": "ppl_v2.png",
           "filePath": "../public/plasmic/akyllers/images/pplV2Png.png"
+        },
+        {
+          "id": "7BGXllZ_6",
+          "name": "mainPagepng2.png",
+          "filePath": "../public/plasmic/akyllers/images/mainPagepng2Png.png"
         }
       ],
       "indirect": false,

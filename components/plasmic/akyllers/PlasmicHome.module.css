@@ -27,7 +27,7 @@
 }
 @media (min-width: 0px) and (max-width: 768px) {
   .root {
-    background: url("/plasmic/akyllers/images/mainPagepng.png") top 50% left 50% / cover repeat,
+    background: url("/plasmic/akyllers/images/mainPagepng2Png.png") top 50% left 50% / cover repeat,
       linear-gradient(160deg, #0b0d12 0%, #433661 100%) 0% 0% / 100% 100% repeat;
   }
 }
