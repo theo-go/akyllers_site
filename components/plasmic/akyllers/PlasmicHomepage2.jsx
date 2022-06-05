@@ -372,18 +372,20 @@ function PlasmicHomepage2__RenderFunc(props) {
                     sty.h1__jysa3
                   )}
                 >
-                  {"Title goes here"}
+                  {"The Crew"}
                 </h1>
 
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text__ukAwi
-                  )}
-                >
-                  {"Enter some text"}
-                </div>
+                {true ? (
+                  <div
+                    className={classNames(
+                      projectcss.all,
+                      projectcss.__wab_text,
+                      sty.text__ukAwi
+                    )}
+                  >
+                    {"Building dope stuff with a vision"}
+                  </div>
+                ) : null}
               </div>
 
               <p.Stack

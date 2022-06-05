@@ -10,6 +10,7 @@
 // Component: OETkP4aQ7kj
 import * as React from "react";
 import Head from "next/head";
+import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
 import {
   classNames,
@@ -172,9 +173,30 @@ function PlasmicManifesto6__RenderFunc(props) {
                           sty.text__piHA
                         )}
                       >
-                        {
-                          "Look back is an amazin' creation by @sirendontplay for the Akyllers Fam. It represents our Ethos, where we came from, how we did things. Reminiscing on where we came from, how we did things, proud of the moments when we had our back against the wall; when nothing made sense, but still we dreamt. \n\nLook back is a song for everyone to remember that family is the n'1 super power in everythin' that we do, everyday. \n\nHere is to the Misfits, ohh wait, there are non here.  "
-                        }
+                        <React.Fragment>
+                          <React.Fragment>{"Look back is an "}</React.Fragment>
+                          <p.PlasmicLink
+                            data-plasmic-name={"link"}
+                            data-plasmic-override={overrides.link}
+                            className={classNames(
+                              projectcss.all,
+                              projectcss.a,
+                              projectcss.__wab_text,
+                              projectcss.plasmic_default__inline,
+                              sty.link
+                            )}
+                            component={Link}
+                            href={"https://twitter.com/SDP808OD"}
+                            platform={"nextjs"}
+                          >
+                            {"amazin' creation by @SireDontPlay"}
+                          </p.PlasmicLink>
+                          <React.Fragment>
+                            {
+                              " for the Akyllers Fam. It represents our Ethos, where we came from, how we did things. Reminiscing on where we came from, how we did things, proud of the moments when we had our back against the wall; when nothing made sense, but still we dreamt. \n\nLook back is a song for everyone to remember that family is the n'1 super power in everythin' that we do, everyday. \n\nHere is to the Misfits, ohh wait, there are non here.  "
+                            }
+                          </React.Fragment>
+                        </React.Fragment>
                       </div>
                     </div>
                   </p.Stack>
@@ -454,6 +476,7 @@ const PlasmicDescendants = {
     "song",
     "columns",
     "htmlVideo",
+    "link",
     "banners",
     "newArtDiv",
     "artStack",
@@ -472,6 +495,7 @@ const PlasmicDescendants = {
     "song",
     "columns",
     "htmlVideo",
+    "link",
     "banners",
     "newArtDiv",
     "artStack",
@@ -483,9 +507,10 @@ const PlasmicDescendants = {
 
   quote: ["quote", "freeBox"],
   freeBox: ["freeBox"],
-  song: ["song", "columns", "htmlVideo"],
-  columns: ["columns", "htmlVideo"],
+  song: ["song", "columns", "htmlVideo", "link"],
+  columns: ["columns", "htmlVideo", "link"],
   htmlVideo: ["htmlVideo"],
+  link: ["link"],
   banners: ["banners"],
   newArtDiv: ["newArtDiv", "artStack", "newArt"],
   artStack: ["artStack", "newArt"],
@@ -532,6 +557,7 @@ export const PlasmicManifesto6 = Object.assign(
     song: makeNodeComponent("song"),
     columns: makeNodeComponent("columns"),
     htmlVideo: makeNodeComponent("htmlVideo"),
+    link: makeNodeComponent("link"),
     banners: makeNodeComponent("banners"),
     newArtDiv: makeNodeComponent("newArtDiv"),
     artStack: makeNodeComponent("artStack"),

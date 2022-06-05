@@ -115,7 +115,13 @@ function PlasmicTrueFooter__RenderFunc(props) {
           <p.Stack
             as={"div"}
             hasGap={true}
-            className={classNames(projectcss.all, sty.freeBox__vVTq)}
+            className={classNames(projectcss.all, sty.freeBox__vVTq, {
+              [sty.freeBoxdarkMode__vVTqIscWr]: hasVariant(
+                variants,
+                "darkMode",
+                "darkMode"
+              )
+            })}
           >
             <FooterLink
               className={classNames("__wab_instance", sty.footerLink__rOA, {
@@ -177,6 +183,22 @@ function PlasmicTrueFooter__RenderFunc(props) {
               }
             >
               {"FORUM"}
+            </FooterLink>
+
+            <FooterLink
+              className={classNames("__wab_instance", sty.footerLink__fTpD, {
+                [sty.footerLinkdarkMode__fTpDIscWr]: hasVariant(
+                  variants,
+                  "darkMode",
+                  "darkMode"
+                )
+              })}
+              link={"/legal"}
+              whiteColor={
+                hasVariant(variants, "darkMode", "darkMode") ? true : undefined
+              }
+            >
+              {"LEGAL"}
             </FooterLink>
 
             <FooterLink

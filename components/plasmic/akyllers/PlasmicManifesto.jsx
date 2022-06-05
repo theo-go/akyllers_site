@@ -96,7 +96,7 @@ function PlasmicManifesto__RenderFunc(props) {
               )}
             >
               {
-                "A lot have written, but few have acted, \nhere is to the ones who work in silence\nto the beavers, the emmets, the creators.\n\nHere goest to the misfits, the humble, the \nloving peeps who enjoy bein' part of a family, \npart of a crew.Here is to those who do not \nbelieve in hierarchy but still believe in order. \n\nAkyllers is a brand created by akyllers, \nto a world that has yet to discover the beauty \nof buildin' as a fam bringing gamers, skaters, \nengineers, creators, writers, photographers, \nphilosophers, doctors all together as one.\n\nGet ready to jump into a new world, a world \ninspired by beautiful things that actually work. \nA new way of doing things of living, working and \nlearning while having fun, \n\nWho said things have to be hard, who said things \nhave to be complex. We believe in a new way of life, \nWe are liberating minds\nWe are Akyllers.  "
+                "A lot have written, but few have acted, \nhere is to the ones who work in silence\nto the beavers, the emmets, the creators.\n\nHere goes to the misfits, the humble, the \nloving peeps who enjoy bein' part of a family, \npart of a crew. Here is to those who do not \nbelieve in hierarchy but still believe in order. \n\nAkyllers is a brand, created by akyllers, \nto the world.\n\nGet ready to jump into a new world, a world \ninspired by beautiful things that actually work. \nA new way of doing things, of living, working and \nlearning while having fun. \n\nWho said things have to be hard?\nWho said things have to be complex?\nWe believe in a new way of life, \n\nLiberating minds.\nWe are Akyllers.  "
               }
             </div>
           </div>
