@@ -1,0 +1,20 @@
+.rhap_button-clear {
+    color: #d4d4d4;
+    overflow: unset;
+}
+.rhap_button-clear span {
+    max-height: 130%;
+}
+
+.rhap_container {
+    position: fixed;
+    z-index: 9999;
+    bottom: 0px;
+    left: 0px;
+    min-width: 100px;
+    min-height: 100px;
+    width: 300px;
+    background: none;
+    border-radius: 10px;
+    box-shadow: none
+}
