@@ -30,10 +30,7 @@ const parentWrapper = {
 }
 
 
-
-
-
-export function OuterLayout({ children }) {
+function OuterLayout({ children }) {
 
     const [playlist, setPlaylist] = useState(allTunes);
     const [tuneIndex, setTuneIndex] = useState(0);
@@ -107,3 +104,4 @@ export function OuterLayout({ children }) {
     )
 }
 
+export default OuterLayout
