@@ -1,29 +1,38 @@
 import '../styles/globals.css'
-import React from 'react';
+import React, { useState, useEffect } from 'react'
 
 import { PlasmicRootProvider } from "@plasmicapp/react-web";
 // import OuterLayout from './outerlayout';
 import "./images/audio-player-styles.css"
 
-import AppContextProvider from '../components/AppContext';
 import OuterLayout from "./outerlayout";
 
-// import LoadingScreen from '../components/LoadingScreen'
+import LoadingScreen from '../components/LoadingScreen'
 
 
 
 
 function MyApp({ Component, pageProps }) {
+  const [loading, setLoading] = useState(true)
 
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 3000)
+  }, [])
 
   return (
-    <AppContextProvider>
-      <OuterLayout>
-        <PlasmicRootProvider>
-          <Component {...pageProps} />
-        </PlasmicRootProvider>
-      </OuterLayout>
-    </AppContextProvider>
+    <>
+      {loading === false ? (
+
+        <OuterLayout>
+          <PlasmicRootProvider className={"fade-in"}>
+            <Component {...pageProps} />
+          </PlasmicRootProvider>
+        </OuterLayout>
+      ) : (
+        <LoadingScreen className={"fade-in"} />
+      )}
+    </>
+
   );
 }
 

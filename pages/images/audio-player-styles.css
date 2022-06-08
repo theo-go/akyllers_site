@@ -1,20 +1,24 @@
 .rhap_button-clear {
-    color: #d4d4d4;
-    overflow: unset;
+    color: #d4d4d4 !important;
+    overflow: unset !important;
 }
 .rhap_button-clear span {
-    max-height: 130%;
+    max-height: 130% !important;
 }
 
 .rhap_container {
-    position: fixed;
-    z-index: 9999;
-    bottom: 0px;
-    left: 0px;
-    min-width: 100px;
-    min-height: 100px;
-    width: 300px;
-    background: none;
-    border-radius: 10px;
-    box-shadow: none
+    position: fixed !important;
+    z-index: 9999 !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    min-width: 100px !important;
+    min-height: 100px !important;
+    width: 300px !important;
+    background: none !important;
+    border-radius: 10px !important;
+    box-shadow: none !important
+}
+
+.rhap_progress-section {
+    flex: 2 1 auto !important
 }
