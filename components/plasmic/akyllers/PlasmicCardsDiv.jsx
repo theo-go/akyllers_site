@@ -9,6 +9,7 @@
 // Plasmic Project: cELQgcBTCpXC8URn4hyouo
 // Component: alRcFwfrdE
 import * as React from "react";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -28,6 +29,7 @@ function PlasmicCardsDiv__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultCardsDiv__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <div
       data-plasmic-name={"root"}

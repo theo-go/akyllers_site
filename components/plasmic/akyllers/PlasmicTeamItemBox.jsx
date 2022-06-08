@@ -11,6 +11,7 @@
 import * as React from "react";
 import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -46,6 +47,7 @@ function PlasmicTeamItemBox__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultTeamItemBox__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   const [isRootHover, triggerRootHoverProps] = useTrigger("useHover", {});
   const triggers = {
     hover_root: isRootHover

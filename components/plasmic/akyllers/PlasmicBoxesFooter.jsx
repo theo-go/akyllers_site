@@ -10,6 +10,7 @@
 // Component: oP4880RYxJw
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -35,6 +36,7 @@ function PlasmicBoxesFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultBoxesFooter__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsnK2Y1P6I3Vepj()
   });

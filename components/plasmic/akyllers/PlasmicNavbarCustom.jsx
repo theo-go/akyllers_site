@@ -11,6 +11,7 @@
 import * as React from "react";
 import Link from "next/link";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   hasVariant,
   classNames,
@@ -37,6 +38,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultNavbarCustom__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsnK2Y1P6I3Vepj()
   });

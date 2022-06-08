@@ -10,6 +10,7 @@
 // Component: -LEP2YxQV0
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   hasVariant,
   classNames,
@@ -38,6 +39,7 @@ function PlasmicMmBoxQuote__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultMmBoxQuote__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <p.Stack
       as={"div"}

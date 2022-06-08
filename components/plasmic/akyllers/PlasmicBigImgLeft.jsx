@@ -10,6 +10,7 @@
 // Component: EKBe6rLTgz
 import * as React from "react";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -29,6 +30,7 @@ function PlasmicBigImgLeft__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultBigImgLeft__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <p.PlasmicImg
       data-plasmic-name={"root"}

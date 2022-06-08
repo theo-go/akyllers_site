@@ -11,6 +11,7 @@
 import * as React from "react";
 import Head from "next/head";
 import * as p from "@plasmicapp/react-web";
+import * as ph from "@plasmicapp/host";
 import {
   classNames,
   createPlasmicElementProxy,
@@ -34,6 +35,7 @@ function PlasmicManifesto3__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
   const args = Object.assign({}, defaultManifesto3__Args, props.args);
   const $props = args;
+  const $ctx = ph.useDataEnv?.() || {};
   return (
     <React.Fragment>
       <Head>
