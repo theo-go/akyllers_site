@@ -20,20 +20,21 @@ function MyApp({ Component, pageProps }) {
   }, [])
 
   return (
-    <>
-      {loading === false ? (
+    // <>
+    //   {loading === false ? (
 
         <OuterLayout>
           <PlasmicRootProvider className={"fade-in"}>
             <Component {...pageProps} />
           </PlasmicRootProvider>
         </OuterLayout>
-      ) : (
-        <LoadingScreen className={"fade-in"} />
-      )}
-    </>
+  )
+      // ) : (
+      //   <LoadingScreen className={"fade-in"} />
+      // )}
+  //   </>
 
-  );
+  // );
 }
 
 export default MyApp

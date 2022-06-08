@@ -21,7 +21,7 @@ import {
 } from "@plasmicapp/react-web";
 import NavbarCustom from "../../NavbarCustom"; // plasmic-import: 5sPSsjDnyE/component
 import BoxesFooter from "../../BoxesFooter"; // plasmic-import: oP4880RYxJw/component
-import { Select } from "antd"; // plasmic-import: 2YpGIhkzkpc/codeComponent
+import Select from "antd/lib/select"; // plasmic-import: 2YpGIhkzkpc/codeComponent
 import { Option } from "rc-select"; // plasmic-import: YRr0RPAdEj/codeComponent
 import GalleryItemBox from "../../GalleryItemBox"; // plasmic-import: u3bZHsWi8B/component
 import AttributesBox from "../../AttributesBox"; // plasmic-import: btXf6zq--J/component
@@ -76,14 +76,14 @@ function PlasmicManifesto5__RenderFunc(props) {
             sty.root
           )}
         >
-          <NavbarCustom
-            data-plasmic-name={"navbarCustom"}
-            data-plasmic-override={overrides.navbarCustom}
-            className={classNames("__wab_instance", sty.navbarCustom)}
-            darkLetters={true}
-          />
-
           <div className={classNames(projectcss.all, sty.freeBox__bNqht)}>
+            <NavbarCustom
+              data-plasmic-name={"navbarCustom"}
+              data-plasmic-override={overrides.navbarCustom}
+              className={classNames("__wab_instance", sty.navbarCustom)}
+              darkLetters={true}
+            />
+
             <div
               className={classNames(
                 projectcss.all,
@@ -131,7 +131,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___0Z44V
+                          sty.text__dCuso
                         )}
                       >
                         {"Select"}
@@ -141,7 +141,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                     <Option
                       className={classNames(
                         "__wab_instance",
-                        sty.antdOption___6Z5Fa
+                        sty.antdOption__bzP22
                       )}
                       value={"Option"}
                     >
@@ -149,7 +149,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__h5RUx
+                          sty.text__frKxq
                         )}
                       >
                         {"Option"}
@@ -171,7 +171,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text___3Rv5E
+                          sty.text__g8Res
                         )}
                       >
                         {"Select"}
@@ -181,7 +181,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                     <Option
                       className={classNames(
                         "__wab_instance",
-                        sty.antdOption___8LQ6M
+                        sty.antdOption__hgEpD
                       )}
                       value={"Option"}
                     >
@@ -189,7 +189,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__mHjpG
+                          sty.text__cgij2
                         )}
                       >
                         {"Option"}
@@ -211,7 +211,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__qfBk
+                          sty.text__lPbMt
                         )}
                       >
                         {"Select"}
@@ -221,7 +221,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                     <Option
                       className={classNames(
                         "__wab_instance",
-                        sty.antdOption__dpFL
+                        sty.antdOption___2DOd8
                       )}
                       value={"Option"}
                     >
@@ -229,7 +229,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__v1Y6K
+                          sty.text__vvjmg
                         )}
                       >
                         {"Option"}

@@ -91,12 +91,12 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               "darkLetters"
             )
           })}
-          displayHeight={"auto"}
+          displayHeight={"30px"}
           displayMaxHeight={"none"}
           displayMaxWidth={"none"}
           displayMinHeight={"0"}
           displayMinWidth={"0"}
-          displayWidth={"auto"}
+          displayWidth={"30px"}
           src={
             hasVariant(variants, "darkLetters", "darkLetters") &&
             hasVariant(globalVariants, "screen", "mobileOnly")

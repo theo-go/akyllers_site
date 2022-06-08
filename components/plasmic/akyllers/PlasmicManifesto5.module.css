@@ -27,10 +27,6 @@
   margin-left: 0px;
   margin-top: 16px;
 }
-.navbarCustom:global(.__wab_instance):global(.__wab_instance) {
-  position: relative;
-  margin-bottom: 20px;
-}
 .freeBox__bNqht {
   display: flex;
   position: relative;
@@ -43,6 +39,10 @@
   min-height: 80vh;
   min-width: 0;
   padding: 8px;
+}
+.navbarCustom:global(.__wab_instance):global(.__wab_instance) {
+  max-width: 100%;
+  position: relative;
 }
 .text__xTdFx {
   position: relative;
@@ -142,17 +142,17 @@
   box-shadow: 0px 4px 16px 0px #0000004d;
   border-radius: 8px;
 }
-.text___0Z44V {
+.text__dCuso {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
   min-width: 0;
 }
-.antdOption___6Z5Fa:global(.__wab_instance) {
+.antdOption__bzP22:global(.__wab_instance) {
   max-width: 100%;
 }
-.text__h5RUx {
+.text__frKxq {
   position: relative;
   width: 100%;
   height: auto;
@@ -166,17 +166,17 @@
   box-shadow: 0px 4px 16px 0px #0000004d;
   border-radius: 8px;
 }
-.text___3Rv5E {
+.text__g8Res {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
   min-width: 0;
 }
-.antdOption___8LQ6M:global(.__wab_instance) {
+.antdOption__hgEpD:global(.__wab_instance) {
   max-width: 100%;
 }
-.text__mHjpG {
+.text__cgij2 {
   position: relative;
   width: 100%;
   height: auto;
@@ -190,17 +190,17 @@
   box-shadow: 0px 4px 16px 0px #0000004d;
   border-radius: 8px;
 }
-.text__qfBk {
+.text__lPbMt {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
   min-width: 0;
 }
-.antdOption__dpFL:global(.__wab_instance) {
+.antdOption___2DOd8:global(.__wab_instance) {
   max-width: 100%;
 }
-.text__v1Y6K {
+.text__vvjmg {
   position: relative;
   width: 100%;
   height: auto;

@@ -768,7 +768,7 @@
         {
           "id": "kv6Mk_JNYw",
           "name": "Button",
-          "componentImportPath": "antd"
+          "componentImportPath": "antd/lib/button"
         },
         {
           "id": "iBC45mjTXv",
@@ -778,7 +778,7 @@
         {
           "id": "tRueht1jub",
           "name": "Switch",
-          "componentImportPath": "antd"
+          "componentImportPath": "antd/lib/switch"
         },
         {
           "id": "YRr0RPAdEj",
@@ -793,7 +793,7 @@
         {
           "id": "2YpGIhkzkpc",
           "name": "Select",
-          "componentImportPath": "antd"
+          "componentImportPath": "antd/lib/select"
         },
         {
           "id": "yegZ392NLoV",
@@ -803,7 +803,7 @@
         {
           "id": "F10gpQ1ZhXY",
           "name": "Collapse",
-          "componentImportPath": "antd/lib/collapse/Collapse"
+          "componentImportPath": "@plasmicpkgs/antd"
         },
         {
           "id": "SAEWraOT2YV",
@@ -843,12 +843,12 @@
         {
           "id": "_C8wcdH3BDp",
           "name": "Carousel",
-          "componentImportPath": "antd"
+          "componentImportPath": "antd/lib/carousel"
         },
         {
           "id": "tO9wrxr8Nbb",
           "name": "Input",
-          "componentImportPath": "antd"
+          "componentImportPath": "antd/lib/input"
         },
         {
           "id": "ZJIPHLoTjkN",

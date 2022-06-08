@@ -59,6 +59,8 @@
 }
 .img___6KE {
   object-fit: cover;
+  width: 30px;
+  height: 30px;
 }
 .img___6KE > picture > img {
   object-fit: cover;
