@@ -74,7 +74,7 @@ function PlasmicBoxesFooter__RenderFunc(props) {
           data-plasmic-name={"lightFooterBox"}
           data-plasmic-override={overrides.lightFooterBox}
           className={classNames("__wab_instance", sty.lightFooterBox)}
-          url={"https://discord.com/invite/fGbCdPkDwU"}
+          url={"https://discord.gg/GTDCnC8KM3"}
         />
 
         <DarkFooterBox
