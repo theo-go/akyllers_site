@@ -232,7 +232,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               sty.link__tlyIa
             )}
             component={Link}
-            href={"https://discord.com/invite/fGbCdPkDwU"}
+            href={"https://discord.gg/GTDCnC8KM3"}
             platform={"nextjs"}
             target={"_blank"}
           >

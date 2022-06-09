@@ -233,7 +233,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                 sty.link__sknvu
               )}
               component={Link}
-              href={"https://discord.com/invite/fGbCdPkDwU"}
+              href={"https://discord.gg/GTDCnC8KM3"}
               platform={"nextjs"}
             >
               <DiscordSvgrepoComsvgIcon
