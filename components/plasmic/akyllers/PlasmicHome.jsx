@@ -31,13 +31,11 @@ export const PlasmicHome__VariantProps = new Array();
 
 export const PlasmicHome__ArgProps = new Array();
 
-export const defaultHome__Args = {};
-
 function PlasmicHome__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHome__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsnK2Y1P6I3Vepj()
   });
@@ -48,6 +46,7 @@ function PlasmicHome__RenderFunc(props) {
         <meta name="twitter:card" content="summary" />
         <title key="title">{"Home"}</title>
         <meta key="og:title" property="og:title" content={"Home"} />
+        <meta key="twitter:title" name="twitter:title" content={"Home"} />
       </Head>
 
       <style>{`
@@ -100,7 +99,7 @@ function PlasmicHome__RenderFunc(props) {
               data-plasmic-override={overrides.link}
               className={classNames(projectcss.all, projectcss.a, sty.link)}
               component={Link}
-              href={"/about"}
+              href={`/about`}
               platform={"nextjs"}
             >
               <p.Stack
@@ -142,12 +141,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicHome__ArgProps,
-      internalVariantPropNames: PlasmicHome__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicHome__ArgProps,
+          internalVariantPropNames: PlasmicHome__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicHome__RenderFunc({
       variants,

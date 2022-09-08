@@ -25,13 +25,11 @@ export const PlasmicLightFooterBox2__VariantProps = new Array();
 
 export const PlasmicLightFooterBox2__ArgProps = new Array();
 
-export const defaultLightFooterBox2__Args = {};
-
 function PlasmicLightFooterBox2__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultLightFooterBox2__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <p.PlasmicLink
       data-plasmic-name={"root"}
@@ -47,7 +45,7 @@ function PlasmicLightFooterBox2__RenderFunc(props) {
         sty.root
       )}
       component={Link}
-      href={"/forum"}
+      href={`/forum`}
       platform={"nextjs"}
       target={undefined}
     >
@@ -80,12 +78,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicLightFooterBox2__ArgProps,
-      internalVariantPropNames: PlasmicLightFooterBox2__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicLightFooterBox2__ArgProps,
+          internalVariantPropNames: PlasmicLightFooterBox2__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicLightFooterBox2__RenderFunc({
       variants,

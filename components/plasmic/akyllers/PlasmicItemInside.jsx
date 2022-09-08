@@ -24,20 +24,28 @@ export const PlasmicItemInside__VariantProps = new Array();
 
 export const PlasmicItemInside__ArgProps = new Array("image", "children");
 
-export const defaultItemInside__Args = {
-  image: {
-    src: "/plasmic/akyllers/images/untitledArtwork1Png.png",
-    fullWidth: 500,
-    fullHeight: 500,
-    aspectRatio: undefined
-  }
-};
-
 function PlasmicItemInside__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultItemInside__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          image: {
+            src: "/plasmic/akyllers/images/untitledArtwork1Png.png",
+            fullWidth: 500,
+            fullHeight: 500,
+            aspectRatio: undefined
+          }
+        },
+
+        props.args
+      ),
+
+    [props.args]
+  );
+
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -90,12 +98,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicItemInside__ArgProps,
-      internalVariantPropNames: PlasmicItemInside__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicItemInside__ArgProps,
+          internalVariantPropNames: PlasmicItemInside__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicItemInside__RenderFunc({
       variants,

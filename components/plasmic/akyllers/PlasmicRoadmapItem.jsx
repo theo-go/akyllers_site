@@ -25,13 +25,11 @@ export const PlasmicRoadmapItem__VariantProps = new Array();
 
 export const PlasmicRoadmapItem__ArgProps = new Array("link", "children");
 
-export const defaultRoadmapItem__Args = {};
-
 function PlasmicRoadmapItem__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultRoadmapItem__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <p.PlasmicLink
       data-plasmic-name={"root"}
@@ -69,12 +67,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicRoadmapItem__ArgProps,
-      internalVariantPropNames: PlasmicRoadmapItem__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicRoadmapItem__ArgProps,
+          internalVariantPropNames: PlasmicRoadmapItem__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicRoadmapItem__RenderFunc({
       variants,

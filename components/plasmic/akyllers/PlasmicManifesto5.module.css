@@ -142,17 +142,18 @@
   box-shadow: 0px 4px 16px 0px #0000004d;
   border-radius: 8px;
 }
-.text__dCuso {
+.text__z3Dy7 {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
   min-width: 0;
 }
-.antdOption__bzP22:global(.__wab_instance) {
+.antdOption__nUc01:global(.__wab_instance) {
   max-width: 100%;
+  object-fit: cover;
 }
-.text__frKxq {
+.text__ylzzf {
   position: relative;
   width: 100%;
   height: auto;
@@ -166,17 +167,18 @@
   box-shadow: 0px 4px 16px 0px #0000004d;
   border-radius: 8px;
 }
-.text__g8Res {
+.text__rrang {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
   min-width: 0;
 }
-.antdOption__hgEpD:global(.__wab_instance) {
+.antdOption__e5Mpt:global(.__wab_instance) {
   max-width: 100%;
+  object-fit: cover;
 }
-.text__cgij2 {
+.text__ugJI {
   position: relative;
   width: 100%;
   height: auto;
@@ -190,17 +192,18 @@
   box-shadow: 0px 4px 16px 0px #0000004d;
   border-radius: 8px;
 }
-.text__lPbMt {
+.text__pv6CF {
   position: relative;
   width: 100%;
   height: auto;
   max-width: 800px;
   min-width: 0;
 }
-.antdOption___2DOd8:global(.__wab_instance) {
+.antdOption__lnSxy:global(.__wab_instance) {
   max-width: 100%;
+  object-fit: cover;
 }
-.text__vvjmg {
+.text__pWdV {
   position: relative;
   width: 100%;
   height: auto;
@@ -397,7 +400,7 @@
 .img > picture > img {
   object-fit: cover;
 }
-.img > .__wab_img-spacer > img {
+.img > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .nameDiv {

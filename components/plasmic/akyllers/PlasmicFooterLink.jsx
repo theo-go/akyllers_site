@@ -26,13 +26,11 @@ export const PlasmicFooterLink__VariantProps = new Array("whiteColor");
 
 export const PlasmicFooterLink__ArgProps = new Array("children", "link");
 
-export const defaultFooterLink__Args = {};
-
 function PlasmicFooterLink__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFooterLink__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <p.PlasmicLink
       data-plasmic-name={"root"}
@@ -81,12 +79,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicFooterLink__ArgProps,
-      internalVariantPropNames: PlasmicFooterLink__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicFooterLink__ArgProps,
+          internalVariantPropNames: PlasmicFooterLink__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicFooterLink__RenderFunc({
       variants,

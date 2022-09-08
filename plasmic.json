@@ -38,8 +38,7 @@
           "name": "NavigationBar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "cELQgcBTCpXC8URn4hyouo",
@@ -398,6 +397,19 @@
           "cssFilePath": "plasmic/akyllers/PlasmicBigImgLeft.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "6qmCqWMds9",
+          "name": "Mint",
+          "type": "managed",
+          "projectId": "cELQgcBTCpXC8URn4hyouo",
+          "renderModuleFilePath": "plasmic/akyllers/PlasmicMint.jsx",
+          "importSpec": {
+            "modulePath": "../pages/mint.jsx"
+          },
+          "cssFilePath": "plasmic/akyllers/PlasmicMint.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [
@@ -751,7 +763,13 @@
       ],
       "indirect": false,
       "globalContextsFilePath": "",
-      "codeComponents": []
+      "codeComponents": [
+        {
+          "id": "Qexcr8AW7N",
+          "name": "PlasmicHead",
+          "componentImportPath": "@plasmicapp/react-web"
+        }
+      ]
     },
     {
       "projectId": "28Ba3BDvRe7EiWdfFNnLB6",
@@ -773,7 +791,7 @@
         {
           "id": "iBC45mjTXv",
           "name": "Slider",
-          "componentImportPath": "@plasmicpkgs/antd"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerSlider"
         },
         {
           "id": "tRueht1jub",
@@ -803,7 +821,7 @@
         {
           "id": "F10gpQ1ZhXY",
           "name": "Collapse",
-          "componentImportPath": "@plasmicpkgs/antd"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerCollapse"
         },
         {
           "id": "SAEWraOT2YV",
@@ -873,7 +891,7 @@
         {
           "id": "cv59X4q0WK",
           "name": "Dropdown",
-          "componentImportPath": "@plasmicpkgs/antd"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerDropdown"
         },
         {
           "id": "cHUYQj2aKK",
@@ -888,10 +906,14 @@
         {
           "id": "Hb-DVgvuk3",
           "name": "Tabs",
-          "componentImportPath": "@plasmicpkgs/antd"
+          "componentImportPath": "@plasmicpkgs/antd/skinny/registerTabs"
+        },
+        {
+          "id": "Q0BhxRa-Moi",
+          "name": "Rate",
+          "componentImportPath": "antd/lib/rate"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "enk3K4vZ6pmH6kVCoZJXGn",
@@ -910,8 +932,7 @@
           "name": "YouTube",
           "componentImportPath": "@plasmicpkgs/react-youtube"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     },
     {
       "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
@@ -936,17 +957,16 @@
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         },
         {
-          "id": "Tg8iODh_BQ",
-          "name": "EmbedCss",
-          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
-        },
-        {
           "id": "PKldDYkH42",
           "name": "Embed",
           "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
-      ],
-      "jsBundleThemes": []
+      ]
     }
   ],
   "globalVariants": {
@@ -956,12 +976,6 @@
         "name": "Screen",
         "projectId": "cELQgcBTCpXC8URn4hyouo",
         "contextFilePath": "plasmic/akyllers/PlasmicGlobalVariant__Screen.jsx"
-      },
-      {
-        "id": "q2e6W8ulGYz",
-        "name": "Screen",
-        "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
-        "contextFilePath": "plasmic/plasmic_basic_components/PlasmicGlobalVariant__Screen.jsx"
       }
     ]
   },
@@ -969,6 +983,6 @@
   "nextjsConfig": {
     "pagesDir": "../pages"
   },
-  "cliVersion": "0.1.178",
-  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.178/dist/plasmic.schema.json"
+  "cliVersion": "0.1.186",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.186/dist/plasmic.schema.json"
 }

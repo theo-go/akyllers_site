@@ -30,20 +30,28 @@ export const PlasmicNewArt__ArgProps = new Array(
   "url"
 );
 
-export const defaultNewArt__Args = {
-  image: {
-    src: "/plasmic/akyllers/images/_198XStory1Png2Jpeg.jpeg",
-    fullWidth: 1400,
-    fullHeight: 788,
-    aspectRatio: undefined
-  }
-};
-
 function PlasmicNewArt__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultNewArt__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          image: {
+            src: "/plasmic/akyllers/images/_198XStory1Png2Jpeg.jpeg",
+            fullWidth: 1400,
+            fullHeight: 788,
+            aspectRatio: undefined
+          }
+        },
+
+        props.args
+      ),
+
+    [props.args]
+  );
+
+  const $props = args;
   return (
     <p.PlasmicLink
       data-plasmic-name={"root"}
@@ -108,12 +116,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicNewArt__ArgProps,
-      internalVariantPropNames: PlasmicNewArt__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicNewArt__ArgProps,
+          internalVariantPropNames: PlasmicNewArt__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicNewArt__RenderFunc({
       variants,

@@ -29,20 +29,28 @@ export const PlasmicRoadmapBox__ArgProps = new Array(
   "slot2"
 );
 
-export const defaultRoadmapBox__Args = {
-  image: {
-    src: "/plasmic/akyllers/images/apng.png",
-    fullWidth: 500,
-    fullHeight: 500,
-    aspectRatio: undefined
-  }
-};
-
 function PlasmicRoadmapBox__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultRoadmapBox__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          image: {
+            src: "/plasmic/akyllers/images/apng.png",
+            fullWidth: 500,
+            fullHeight: 500,
+            aspectRatio: undefined
+          }
+        },
+
+        props.args
+      ),
+
+    [props.args]
+  );
+
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -103,7 +111,6 @@ function PlasmicRoadmapBox__RenderFunc(props) {
                   )}
                 >
                   <React.Fragment>
-                    <React.Fragment>{""}</React.Fragment>
                     <span
                       className={"plasmic_default__all plasmic_default__span"}
                       style={{ fontWeight: 700 }}
@@ -168,12 +175,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicRoadmapBox__ArgProps,
-      internalVariantPropNames: PlasmicRoadmapBox__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicRoadmapBox__ArgProps,
+          internalVariantPropNames: PlasmicRoadmapBox__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicRoadmapBox__RenderFunc({
       variants,

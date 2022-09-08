@@ -25,13 +25,11 @@ export const PlasmicDarkFooterBox2__VariantProps = new Array();
 
 export const PlasmicDarkFooterBox2__ArgProps = new Array();
 
-export const defaultDarkFooterBox2__Args = {};
-
 function PlasmicDarkFooterBox2__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultDarkFooterBox2__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <p.PlasmicLink
       data-plasmic-name={"root"}
@@ -80,12 +78,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicDarkFooterBox2__ArgProps,
-      internalVariantPropNames: PlasmicDarkFooterBox2__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicDarkFooterBox2__ArgProps,
+          internalVariantPropNames: PlasmicDarkFooterBox2__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicDarkFooterBox2__RenderFunc({
       variants,

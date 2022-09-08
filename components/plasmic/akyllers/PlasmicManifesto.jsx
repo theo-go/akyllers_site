@@ -27,19 +27,18 @@ export const PlasmicManifesto__VariantProps = new Array();
 
 export const PlasmicManifesto__ArgProps = new Array();
 
-export const defaultManifesto__Args = {};
-
 function PlasmicManifesto__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultManifesto__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <React.Fragment>
       <Head>
         <meta name="twitter:card" content="summary" />
         <title key="title">{"Manifesto"}</title>
         <meta key="og:title" property="og:title" content={"Manifesto"} />
+        <meta key="twitter:title" name="twitter:title" content={"Manifesto"} />
       </Head>
 
       <style>{`
@@ -142,12 +141,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicManifesto__ArgProps,
-      internalVariantPropNames: PlasmicManifesto__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicManifesto__ArgProps,
+          internalVariantPropNames: PlasmicManifesto__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicManifesto__RenderFunc({
       variants,

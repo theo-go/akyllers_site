@@ -24,13 +24,11 @@ export const PlasmicFullText__VariantProps = new Array();
 
 export const PlasmicFullText__ArgProps = new Array("description");
 
-export const defaultFullText__Args = {};
-
 function PlasmicFullText__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultFullText__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -82,12 +80,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicFullText__ArgProps,
-      internalVariantPropNames: PlasmicFullText__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicFullText__ArgProps,
+          internalVariantPropNames: PlasmicFullText__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicFullText__RenderFunc({
       variants,

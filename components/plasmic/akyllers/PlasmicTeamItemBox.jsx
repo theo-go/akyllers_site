@@ -34,20 +34,28 @@ export const PlasmicTeamItemBox__ArgProps = new Array(
   "description"
 );
 
-export const defaultTeamItemBox__Args = {
-  image: {
-    src: "/plasmic/akyllers/images/copyOfNewsletterPodcastCopyjpg.jpeg",
-    fullWidth: 1080,
-    fullHeight: 1080,
-    aspectRatio: undefined
-  }
-};
-
 function PlasmicTeamItemBox__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultTeamItemBox__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          image: {
+            src: "/plasmic/akyllers/images/copyOfNewsletterPodcastCopyjpg.jpeg",
+            fullWidth: 1080,
+            fullHeight: 1080,
+            aspectRatio: undefined
+          }
+        },
+
+        props.args
+      ),
+
+    [props.args]
+  );
+
+  const $props = args;
   const [isRootHover, triggerRootHoverProps] = useTrigger("useHover", {});
   const triggers = {
     hover_root: isRootHover
@@ -157,12 +165,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTeamItemBox__ArgProps,
-      internalVariantPropNames: PlasmicTeamItemBox__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicTeamItemBox__ArgProps,
+          internalVariantPropNames: PlasmicTeamItemBox__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicTeamItemBox__RenderFunc({
       variants,

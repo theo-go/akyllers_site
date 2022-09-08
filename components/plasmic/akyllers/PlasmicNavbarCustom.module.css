@@ -28,7 +28,7 @@
 .img__eiNyK > picture > img {
   object-fit: cover;
 }
-.img__eiNyK > .__wab_img-spacer > img {
+.img__eiNyK > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .img__aPIi {
@@ -37,7 +37,7 @@
 .img__aPIi > picture > img {
   object-fit: cover;
 }
-.img__aPIi > .__wab_img-spacer > img {
+.img__aPIi > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 @media (min-width: 0px) and (max-width: 768px) {
@@ -53,7 +53,7 @@
   }
 }
 @media (min-width: 0px) and (max-width: 768px) {
-  .img__aPIi > .__wab_img-spacer > img {
+  .img__aPIi > :global(.__wab_img-spacer) > img {
     object-fit: contain;
   }
 }
@@ -65,7 +65,7 @@
 .img___6KE > picture > img {
   object-fit: cover;
 }
-.img___6KE > .__wab_img-spacer > img {
+.img___6KE > :global(.__wab_img-spacer) > img {
   object-fit: cover;
 }
 .link__vgXzj {

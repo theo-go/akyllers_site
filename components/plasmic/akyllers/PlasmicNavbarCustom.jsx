@@ -32,13 +32,11 @@ export const PlasmicNavbarCustom__VariantProps = new Array("darkLetters");
 
 export const PlasmicNavbarCustom__ArgProps = new Array();
 
-export const defaultNavbarCustom__Args = {};
-
 function PlasmicNavbarCustom__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultNavbarCustom__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsnK2Y1P6I3Vepj()
   });
@@ -53,7 +51,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
         <p.PlasmicLink
           className={classNames(projectcss.all, projectcss.a, sty.link__qKkg)}
           component={Link}
-          href={"/"}
+          href={`/`}
           platform={"nextjs"}
         >
           <p.PlasmicImg
@@ -135,7 +133,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               }
             )}
             component={Link}
-            href={"/about"}
+            href={`/about`}
             platform={"nextjs"}
           >
             {"ABOUT"}
@@ -156,7 +154,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               }
             )}
             component={Link}
-            href={"/manifesto"}
+            href={`/manifesto`}
             platform={"nextjs"}
           >
             {"manifesto"}
@@ -177,7 +175,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               }
             )}
             component={Link}
-            href={"/roadmap"}
+            href={`/roadmap`}
             platform={"nextjs"}
           >
             {"Roadmap"}
@@ -198,7 +196,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               }
             )}
             component={Link}
-            href={"/forum"}
+            href={`/forum`}
             platform={"nextjs"}
           >
             {"FORUM"}
@@ -219,7 +217,7 @@ function PlasmicNavbarCustom__RenderFunc(props) {
               }
             )}
             component={Link}
-            href={"/gallery"}
+            href={`/gallery`}
             platform={"nextjs"}
           >
             {"Gallery"}
@@ -346,12 +344,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicNavbarCustom__ArgProps,
-      internalVariantPropNames: PlasmicNavbarCustom__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicNavbarCustom__ArgProps,
+          internalVariantPropNames: PlasmicNavbarCustom__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicNavbarCustom__RenderFunc({
       variants,

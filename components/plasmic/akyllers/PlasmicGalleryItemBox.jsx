@@ -29,20 +29,28 @@ export const PlasmicGalleryItemBox__ArgProps = new Array(
   "number"
 );
 
-export const defaultGalleryItemBox__Args = {
-  image: {
-    src: "/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png",
-    fullWidth: 2048,
-    fullHeight: 2048,
-    aspectRatio: undefined
-  }
-};
-
 function PlasmicGalleryItemBox__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultGalleryItemBox__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          image: {
+            src: "/plasmic/akyllers/images/humanMenEyesFacialMouth1Png.png",
+            fullWidth: 2048,
+            fullHeight: 2048,
+            aspectRatio: undefined
+          }
+        },
+
+        props.args
+      ),
+
+    [props.args]
+  );
+
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -129,12 +137,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicGalleryItemBox__ArgProps,
-      internalVariantPropNames: PlasmicGalleryItemBox__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicGalleryItemBox__ArgProps,
+          internalVariantPropNames: PlasmicGalleryItemBox__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicGalleryItemBox__RenderFunc({
       variants,

@@ -23,13 +23,11 @@ export const PlasmicReadButton__VariantProps = new Array();
 
 export const PlasmicReadButton__ArgProps = new Array();
 
-export const defaultReadButton__Args = {};
-
 function PlasmicReadButton__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultReadButton__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -56,12 +54,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicReadButton__ArgProps,
-      internalVariantPropNames: PlasmicReadButton__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicReadButton__ArgProps,
+          internalVariantPropNames: PlasmicReadButton__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicReadButton__RenderFunc({
       variants,

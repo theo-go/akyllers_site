@@ -34,13 +34,11 @@ export const PlasmicHomepage2__VariantProps = new Array();
 
 export const PlasmicHomepage2__ArgProps = new Array();
 
-export const defaultHomepage2__Args = {};
-
 function PlasmicHomepage2__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultHomepage2__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsnK2Y1P6I3Vepj()
   });
@@ -51,6 +49,7 @@ function PlasmicHomepage2__RenderFunc(props) {
         <meta name="twitter:card" content="summary" />
         <title key="title">{"About"}</title>
         <meta key="og:title" property="og:title" content={"About"} />
+        <meta key="twitter:title" name="twitter:title" content={"About"} />
       </Head>
 
       <style>{`
@@ -490,12 +489,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicHomepage2__ArgProps,
-      internalVariantPropNames: PlasmicHomepage2__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicHomepage2__ArgProps,
+          internalVariantPropNames: PlasmicHomepage2__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicHomepage2__RenderFunc({
       variants,

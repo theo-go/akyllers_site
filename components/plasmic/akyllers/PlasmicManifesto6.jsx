@@ -33,13 +33,11 @@ export const PlasmicManifesto6__VariantProps = new Array();
 
 export const PlasmicManifesto6__ArgProps = new Array();
 
-export const defaultManifesto6__Args = {};
-
 function PlasmicManifesto6__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultManifesto6__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsnK2Y1P6I3Vepj()
   });
@@ -50,6 +48,7 @@ function PlasmicManifesto6__RenderFunc(props) {
         <meta name="twitter:card" content="summary" />
         <title key="title">{"Forum"}</title>
         <meta key="og:title" property="og:title" content={"Forum"} />
+        <meta key="twitter:title" name="twitter:title" content={"Forum"} />
       </Head>
 
       <style>{`
@@ -141,12 +140,9 @@ function PlasmicManifesto6__RenderFunc(props) {
                         autoPlay={false}
                         className={classNames("__wab_instance", sty.htmlVideo)}
                         controls={true}
-                        poster={{
-                          src: "/plasmic/akyllers/images/screenshot84Png.png",
-                          fullWidth: 2125,
-                          fullHeight: 2136,
-                          aspectRatio: undefined
-                        }}
+                        poster={
+                          '"/plasmic/akyllers/images/screenshot84Png.png"'
+                        }
                         preload={"none"}
                         src={
                           "https://firebasestorage.googleapis.com/v0/b/lexyom-site.appspot.com/o/vid3.mp4?alt=media&token=0b8cd44f-0b19-4160-8c90-38c2f24a1c79"
@@ -177,22 +173,25 @@ function PlasmicManifesto6__RenderFunc(props) {
                       >
                         <React.Fragment>
                           <React.Fragment>{"Look back is an "}</React.Fragment>
-                          <p.PlasmicLink
-                            data-plasmic-name={"link"}
-                            data-plasmic-override={overrides.link}
-                            className={classNames(
-                              projectcss.all,
-                              projectcss.a,
-                              projectcss.__wab_text,
-                              projectcss.plasmic_default__inline,
-                              sty.link
-                            )}
-                            component={Link}
-                            href={"https://twitter.com/SDP808OD"}
-                            platform={"nextjs"}
-                          >
-                            {"amazin' creation by @SireDontPlay"}
-                          </p.PlasmicLink>
+                          {
+                            <p.PlasmicLink
+                              data-plasmic-name={"link"}
+                              data-plasmic-override={overrides.link}
+                              className={classNames(
+                                projectcss.all,
+                                projectcss.a,
+                                projectcss.__wab_text,
+                                projectcss.plasmic_default__inline,
+                                sty.link
+                              )}
+                              component={Link}
+                              href={"https://twitter.com/SDP808OD"}
+                              platform={"nextjs"}
+                            >
+                              {"amazin' creation by @SireDontPlay"}
+                            </p.PlasmicLink>
+                          }
+
                           <React.Fragment>
                             {
                               " for the Akyllers Fam. It represents our Ethos, where we came from, how we did things. Reminiscing on where we came from, how we did things, proud of the moments when we had our back against the wall; when nothing made sense, but still we dreamt. \n\nLook back is a song for everyone to remember that family is the n'1 super power in everythin' that we do, everyday. \n\nHere is to the Misfits, ohh wait, there are non here.  "
@@ -524,12 +523,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicManifesto6__ArgProps,
-      internalVariantPropNames: PlasmicManifesto6__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicManifesto6__ArgProps,
+          internalVariantPropNames: PlasmicManifesto6__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicManifesto6__RenderFunc({
       variants,

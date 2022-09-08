@@ -32,13 +32,11 @@ export const PlasmicTrueFooter__VariantProps = new Array("darkMode");
 
 export const PlasmicTrueFooter__ArgProps = new Array();
 
-export const defaultTrueFooter__Args = {};
-
 function PlasmicTrueFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultTrueFooter__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsnK2Y1P6I3Vepj()
   });
@@ -69,7 +67,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                 sty.link__eiFPj
               )}
               component={Link}
-              href={"/"}
+              href={`/`}
               platform={"nextjs"}
             >
               <p.PlasmicImg
@@ -133,7 +131,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
-              link={"/about"}
+              link={`/about`}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -149,7 +147,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
-              link={"/manifesto"}
+              link={`/manifesto`}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -163,7 +161,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
-              link={"/roadmap"}
+              link={`/roadmap`}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -179,7 +177,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
-              link={"/forum"}
+              link={`/forum`}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -195,7 +193,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
-              link={"/legal"}
+              link={`/legal`}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -211,7 +209,7 @@ function PlasmicTrueFooter__RenderFunc(props) {
                   "darkMode"
                 )
               })}
-              link={"/gallery"}
+              link={`/gallery`}
               whiteColor={
                 hasVariant(variants, "darkMode", "darkMode") ? true : undefined
               }
@@ -305,12 +303,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicTrueFooter__ArgProps,
-      internalVariantPropNames: PlasmicTrueFooter__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicTrueFooter__ArgProps,
+          internalVariantPropNames: PlasmicTrueFooter__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicTrueFooter__RenderFunc({
       variants,

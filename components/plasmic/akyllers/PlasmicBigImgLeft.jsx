@@ -24,13 +24,11 @@ export const PlasmicBigImgLeft__VariantProps = new Array();
 
 export const PlasmicBigImgLeft__ArgProps = new Array();
 
-export const defaultBigImgLeft__Args = {};
-
 function PlasmicBigImgLeft__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultBigImgLeft__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   return (
     <p.PlasmicImg
       data-plasmic-name={"root"}
@@ -67,12 +65,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicBigImgLeft__ArgProps,
-      internalVariantPropNames: PlasmicBigImgLeft__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicBigImgLeft__ArgProps,
+          internalVariantPropNames: PlasmicBigImgLeft__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicBigImgLeft__RenderFunc({
       variants,

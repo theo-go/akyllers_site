@@ -30,13 +30,11 @@ export const PlasmicBoxesFooter__VariantProps = new Array();
 
 export const PlasmicBoxesFooter__ArgProps = new Array();
 
-export const defaultBoxesFooter__Args = {};
-
 function PlasmicBoxesFooter__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultBoxesFooter__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsnK2Y1P6I3Vepj()
   });
@@ -124,12 +122,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicBoxesFooter__ArgProps,
-      internalVariantPropNames: PlasmicBoxesFooter__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicBoxesFooter__ArgProps,
+          internalVariantPropNames: PlasmicBoxesFooter__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicBoxesFooter__RenderFunc({
       variants,

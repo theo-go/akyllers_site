@@ -35,13 +35,11 @@ export const PlasmicManifesto5__VariantProps = new Array();
 
 export const PlasmicManifesto5__ArgProps = new Array();
 
-export const defaultManifesto5__Args = {};
-
 function PlasmicManifesto5__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultManifesto5__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(() => Object.assign({}, props.args), [props.args]);
+  const $props = args;
   const globalVariants = ensureGlobalVariants({
     screen: useScreenVariantsnK2Y1P6I3Vepj()
   });
@@ -52,6 +50,7 @@ function PlasmicManifesto5__RenderFunc(props) {
         <meta name="twitter:card" content="summary" />
         <title key="title">{"Gallery"}</title>
         <meta key="og:title" property="og:title" content={"Gallery"} />
+        <meta key="twitter:title" name="twitter:title" content={"Gallery"} />
       </Head>
 
       <style>{`
@@ -131,7 +130,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__dCuso
+                          sty.text__z3Dy7
                         )}
                       >
                         {"Select"}
@@ -141,7 +140,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                     <Option
                       className={classNames(
                         "__wab_instance",
-                        sty.antdOption__bzP22
+                        sty.antdOption__nUc01
                       )}
                       value={"Option"}
                     >
@@ -149,7 +148,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__frKxq
+                          sty.text__ylzzf
                         )}
                       >
                         {"Option"}
@@ -171,7 +170,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__g8Res
+                          sty.text__rrang
                         )}
                       >
                         {"Select"}
@@ -181,7 +180,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                     <Option
                       className={classNames(
                         "__wab_instance",
-                        sty.antdOption__hgEpD
+                        sty.antdOption__e5Mpt
                       )}
                       value={"Option"}
                     >
@@ -189,7 +188,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__cgij2
+                          sty.text__ugJI
                         )}
                       >
                         {"Option"}
@@ -211,7 +210,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__lPbMt
+                          sty.text__pv6CF
                         )}
                       >
                         {"Select"}
@@ -221,7 +220,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                     <Option
                       className={classNames(
                         "__wab_instance",
-                        sty.antdOption___2DOd8
+                        sty.antdOption__lnSxy
                       )}
                       value={"Option"}
                     >
@@ -229,7 +228,7 @@ function PlasmicManifesto5__RenderFunc(props) {
                         className={classNames(
                           projectcss.all,
                           projectcss.__wab_text,
-                          sty.text__vvjmg
+                          sty.text__pWdV
                         )}
                       >
                         {"Option"}
@@ -621,12 +620,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicManifesto5__ArgProps,
-      internalVariantPropNames: PlasmicManifesto5__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicManifesto5__ArgProps,
+          internalVariantPropNames: PlasmicManifesto5__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicManifesto5__RenderFunc({
       variants,

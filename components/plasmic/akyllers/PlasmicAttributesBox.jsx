@@ -28,20 +28,28 @@ export const PlasmicAttributesBox__ArgProps = new Array(
   "typeAnswer"
 );
 
-export const defaultAttributesBox__Args = {
-  image: {
-    src: "/plasmic/akyllers/images/untitledArtwork5Png.png",
-    fullWidth: 500,
-    fullHeight: 500,
-    aspectRatio: undefined
-  }
-};
-
 function PlasmicAttributesBox__RenderFunc(props) {
   const { variants, overrides, forNode } = props;
-  const args = Object.assign({}, defaultAttributesBox__Args, props.args);
-  const $props = args;
   const $ctx = ph.useDataEnv?.() || {};
+  const args = React.useMemo(
+    () =>
+      Object.assign(
+        {
+          image: {
+            src: "/plasmic/akyllers/images/untitledArtwork5Png.png",
+            fullWidth: 500,
+            fullHeight: 500,
+            aspectRatio: undefined
+          }
+        },
+
+        props.args
+      ),
+
+    [props.args]
+  );
+
+  const $props = args;
   return (
     <div
       data-plasmic-name={"root"}
@@ -112,12 +120,17 @@ const PlasmicDescendants = {
 
 function makeNodeComponent(nodeName) {
   const func = function (props) {
-    const { variants, args, overrides } = deriveRenderOpts(props, {
-      name: nodeName,
-      descendantNames: [...PlasmicDescendants[nodeName]],
-      internalArgPropNames: PlasmicAttributesBox__ArgProps,
-      internalVariantPropNames: PlasmicAttributesBox__VariantProps
-    });
+    const { variants, args, overrides } = React.useMemo(
+      () =>
+        deriveRenderOpts(props, {
+          name: nodeName,
+          descendantNames: [...PlasmicDescendants[nodeName]],
+          internalArgPropNames: PlasmicAttributesBox__ArgProps,
+          internalVariantPropNames: PlasmicAttributesBox__VariantProps
+        }),
+
+      [props, nodeName]
+    );
 
     return PlasmicAttributesBox__RenderFunc({
       variants,
