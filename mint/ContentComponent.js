@@ -131,10 +131,10 @@ const ContentComponent = () => {
                 try {
                     const res = await contract.Presalemint(mintNumber ? mintNumber : 1,  data , {value: ethers.utils.parseEther("0.05")});
                     console.log(contract);
-                    notifymessage("Allowlist mint success!", "success");
+                    notifymessage("Mint success!", "success");
                 } catch (error) {
                     notifymessage(
-                        "Allowlist mint failed! Please check your wallet.",
+                        "Mint failed! Please check your wallet.",
                         "error"
                     );
                     console.log("Error: ", error);
@@ -166,7 +166,7 @@ const ContentComponent = () => {
                 <p className="MintBtn" onClick={mintMax}>
                     MINT
                 </p>
-                Number of NFT's to be minted: 
+                NFT's to be minted: 
                 <input type="number" placeholder="Mint" max={2} min={1} onChange={(e) => setMintNumber(e.target.value)} value={mintNumber}  />
                 <p className="MintCount">{minted} / 4444 Minted</p>
             </div>
