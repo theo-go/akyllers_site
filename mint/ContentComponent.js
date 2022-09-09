@@ -128,9 +128,8 @@ const ContentComponent = () => {
 
                 const leftToMint = await contract.balanceOf(account);
                 let mintPriceHex = await contract.cost();
-
                 try {
-                    const res = await contract.Presalemint(mintNumber ? mintNumber : 1,  data , {value: ethers.utils.parseEther("0.05")});
+                    const res = await contract.Presalemint(mintNumber ? mintNumber : 1,  data , {value: ethers.utils.parseEther(`${mintNumber * 0.05}`)});
                     notifymessage("Mint success!", "success");
                 } catch (error) {
                     notifymessage(
