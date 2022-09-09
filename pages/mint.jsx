@@ -4,6 +4,16 @@ import * as React from "react";
 import * as ph from "@plasmicapp/host";
 import { PlasmicMint } from "../components/plasmic/akyllers/PlasmicMint";
 import { useRouter } from "next/router";
+import { Web3ReactProvider } from '@web3-react/core'
+import { Web3Provider } from '@ethersproject/providers'
+import ContentComponent from "../mint/ContentComponent";
+import Image from "next/image";
+
+const getLibrary = (provider) => {
+  const library = new Web3Provider(provider, 'any')
+  library.pollingInterval = 15000
+  return library
+}
 
 function Mint() {
   // Use PlasmicMint to render this component as it was
@@ -24,7 +34,12 @@ function Mint() {
   // (https://nextjs.org/docs/advanced-features/custom-app).
   return (
     <ph.PageParamsProvider params={useRouter().query} query={useRouter().query}>
-      <PlasmicMint />
+      <Web3ReactProvider getLibrary={getLibrary}>
+        <div className="ag-sparks">
+          <img src="/plasmic/akyllers/images/logopng.png" className="mintLogo" />
+        </div>
+        <ContentComponent />
+      </Web3ReactProvider>
     </ph.PageParamsProvider>
   );
 }

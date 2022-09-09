@@ -3,7 +3,9 @@ import React, { useState, useEffect } from 'react'
 
 import { PlasmicRootProvider } from "@plasmicapp/react-web";
 // import OuterLayout from './outerlayout';
-import "./images/audio-player-styles.css"
+import "./images/audio-player-styles.css";
+
+import '../mint/mint.animations.css';
 
 import OuterLayout from "./outerlayout";
 
