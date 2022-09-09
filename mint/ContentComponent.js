@@ -73,7 +73,7 @@ const ContentComponent = () => {
 
     useEffect(() => {
         if (account) {
-            isOG(account).then((res) => {
+            isAllowList(account).then((res) => {
                 if (res.data && res.data.length > 0) {
                     setAccountType("OG");
                     setData(res.data);
@@ -100,13 +100,12 @@ const ContentComponent = () => {
     }, []);
 
     const mintNFT = async () => {
-        const chainId = 4; // 1: ethereum mainnet, 4: rinkeby
-        console.log("current", window.ethereum.networkVersion);
+        const chainId = 1; // 1: ethereum mainnet, 4: rinkeby
         if (window.ethereum.networkVersion !== chainId) {
             try {
                 await window.ethereum.request({
                     method: "wallet_switchEthereumChain",
-                    params: [{ chainId: "0x4" }], // 0x4 is rinkeby. Ox1 is ethereum mainnet.
+                    params: [{ chainId: "0x1" }], // 0x4 is rinkeby. Ox1 is ethereum mainnet.
                 });
             } catch (err) {
                 notifymessage("Please check the Ethereum mainnet", "error");
@@ -121,22 +120,18 @@ const ContentComponent = () => {
             Contract.abi,
             signer
         );
-        console.log("contract",contract);
 
         const isOpen = await contract.paused();
         if (!isOpen) {
-            
             const leftToMint = await contract.balanceOf(account);
-                console.log("Left To Mint: ",leftToMint.toNumber());
-                let mintPriceHex = await contract.cost(); 
-                console.log("Price:",mintPriceHex.toNumber())
+                let mintPriceHex = await contract.cost();
                 try {
-                    const res = await contract.Presalemint(1,  data , {value: 22});
+                    const res = await contract.Presalemint(1,  data , {value: ethers.utils.parseEther("0.05")});
                     console.log(contract);
-                    notifymessage("OG mint success!", "success");
+                    notifymessage("Allowlist mint success!", "success");
                 } catch (error) {
                     notifymessage(
-                        "OG mint failed! Please check your wallet.",
+                        "Allowlist mint failed! Please check your wallet.",
                         "error"
                     );
                     console.log("Error: ", error);

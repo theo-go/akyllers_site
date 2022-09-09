@@ -1,6 +1,6 @@
 export const API_URL = "http://localhost:8081";
 export const Contract = {
-    address: "0x5Fef5FfA7ED4822a60C02c3fc05741Fc942b36C8",
+    address: "0x145ac4edffae802d8260d64e5720e4b210039c71",
     abi: [
         {
             inputs: [
