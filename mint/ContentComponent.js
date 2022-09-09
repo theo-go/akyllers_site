@@ -127,18 +127,21 @@ const ContentComponent = () => {
         if (!isOpen) {
                 const leftToMint = await contract.balanceOf(account);
                 let mintPriceHex = await contract.cost();
+
+                if(data && data.length === 0) {
+                    notifymessage("You're not eligable for mint yet! Whitelisted users only.", "warning");
+                }
                 try {
                     const res = await contract.Presalemint(mintNumber ? mintNumber : 1,  data , {value: 0});
                     //console.log(`${mintNumber} NFT's minted. Price: ${mintNumber * 0.05} Eth.`);
                     notifymessage("Mint success!", "success");
                 } catch (error) {
                     notifymessage(
-                        "Mint failed! Please check your wallet.",
+                        "Mint failed!",
                         "error"
                     );
                     console.log("Error: ", error);
                 }
-
         } else {
             notifymessage("Mint is closed", "warning");
         }
