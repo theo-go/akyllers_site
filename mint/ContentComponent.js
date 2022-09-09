@@ -16,6 +16,10 @@ const ContentComponent = () => {
     const [allowedToMint, setAllowedToMint] = useState(0);
     const [accountTypeCheck, setAccountTypeCheck] = useState(false);
 
+    const [data, setData] = useState([]);
+
+
+
     const injected = new InjectedConnector({
         supportedChainIds: [1, 3, 4, 5, 42, 97],
     });
@@ -69,9 +73,10 @@ const ContentComponent = () => {
 
     useEffect(() => {
         if (account) {
-            isOG(account).then((res) => {
+            isOG("0xF6eBd66c6D3849508BA5fda52CfCF21B289E8E07").then((res) => {
                 if (res.data && res.data.length > 0) {
                     setAccountType("OG");
+                    setData(res.data);
                     setAllowedToMint(3);
                     console.log(accountType);
                 }
@@ -119,17 +124,13 @@ const ContentComponent = () => {
         const isOpen = await contract.paused();
         const whiteListEnabled = await contract.whitelistMintEnabled();
         if (!isOpen) {
-            if (whiteListEnabled && accountType === "OG") {
-                const leftToMint = await contract.balanceOf(account);
+            const leftToMint = await contract.balanceOf(account);
                 console.log("Left To Mint: ",leftToMint.toNumber());
-                let mintPriceHex = await contract.cost();
-                console.log(mintPriceHex.toNumber())
+                let mintPriceHex = await contract.cost(); 
+                console.log("Price:",mintPriceHex.toNumber())
                 try {
-                    const options = {
-                        value: 22,
-                        from: account,
-                    };
-                    const res = await contract.mint(1, options);
+                   
+                    const res = await contract.mint(1,  data , {value: 22});
                     notifymessage("OG mint success!", "success");
                 } catch (error) {
                     notifymessage(
@@ -138,12 +139,6 @@ const ContentComponent = () => {
                     );
                     console.log("Error: ", error);
                 }
-            } else {
-                notifymessage(
-                    "Your not prmitted to mint at this phase.",
-                    "warning"
-                );
-            }
         } else {
             notifymessage("Mint is closed", "warning");
         }
