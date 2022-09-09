@@ -87,7 +87,7 @@ const ContentComponent = () => {
     }, [accountTypeCheck]);
 
     useEffect(() => {
-        setTimeout( async () => {
+        setInterval( async () => {
             const signer = new ethers.providers.Web3Provider(
                 window.ethereum
             ).getSigner();
@@ -128,9 +128,9 @@ const ContentComponent = () => {
 
                 const leftToMint = await contract.balanceOf(account);
                 let mintPriceHex = await contract.cost();
+
                 try {
                     const res = await contract.Presalemint(mintNumber ? mintNumber : 1,  data , {value: ethers.utils.parseEther("0.05")});
-                    console.log(contract);
                     notifymessage("Mint success!", "success");
                 } catch (error) {
                     notifymessage(
