@@ -69,7 +69,7 @@ const ContentComponent = () => {
 
     useEffect(() => {
         if (account) {
-            isAllowList(account).then((res) => {
+            isOG(account).then((res) => {
                 if (res.data && res.data.length > 0) {
                     setAccountType("OG");
                     setAllowedToMint(3);
@@ -130,10 +130,10 @@ const ContentComponent = () => {
                         from: account,
                     };
                     const res = await contract.mint(1, options);
-                    notifymessage("Allowlist mint success!", "success");
+                    notifymessage("OG mint success!", "success");
                 } catch (error) {
                     notifymessage(
-                        "Allowlist mint failed! Please check your wallet.",
+                        "OG mint failed! Please check your wallet.",
                         "error"
                     );
                     console.log("Error: ", error);
