@@ -123,6 +123,7 @@ const ContentComponent = () => {
                 const leftToMint = await contract.balanceOf(account);
                 console.log("Left To Mint: ",leftToMint.toNumber());
                 let mintPriceHex = await contract.cost();
+                console.log(mintPriceHex.toNumber())
                 try {
                     const options = {
                         value: BigNumber.from(mintPriceHex),
@@ -135,6 +136,7 @@ const ContentComponent = () => {
                         "OG mint failed! Please check your wallet.",
                         "error"
                     );
+                    console.log("Error: ", error);
                 }
             } else {
                 notifymessage(
