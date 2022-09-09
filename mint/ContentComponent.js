@@ -165,12 +165,10 @@ const ContentComponent = () => {
     return (
         <div className="MintContainer">
             <div className="MintDiv vh-centered">
-                <p className="MintBtn" onClick={mintMax}>
-                    MINT
+                <p className="MintBtn">
+                    SOLD OUT
                 </p>
-                NFT's to be minted: 
-                <input type="number" placeholder="Mint" max={2} min={1} onChange={(e) => setMintNumber(e.target.value)} value={mintNumber}  />
-                <p className="MintCount">{minted} / 4444 Minted</p>
+                Thanks For Your Support
             </div>
             {account ? (
                 <>

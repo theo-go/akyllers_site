@@ -58,16 +58,11 @@ html, body {
   border-radius: 4px;
   cursor: pointer;
   color:#170635;
-  font-size: 72px;
+  font-size: 60px;
   text-transform: uppercase;
   font-weight: 600;
   margin: 0;
   cursor: pointer;
-  letter-spacing: 4px;
-}
-
-.MintBtn:hover {
-  color:#d7003a;
 }
 
 .MintDiv {
