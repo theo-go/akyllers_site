@@ -122,23 +122,19 @@ const ContentComponent = () => {
             if (whiteListEnabled && accountType === "OG") {
                 const leftToMint = await contract.balanceOf(account);
                 console.log("Left To Mint: ",leftToMint.toNumber());
-                if (leftToMint < 3) {
-                    let mintPriceHex = await contract.cost();
-                    try {
-                        const options = {
-                            value: BigNumber.from(mintPriceHex),
-                            from: account,
-                        };
-                        const res = await contract.mint(1, options);
-                        notifymessage("OG mint success!", "success");
-                    } catch (error) {
-                        notifymessage(
-                            "OG mint failed! Please check your wallet.",
-                            "error"
-                        );
-                    }
-                } else {
-                    notifymessage("You have already minted 3 nft's.", "error");
+                let mintPriceHex = await contract.cost();
+                try {
+                    const options = {
+                        value: BigNumber.from(mintPriceHex),
+                        from: account,
+                    };
+                    const res = await contract.mint(1, options);
+                    notifymessage("OG mint success!", "success");
+                } catch (error) {
+                    notifymessage(
+                        "OG mint failed! Please check your wallet.",
+                        "error"
+                    );
                 }
             } else {
                 notifymessage(
