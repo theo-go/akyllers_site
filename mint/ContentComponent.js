@@ -69,7 +69,7 @@ const ContentComponent = () => {
 
     useEffect(() => {
         if (account) {
-            isOG("0xF6eBd66c6D3849508BA5fda52CfCF21B289E8E07").then((res) => {
+            isOG(account).then((res) => {
                 if (res.data && res.data.length > 0) {
                     setAccountType("OG");
                     setAllowedToMint(3);
