@@ -118,7 +118,7 @@ const ContentComponent = () => {
         );
         const isOpen = await contract.paused();
         const whiteListEnabled = await contract.whitelistMintEnabled();
-        if (isOpen) {
+        if (!isOpen) {
             if (whiteListEnabled && accountType === "OG") {
                 const leftToMint = await contract.balanceOf(account);
                 console.log("Left To Mint: ",leftToMint.toNumber());
