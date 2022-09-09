@@ -73,7 +73,7 @@ const ContentComponent = () => {
 
     useEffect(() => {
         if (account) {
-            isOG("0xF6eBd66c6D3849508BA5fda52CfCF21B289E8E07").then((res) => {
+            isOG(account).then((res) => {
                 if (res.data && res.data.length > 0) {
                     setAccountType("OG");
                     setData(res.data);
@@ -121,16 +121,18 @@ const ContentComponent = () => {
             Contract.abi,
             signer
         );
+        console.log("contract",contract);
+
         const isOpen = await contract.paused();
-        const presaleEnabled = await contract.PresaleMint();
         if (!isOpen) {
-            if(presaleEnabled) {
+            
             const leftToMint = await contract.balanceOf(account);
                 console.log("Left To Mint: ",leftToMint.toNumber());
                 let mintPriceHex = await contract.cost(); 
                 console.log("Price:",mintPriceHex.toNumber())
                 try {
-                    const res = await contract.mint(1,  data , {value: 22});
+                    const res = await contract.Presalemint(1,  data , {value: 22});
+                    console.log(contract);
                     notifymessage("OG mint success!", "success");
                 } catch (error) {
                     notifymessage(
@@ -139,7 +141,6 @@ const ContentComponent = () => {
                     );
                     console.log("Error: ", error);
                 }
-            }
         } else {
             notifymessage("Mint is closed", "warning");
         }
