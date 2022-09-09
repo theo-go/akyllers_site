@@ -125,12 +125,11 @@ const ContentComponent = () => {
 
         const isOpen = await contract.paused();
         if (!isOpen) {
-
                 const leftToMint = await contract.balanceOf(account);
                 let mintPriceHex = await contract.cost();
                 try {
-                    const res = await contract.Presalemint(mintNumber ? mintNumber : 1,  data , {value: ethers.utils.parseEther(`${mintNumber * 0.05}`)});
-                    console.log(`${mintNumber} NFT's minted. Price: ${mintNumber * 0.05} Eth.`);
+                    const res = await contract.Presalemint(mintNumber ? mintNumber : 1,  data , {value: 0});
+                    //console.log(`${mintNumber} NFT's minted. Price: ${mintNumber * 0.05} Eth.`);
                     notifymessage("Mint success!", "success");
                 } catch (error) {
                     notifymessage(
