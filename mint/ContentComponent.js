@@ -16,6 +16,8 @@ const ContentComponent = () => {
     const [allowedToMint, setAllowedToMint] = useState(0);
     const [accountTypeCheck, setAccountTypeCheck] = useState(false);
 
+    const [mintNumber, setMintNumber] = useState(1);
+
     const [data, setData] = useState([]);
 
 
@@ -73,7 +75,7 @@ const ContentComponent = () => {
 
     useEffect(() => {
         if (account) {
-            isAllowList(account).then((res) => {
+            isOG(account).then((res) => {
                 if (res.data && res.data.length > 0) {
                     setAccountType("OG");
                     setData(res.data);
@@ -123,10 +125,11 @@ const ContentComponent = () => {
 
         const isOpen = await contract.paused();
         if (!isOpen) {
-            const leftToMint = await contract.balanceOf(account);
+
+                const leftToMint = await contract.balanceOf(account);
                 let mintPriceHex = await contract.cost();
                 try {
-                    const res = await contract.Presalemint(1,  data , {value: ethers.utils.parseEther("0.05")});
+                    const res = await contract.Presalemint(mintNumber ? mintNumber : 1,  data , {value: ethers.utils.parseEther("0.05")});
                     console.log(contract);
                     notifymessage("Allowlist mint success!", "success");
                 } catch (error) {
@@ -136,6 +139,7 @@ const ContentComponent = () => {
                     );
                     console.log("Error: ", error);
                 }
+
         } else {
             notifymessage("Mint is closed", "warning");
         }
@@ -162,6 +166,8 @@ const ContentComponent = () => {
                 <p className="MintBtn" onClick={mintMax}>
                     MINT
                 </p>
+                Number of NFT's to be minted: 
+                <input type="number" placeholder="Mint" max={2} min={1} onChange={(e) => setMintNumber(e.target.value)} value={mintNumber}  />
                 <p className="MintCount">{minted} / 4444 Minted</p>
             </div>
             {account ? (

@@ -10,6 +10,20 @@ html, body {
  z-index: 1;
  color: #FFF;
  height: 100vh;
+ color: #170635;
+ font-weight: bold;
+}
+
+.MintContainer input {
+  border: 1px solid #170635;
+  background: none;
+  border-radius: 4px;
+  width: 60px;
+  margin-bottom: 8px;
+  font-size: 18px;
+  color: #170635;
+  outline: 0;
+  margin-left: 4px;
 }
 
 .mintLogo {
