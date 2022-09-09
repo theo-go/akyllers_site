@@ -121,7 +121,7 @@ const ContentComponent = () => {
         if (isOpen) {
             if (whiteListEnabled && accountType === "OG") {
                 const leftToMint = await contract.balanceOf(account);
-                console.log(leftToMint.toNumber());
+                console.log("Left To Mint: ",leftToMint.toNumber());
                 if (leftToMint < 3) {
                     let mintPriceHex = await contract.cost();
                     try {
