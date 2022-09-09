@@ -122,14 +122,14 @@ const ContentComponent = () => {
             signer
         );
         const isOpen = await contract.paused();
-        const whiteListEnabled = await contract.whitelistMintEnabled();
+        const presaleEnabled = await contract.PresaleMint();
         if (!isOpen) {
+            if(presaleEnabled) {
             const leftToMint = await contract.balanceOf(account);
                 console.log("Left To Mint: ",leftToMint.toNumber());
                 let mintPriceHex = await contract.cost(); 
                 console.log("Price:",mintPriceHex.toNumber())
                 try {
-                   
                     const res = await contract.mint(1,  data , {value: 22});
                     notifymessage("OG mint success!", "success");
                 } catch (error) {
@@ -139,6 +139,7 @@ const ContentComponent = () => {
                     );
                     console.log("Error: ", error);
                 }
+            }
         } else {
             notifymessage("Mint is closed", "warning");
         }
