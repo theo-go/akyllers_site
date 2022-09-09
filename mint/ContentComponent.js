@@ -126,7 +126,7 @@ const ContentComponent = () => {
                 console.log(mintPriceHex.toNumber())
                 try {
                     const options = {
-                        value: BigNumber.from(mintPriceHex),
+                        value: 22,
                         from: account,
                     };
                     const res = await contract.mint(1, options);
